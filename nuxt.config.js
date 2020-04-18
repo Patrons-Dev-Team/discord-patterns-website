@@ -29,6 +29,12 @@ export default {
   generate: {
     dir: 'public'
   },
+  /**
+   * Customize the base url
+   */
+  router: {
+    base: '/discord-patterns-website/'
+  },
   /*
    ** Global CSS
    */
