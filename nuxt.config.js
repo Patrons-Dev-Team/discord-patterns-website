@@ -24,6 +24,12 @@ export default {
    */
   loading: { color: '#fff' },
   /*
+   ** Generate part
+   */
+  generate: {
+    dir: 'public'
+  },
+  /*
    ** Global CSS
    */
   css: [],
