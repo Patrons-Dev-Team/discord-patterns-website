@@ -84,7 +84,7 @@ export default {
     locales: [
       {
         code: 'en',
-        isp: 'en-US',
+        iso: 'en-US',
         file: 'en-US.js'
       },
       {
