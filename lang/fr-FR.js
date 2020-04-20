@@ -6,6 +6,6 @@ export default {
   },
   footer: {
     MADE_WITH: 'Fait avec ',
-    BY: 'par '
+    BY: 'par :'
   }
 }
