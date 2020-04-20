@@ -10,6 +10,7 @@
       </nuxt-link>
     </v-card-title>
     <v-card-actions>
+      <v-btn to="/preview" nuxt text>{{ $t('header.PREVIEW') }}</v-btn>
       <v-btn to="/browse?recent" nuxt text>{{ $t('header.BROWSE') }}</v-btn>
       <v-btn to="/browse?popular" nuxt text>{{ $t('header.POPULAR') }}</v-btn>
     </v-card-actions>
