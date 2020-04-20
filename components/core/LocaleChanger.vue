@@ -6,23 +6,18 @@
         &nbsp;{{ displayLocale }}
       </v-btn>
     </template>
-    <v-list dense max-width="82">
+    <v-list>
       <v-list-item
         v-for="locale in availableLocales"
         :key="locale.code"
-        :href="switchLocalePath(locale.code)"
-        class="px-1"
+        :to="switchLocalePath(locale.code)"
       >
-        <v-layout>
-          <v-flex>
-            <country-flag
-              :country="locale.iso.split('-')[1]"
-              size="small"
-              rounded
-            />
-          </v-flex>
-          <v-flex>{{ locale.iso.split('-')[1].toUpperCase() }}</v-flex>
-        </v-layout>
+        <v-list-item-icon>
+          <div>
+            <country-flag class="v-icon" :country="locale.code" size="medium" />
+          </div>
+        </v-list-item-icon>
+        <v-list-item-title>{{ locale.code.toUpperCase() }}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-menu>
