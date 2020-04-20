@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+import GitRevisionPlugin from 'git-revision-webpack-plugin'
+const gitRevisionPlugin = new GitRevisionPlugin()
 
 export default {
   mode: 'universal',
@@ -97,7 +99,7 @@ export default {
   i18n: {
     locales: [
       {
-        code: 'en',
+        code: 'us',
         iso: 'en-US',
         file: 'en-US.js'
       },
@@ -107,9 +109,9 @@ export default {
         file: 'fr-FR.js'
       }
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'us',
     vueI18n: {
-      fallbackLocale: 'en'
+      fallbackLocale: 'us'
     },
     seo: true,
     lazy: true,
@@ -123,5 +125,15 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  /*
+   ** Client side env variables
+   */
+  env: {
+    VERSION: process.env.npm_package_version,
+    GIT_DESCRIBE_VERSION: gitRevisionPlugin.version(),
+    COMMITHASH: gitRevisionPlugin.commithash(),
+    BRANCH: gitRevisionPlugin.branch(),
+    APP_TITLE: 'Discord Patterns'
   }
 }
