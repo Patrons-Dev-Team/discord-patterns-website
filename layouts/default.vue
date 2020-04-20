@@ -1,6 +1,7 @@
 <template>
   <v-app dark>
     <navbar />
+    <parallax-header />
     <v-content>
       <v-container>
         <nuxt />
@@ -13,11 +14,13 @@
 <script>
 import Navbar from '~/components/core/Navbar.vue'
 import DFooter from '~/components/core/DFooter.vue'
+import ParallaxHeader from '~/components/HeaderParallax.vue'
 
 export default {
   components: {
     Navbar,
-    DFooter
+    DFooter,
+    ParallaxHeader
   },
   data() {
     return {
