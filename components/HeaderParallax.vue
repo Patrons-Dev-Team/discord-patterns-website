@@ -6,7 +6,7 @@
         <p>FOSS Templates, on your demand !</p>
       </div>
       <div>
-        <v-btn href="https://discord.gg/MFMXamv" target="_blank" outlined="true"
+        <v-btn href="https://discord.gg/MFMXamv" target="_blank" outlined
           >Join our Discord Server !</v-btn
         >
       </div>
