@@ -12,5 +12,21 @@ export default {
               template listing website, made for your eyes, and totally open
               source`,
     TITLE_LINKS: 'Links'
+  },
+  listing: {
+    pophover: {
+      CHANNELS: 'Channels',
+      ROLES: 'Roles'
+    },
+    card: {
+      CREATE_BUTTON: 'Create my server',
+      DETAILS_BUTTON: 'Details'
+    },
+    tags: {
+      '0': 'giveaways',
+      '1': 'steam',
+      '2': 'gaming',
+      '3': 'social'
+    }
   }
 }
