@@ -1,16 +1,16 @@
 <template>
   <div>
     <v-footer app absolute padless>
-      <v-container fluid class="py-4 px-7">
+      <v-container class="py-3 px-7">
         <v-row>
           <v-col cols="12" lg="6">
-            <h2>{{ appTitle }}</h2>
+            <h3>{{ appTitle }}</h3>
             <p>
               {{ $t('footer.DESCRIPTION') }}
             </p>
           </v-col>
           <v-col lg="4" offset-lg="1" cols="6">
-            <h2>{{ $t('footer.TITLE_LINKS') }}</h2>
+            <h3>{{ $t('footer.TITLE_LINKS') }}</h3>
             <ul>
               <li>
                 <nuxt-link to="#">{{ $t('footer.ABOUT_LINK') }}</nuxt-link>
@@ -26,7 +26,7 @@
           <v-col lg="1" cols="6"> <LocaleChanger /></v-col>
         </v-row>
       </v-container>
-      <v-container class="primary py-4 px-7" fluid background-color="secondary">
+      <v-container class="primary py-2 px-7" fluid background-color="secondary">
         <div class="d-flex flex-sm-row flex-column">
           <span
             >v{{ version }}, {{ commitHash.substring(0, 7) }} ({{ branch }}) -
