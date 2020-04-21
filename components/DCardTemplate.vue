@@ -14,7 +14,7 @@
             outlined
             class="ma-1"
           >
-            <v-icon left x-small :v-text="tag.icon"></v-icon
+            <v-icon left x-small>{{ tag.icon }}</v-icon
             >{{ $t(`listing.tags.${tag.id}`) }}</v-chip
           >
         </div>
