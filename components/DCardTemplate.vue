@@ -198,9 +198,3 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-@import '~assets/variables.scss';
-$treeview-node-height: 20px;
-$treeview-node-height-dense: 20px;
-$treeview-node-padding: 0px;
-</style>
