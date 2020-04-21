@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-footer app absolute padless>
-      <v-container class="py-3 px-7">
+      <v-container class="pt-3 px-7 pb-0">
         <v-row>
           <v-col cols="12" lg="6">
             <h3>{{ appTitle }}</h3>
@@ -26,15 +26,18 @@
           <v-col lg="1" cols="6"> <LocaleChanger /></v-col>
         </v-row>
       </v-container>
-      <v-container class="primary py-2 px-7" fluid background-color="secondary">
-        <div class="d-flex flex-sm-row flex-column">
+      <v-container class="caption py-3 px-7">
+        <v-divider></v-divider>
+
+        <div class="d-flex pt-2 flex-sm-row flex-column">
           <span
-            >v{{ version }}, {{ commitHash.substring(0, 7) }} ({{ branch }}) -
+            >v{{ version }}, {{ commitHash.substring(0, 7) }} ({{ branch }})
           </span>
           <span>
-            &nbsp;{{ $t('footer.MADE_WITH') }}
+            <span class="hidden-sm-and-down">&nbsp;- </span>
+            {{ $t('footer.MADE_WITH') }}
             <v-icon small class="red--text">mdi-cards-heart</v-icon>
-            &nbsp;{{ $t('footer.BY') }} Patrons Dev Team
+            {{ $t('footer.BY') }} Patrons Dev Team
           </span>
         </div>
       </v-container>
