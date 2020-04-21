@@ -28,7 +28,7 @@
     </v-list-item>
 
     <v-card-actions>
-      <v-menu open-on-hover offset-x eager>
+      <v-menu open-on-hover offset-x eager left>
         <template v-slot:activator="{ on }">
           <v-btn icon v-on="on"><v-icon>mdi-eye</v-icon></v-btn>
         </template>
