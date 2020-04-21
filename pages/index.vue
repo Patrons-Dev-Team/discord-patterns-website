@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <d-card-template></d-card-template>
+      <d-card-template :template="templates['0']"></d-card-template>
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -67,11 +67,18 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import DCardTemplate from '~/components/DCardTemplate'
+import templatesApi from '~/services/api/templates'
 export default {
   components: {
     Logo,
     VuetifyLogo,
     DCardTemplate
+  },
+  async asyncData() {
+    const { templates } = await templatesApi.getAllTemplates('us')
+    return {
+      templates
+    }
   }
 }
 </script>
