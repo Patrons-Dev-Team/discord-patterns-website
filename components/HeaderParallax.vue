@@ -2,7 +2,7 @@
   <v-parallax dark height="300" src="parallax_background.png">
     <v-row justify="space-around" align="center">
       <div>
-        <h1 class="display-1">Discord patterns</h1>
+        <h1 class="display-1">{{ appTitle }}</h1>
         <p>FOSS Templates, on your demand !</p>
       </div>
       <div>
@@ -15,5 +15,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      appTitle: process.env.APP_TITLE
+    }
+  }
+}
 </script>
