@@ -81,7 +81,7 @@
                   <template v-slot:prepend="{ item }">
                     <div
                       v-if="!item.parent_id && item.type !== 4"
-                      style="display: inline-block; width: 24px"
+                      style="display: inline-block; width: 8px"
                     ></div>
                     <v-icon v-if="item.type !== 4">
                       {{ channelsIcons[item.type] }}
@@ -136,3 +136,8 @@ export default {
   }
 }
 </script>
+<style>
+.v-treeview-node__root .v-treeview-node__toggle::after {
+  background-color: unset;
+}
+</style>
