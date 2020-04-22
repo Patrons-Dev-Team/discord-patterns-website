@@ -7,13 +7,7 @@
         }}</v-list-item-title>
         <v-list-item-subtitle>{{ template.description }}</v-list-item-subtitle>
         <div>
-          <v-chip
-            v-for="tag in tags"
-            :key="tag.id"
-            x-small
-            outlined
-            class="ma-1"
-          >
+          <v-chip v-for="tag in tags" :key="tag.id" small outlined class="ma-1">
             <v-icon left x-small>{{ tag.icon }}</v-icon
             >{{ $t(`listing.tags.${tag.id}`) }}</v-chip
           >
@@ -51,7 +45,7 @@
                       ? '#' + role.color.toString(16).padStart(6, '0')
                       : 'rgb(212,212,212)'
                   "
-                  x-small
+                  small
                   outlined
                   class="ma-1"
                 >
