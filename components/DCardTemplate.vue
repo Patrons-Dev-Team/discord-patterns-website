@@ -1,17 +1,11 @@
 <template>
-  <v-card class="mx-auto" max-width="344" outlined>
-    <v-list-item three-line>
+  <v-card outlined>
+    <v-list-item two-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1">{{
-          template.title
-        }}</v-list-item-title>
+        <v-list-item-title class="headline mb-1">
+          <span style="white-space: normal;"> {{ template.title }} </span>
+        </v-list-item-title>
         <v-list-item-subtitle>{{ template.description }}</v-list-item-subtitle>
-        <div>
-          <v-chip v-for="tag in tags" :key="tag.id" small outlined class="ma-1">
-            <v-icon left x-small>{{ tag.icon }}</v-icon
-            >{{ $t(`listing.tags.${tag.id}`) }}</v-chip
-          >
-        </div>
       </v-list-item-content>
 
       <v-list-item-avatar
@@ -20,9 +14,14 @@
         >{{ template.emoji }}</v-list-item-avatar
       >
     </v-list-item>
-
+    <div>
+      <v-chip v-for="tag in tags" :key="tag.id" small outlined class="ma-1">
+        <v-icon left x-small>{{ tag.icon }}</v-icon
+        >{{ $t(`listing.tags.${tag.id}`) }}</v-chip
+      >
+    </div>
     <v-card-actions>
-      <v-menu open-on-hover offset-x eager left>
+      <v-menu open-on-hover offset-x left>
         <template v-slot:activator="{ on }">
           <v-btn icon v-on="on"><v-icon>mdi-eye</v-icon></v-btn>
         </template>
