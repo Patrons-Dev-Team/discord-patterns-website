@@ -14,6 +14,7 @@ export default {
     TITLE_LINKS: 'Links'
   },
   listing: {
+    BROWSE_ALL: 'Browse all templates',
     pophover: {
       CHANNELS: 'Channels',
       ROLES: 'Roles'

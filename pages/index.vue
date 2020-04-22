@@ -1,7 +1,21 @@
 <template>
   <v-layout column justify-center align-center>
+    <v-row>
+      <v-col
+        v-for="template in templates"
+        :key="template.dprops.code"
+        cols="12"
+        sm="6"
+        lg="4"
+      >
+        <d-card-template :template="template"></d-card-template>
+      </v-col>
+    </v-row>
+    <v-btn block x-large color="primary">
+      <v-icon left dark large class="mr-3">mdi-compass</v-icon
+      >{{ $t('listing.BROWSE_ALL') }}</v-btn
+    >
     <v-flex xs12 sm8 md6>
-      <d-card-template :template="templates['0']"></d-card-template>
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -76,8 +90,11 @@ export default {
   },
   async asyncData() {
     const { templates } = await templatesApi.getAllTemplates('us')
+    for (let i = 0; i < 9; i++) {
+      templates[String(i)] = templates['0']
+    }
     return {
-      templates
+      templates: Object.values(templates)
     }
   }
 }
