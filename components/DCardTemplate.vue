@@ -79,6 +79,10 @@
                   :items="channels"
                 >
                   <template v-slot:prepend="{ item }">
+                    <div
+                      v-if="!item.parent_id && item.type !== 4"
+                      style="display: inline-block; width: 24px"
+                    ></div>
                     <v-icon v-if="item.type !== 4">
                       {{ channelsIcons[item.type] }}
                     </v-icon>
