@@ -12,5 +12,9 @@ export default {
               template listing website, made for your eyes, and totally open
               source`,
     TITLE_LINKS: 'Links'
+  },
+  parallax: {
+    CONTENT: 'FOSS Templates, on your demand !',
+    JOIN: 'Join our Discord Server !'
   }
 }

@@ -1,6 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
+      <d-search-template></d-search-template>
       <d-card-template></d-card-template>
       <div class="text-center">
         <logo />
@@ -67,11 +68,13 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import DCardTemplate from '~/components/DCardTemplate'
+import DSearchTemplate from '~/components/DSearchTemplate'
 export default {
   components: {
     Logo,
     VuetifyLogo,
-    DCardTemplate
+    DCardTemplate,
+    DSearchTemplate
   }
 }
 </script>
