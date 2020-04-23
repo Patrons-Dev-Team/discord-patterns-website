@@ -8,9 +8,7 @@
         <v-list-item-subtitle>{{ template.description }}</v-list-item-subtitle>
       </v-list-item-content>
 
-      <v-list-item-avatar
-        size="70"
-        class="display-1 grey darken-3 text-center white"
+      <v-list-item-avatar size="70" class="display-1 accent text-center "
         ><div v-emoji class="d-emoji">
           {{ template.emoji }}
         </div></v-list-item-avatar
