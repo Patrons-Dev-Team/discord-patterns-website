@@ -45,6 +45,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    // Doc: https://vue-discord-message.netlify.app/
+    // 'vue-discord-message'
     { src: '~/plugins/vue-discord-message.js', mode: 'client' },
     { src: '~/plugins/twemoji.js', mode: 'client' }
   ],
@@ -66,8 +68,6 @@ export default {
     '@nuxtjs/dotenv',
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
     'nuxt-i18n'
-    // Doc: https://vue-discord-message.netlify.app/
-    // 'vue-discord-message'
   ],
   /*
    ** Axios module configuration
