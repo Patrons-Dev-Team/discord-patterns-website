@@ -1,8 +1,8 @@
 <template>
   <v-app dark>
     <navbar />
-    <parallax-header />
     <v-content>
+      <parallax-header />
       <v-container>
         <nuxt />
       </v-container>
