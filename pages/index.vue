@@ -2,6 +2,56 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8>
       <d-search-template></d-search-template>
+      <v-menu bottom offset-y>
+        <template v-slot:activator="{ on: menu }">
+          <v-tooltip open-delay="1000" top>
+            <template v-slot:activator="{ on: tooltip }">
+              <v-btn
+                class="grey--text"
+                text
+                rounded
+                v-on="{ ...tooltip, ...menu }"
+              >
+                <v-icon left>mdi-clock</v-icon
+                >{{ $t('listing.sort.MOST_RECENT') }}</v-btn
+              >
+            </template>
+            <span>{{ $t('listing.SORT_BY_TOOLTIP') }}</span>
+          </v-tooltip>
+        </template>
+        <v-list dense rounded>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-sort-alphabetical-descending-variant</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{
+                $t('listing.sort.ALPHABETICAL')
+              }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-clock</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{
+                $t('listing.sort.MOST_RECENT')
+              }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-star</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{
+                $t('listing.sort.MOST_POPULAR')
+              }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       <v-row>
         <v-col
           v-for="template in templates"
@@ -14,7 +64,7 @@
           <d-card-template :template="template"></d-card-template>
         </v-col>
       </v-row>
-      <v-btn block x-large color="primary">
+      <v-btn block x-large color="primary" class="mt-2">
         <v-icon left dark large class="mr-3">mdi-compass</v-icon
         >{{ $t('listing.BROWSE_ALL') }}</v-btn
       >
