@@ -11,7 +11,9 @@
       <v-list-item-avatar
         size="70"
         class="display-1 grey darken-3 text-center white"
-        >{{ template.emoji }}</v-list-item-avatar
+        ><div v-emoji class="d-emoji">
+          {{ template.emoji }}
+        </div></v-list-item-avatar
       >
     </v-list-item>
     <div>
@@ -21,10 +23,8 @@
       >
     </div>
     <v-card-actions>
-      <v-menu open-on-hover offset-x left>
-        <template v-slot:activator="{ on }">
-          <v-btn icon v-on="on"><v-icon>mdi-eye</v-icon></v-btn>
-        </template>
+      <v-btn :id="`desc-acti-${id}`" icon><v-icon>mdi-eye</v-icon></v-btn>
+      <v-menu open-on-hover offset-x left :activator="`#desc-acti-${id}`">
         <v-list max-width="300" dense>
           <v-list-item>
             <v-list-item-content>
@@ -107,6 +107,7 @@ export default {
   },
   data() {
     return {
+      id: this._uid,
       tags: this.template.tags.map((tag) => {
         return {
           id: tag,
@@ -129,9 +130,12 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .d-tree-normalized-level {
   display: inline-block;
   width: 24px;
+}
+.d-emoji {
+  width: 35px;
 }
 </style>

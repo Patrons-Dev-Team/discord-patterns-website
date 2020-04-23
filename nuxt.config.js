@@ -44,7 +44,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-discord-message.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/vue-discord-message.js', mode: 'client' },
+    { src: '~/plugins/twemoji.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
