@@ -16,5 +16,22 @@ export default {
   parallax: {
     CONTENT: 'FOSS Templates, on your demand !',
     JOIN: 'Join our Discord Server !'
+  },
+  listing: {
+    BROWSE_ALL: 'Browse all templates',
+    pophover: {
+      CHANNELS: 'Channels',
+      ROLES: 'Roles'
+    },
+    card: {
+      CREATE_BUTTON: 'Create my server',
+      DETAILS_BUTTON: 'Details'
+    },
+    tags: {
+      '0': 'giveaways',
+      '1': 'steam',
+      '2': 'gaming',
+      '3': 'social'
+    }
   }
 }

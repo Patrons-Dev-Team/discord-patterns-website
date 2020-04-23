@@ -1,8 +1,23 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
+    <v-flex xs12 sm8>
       <d-search-template></d-search-template>
-      <d-card-template></d-card-template>
+      <v-row>
+        <v-col
+          v-for="template in templates"
+          :key="template.dprops.code"
+          cols="12"
+          sm="6"
+          lg="4"
+          xl="3"
+        >
+          <d-card-template :template="template"></d-card-template>
+        </v-col>
+      </v-row>
+      <v-btn block x-large color="primary">
+        <v-icon left dark large class="mr-3">mdi-compass</v-icon
+        >{{ $t('listing.BROWSE_ALL') }}</v-btn
+      >
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -69,12 +84,22 @@ import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import DCardTemplate from '~/components/DCardTemplate'
 import DSearchTemplate from '~/components/DSearchTemplate'
+import templatesApi from '~/services/api/templates'
 export default {
   components: {
     Logo,
     VuetifyLogo,
     DCardTemplate,
     DSearchTemplate
+  },
+  async asyncData() {
+    const { templates } = await templatesApi.getAllTemplates('us')
+    for (let i = 0; i < 9; i++) {
+      templates[String(i)] = templates['0']
+    }
+    return {
+      templates: Object.values(templates)
+    }
   }
 }
 </script>

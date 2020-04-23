@@ -1,27 +1,29 @@
 <template>
   <div>
-    <v-text-field :rules="rules" label="Search bar"></v-text-field>
+    <h2>Awesome template list</h2>
     <v-row>
-      <v-chip
-        v-for="(tag, index) in tags"
-        :key="index"
-        close
-        outlined
-        @click:close="deleteTag(tag)"
-      >
-        {{ tag.icon + ' ' + tag.content }}
-      </v-chip>
-    </v-row>
-    <v-divider></v-divider>
-    <h3>Tags :</h3>
-    <v-row>
-      <v-chip
-        v-for="(tag, index) in tagsToSelect"
-        :key="index"
-        @click="addToTag(tag)"
-      >
-        {{ tag.icon + ' ' + tag.content }}
-      </v-chip>
+      <v-col sm="4" class="py-0 my-0">
+        <v-text-field
+          rounded
+          outlined
+          :label="$t('listing.SEARCH')"
+          append-icon="mdi-magnify"
+          single-line
+          clearable
+          clear-icon="mdi-close"
+          hide-details
+          autofocus
+          dense
+        ></v-text-field>
+      </v-col>
+      <v-col cols="12" sm="12" class="py-0 my-0">
+        <v-chip-group column multiple :model="selectedTag">
+          <v-chip v-for="(tag, index) in tags" :key="index" outlined filter>
+            <v-icon left>{{ tag.icon }}</v-icon>
+            {{ tag.content }}
+          </v-chip>
+        </v-chip-group>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -30,44 +32,38 @@
 export default {
   name: 'DSearchTemplate',
   data: () => ({
-    rules: [(value) => (value || '').length <= 20 || 'Max 20 characters'],
-    tags: [],
-    tagsToSelect: [
+    tags: [
       {
-        icon: '🕹️',
+        icon: 'mdi-youtube-gaming',
         content: 'Gaming'
       },
       {
-        icon: '👨‍🎓',
+        icon: 'mdi-school',
         content: 'School'
       },
       {
-        icon: '🎲',
+        icon: 'mdi-dice-6',
         content: 'RP'
       },
       {
-        icon: '🎵',
+        icon: 'mdi-music',
         content: 'Music'
       },
       {
-        icon: '🇫🇷',
+        icon: 'mdi-flag',
         content: 'FR'
       },
       {
-        icon: '🇬🇧',
+        icon: 'mdi-flag',
         content: 'EN'
+      },
+      {
+        icon: 'mdi-fire',
+        content: 'Explore tags'
       }
-    ]
+    ],
+    selectedTag: []
   }),
-  methods: {
-    addToTag(tag) {
-      if (!this.tags.includes(tag)) {
-        this.tags.push(tag)
-      }
-    },
-    deleteTag(tag) {
-      this.tags = this.tags.filter((t) => t !== tag)
-    }
-  }
+  methods: {}
 }
 </script>
