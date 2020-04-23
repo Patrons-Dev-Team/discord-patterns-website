@@ -74,7 +74,7 @@
                   <template v-slot:prepend="{ item }">
                     <div
                       v-if="!item.parent_id && item.type !== 4"
-                      style="display: inline-block; width: 24px"
+                      class="d-tree-normalized-level"
                     ></div>
                     <v-icon v-if="item.type !== 4">
                       {{ channelsIcons[item.type] }}
@@ -129,3 +129,9 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.d-tree-normalized-level {
+  display: inline-block;
+  width: 24px;
+}
+</style>
