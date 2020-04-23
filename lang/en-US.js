@@ -13,6 +13,10 @@ export default {
               source`,
     TITLE_LINKS: 'Links'
   },
+  parallax: {
+    CONTENT: 'FOSS Templates, on your demand !',
+    JOIN: 'Join our Discord Server !'
+  },
   listing: {
     BROWSE_ALL: 'Browse all templates',
     pophover: {

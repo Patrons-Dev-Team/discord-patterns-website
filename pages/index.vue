@@ -1,6 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
+    <v-flex xs12 sm8>
+      <d-search-template></d-search-template>
       <v-menu bottom offset-y>
         <template v-slot:activator="{ on: menu }">
           <v-tooltip open-delay="1000" top>
@@ -132,12 +133,14 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import DCardTemplate from '~/components/DCardTemplate'
+import DSearchTemplate from '~/components/DSearchTemplate'
 import templatesApi from '~/services/api/templates'
 export default {
   components: {
     Logo,
     VuetifyLogo,
-    DCardTemplate
+    DCardTemplate,
+    DSearchTemplate
   },
   async asyncData() {
     const { templates } = await templatesApi.getAllTemplates('us')
