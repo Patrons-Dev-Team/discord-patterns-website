@@ -1,5 +1,9 @@
 <template>
-  <v-parallax dark height="300" src="parallax_background.png">
+  <v-parallax
+    class="blue-grey darken-4"
+    height="300"
+    src="parallax_background.png"
+  >
     <v-row justify="space-around" align="center">
       <div>
         <h1 class="display-1">{{ appTitle }}</h1>
