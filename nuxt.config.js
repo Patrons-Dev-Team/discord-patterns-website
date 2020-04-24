@@ -47,7 +47,10 @@ export default {
   plugins: [
     // Doc: https://vue-discord-message.netlify.app/
     // 'vue-discord-message'
-    { src: '~/plugins/vue-discord-message.js', mode: 'client' }
+    { src: '~/plugins/vue-discord-message.js', mode: 'client' },
+    // Doc: https://github.com/amsik/liquor-tree
+    // 'liquor-tree'
+    { src: '~/plugins/liquor-tree.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
