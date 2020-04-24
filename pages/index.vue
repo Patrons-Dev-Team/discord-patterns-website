@@ -1,24 +1,16 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8>
-      <d-search-template></d-search-template>
-      <v-menu bottom offset-y>
-        <template v-slot:activator="{ on: menu }">
-          <v-tooltip open-delay="1000" top>
-            <template v-slot:activator="{ on: tooltip }">
-              <v-btn
-                class="grey--text"
-                text
-                rounded
-                v-on="{ ...tooltip, ...menu }"
-              >
-                <v-icon left>mdi-clock</v-icon
-                >{{ $t('listing.sort.MOST_RECENT') }}</v-btn
-              >
-            </template>
-            <span>{{ $t('listing.SORT_BY_TOOLTIP') }}</span>
-          </v-tooltip>
-        </template>
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="12">
+      <div class="my-7">
+        <h3 class="display-2">{{ $t('listing.index.TITLE') }}</h3>
+        <p>{{ $t('listing.index.DESCRIPTION') }}</p>
+      </div>
+      <d-search-template class="my-10"></d-search-template>
+      <v-btn id="sort-btn" class="grey--text" text rounded>
+        <v-icon left>mdi-clock</v-icon
+        >{{ $t('listing.sort.MOST_RECENT') }}</v-btn
+      >
+      <v-menu bottom offset-y activator="#sort-btn">
         <v-list dense rounded>
           <v-list-item>
             <v-list-item-icon>
@@ -52,9 +44,9 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-row>
+      <v-row v-resize="onResize">
         <v-col
-          v-for="template in templates"
+          v-for="template in dTemplates"
           :key="template.dprops.code"
           cols="12"
           sm="6"
@@ -65,80 +57,47 @@
         </v-col>
       </v-row>
       <v-btn block x-large color="primary" class="mt-2">
-        <v-icon left dark large class="mr-3">mdi-compass</v-icon
+        <v-icon left large class="mr-3">mdi-compass</v-icon
         >{{ $t('listing.BROWSE_ALL') }}</v-btn
       >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
+    </v-col>
+    <v-col cols="12" class="mt-10">
+      <v-card outlined>
+        <v-list>
+          <v-list-item>
+            <v-list-item-avatar>
+              <v-img
+                src="https://discord.fr/user/themes/discordfr/images/logo/500.png"
+              ></v-img>
+            </v-list-item-avatar>
+
+            <v-list-item-content>
+              <div class="overline">{{ $t('partner.TITLE') }}</div>
+              <v-list-item-title>Discord.fr</v-list-item-title>
+              <v-list-item-subtitle
+                >Rejoignez discord.fr, la plus grosse communauté
+                française</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-list-item-action>
+              <v-btn icon>
+                <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+        </v-list>
       </v-card>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import DCardTemplate from '~/components/DCardTemplate'
 import DSearchTemplate from '~/components/DSearchTemplate'
 import templatesApi from '~/services/api/templates'
 export default {
   components: {
-    Logo,
-    VuetifyLogo,
     DCardTemplate,
     DSearchTemplate
   },
@@ -148,7 +107,20 @@ export default {
       templates[String(i)] = templates['0']
     }
     return {
-      templates: Object.values(templates)
+      templates: Object.values(templates),
+      dTemplates: Object.values(templates)
+    }
+  },
+  mounted() {
+    this.onResize()
+  },
+  methods: {
+    onResize() {
+      if (window.innerWidth > 1904) {
+        this.dTemplates = this.templates.slice(0, 8)
+      } else {
+        this.dTemplates = this.templates
+      }
     }
   }
 }
