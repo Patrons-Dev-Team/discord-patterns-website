@@ -72,7 +72,7 @@
             </v-list-item-avatar>
 
             <v-list-item-content>
-              <div class="overline">{{ $t('partner.TITLE') }}</div>
+              <div class="overline">{{ $t('partners.TITLE') }}</div>
               <v-list-item-title>Discord.fr</v-list-item-title>
               <v-list-item-subtitle
                 >Rejoignez discord.fr, la plus grosse communauté
