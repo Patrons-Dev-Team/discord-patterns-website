@@ -9,10 +9,13 @@
       </v-list-item-content>
 
       <v-list-item-avatar size="70" class="display-1 accent text-center "
-        ><div v-emoji class="d-emoji">
-          {{ template.emoji }}
-        </div></v-list-item-avatar
-      >
+        ><v-img
+          :src="emojiSrc"
+          contain
+          height="35"
+          :alt="template.emoji"
+        ></v-img>
+      </v-list-item-avatar>
     </v-list-item>
     <div>
       <v-chip v-for="tag in tags" :key="tag.id" small outlined class="ma-1">
@@ -95,6 +98,7 @@
 </template>
 <script>
 import { arrayToTree } from 'performant-array-to-tree'
+import { parse } from 'twemoji-parser'
 import tagsIcons from '~/data/tags-icons'
 export default {
   props: {
@@ -104,6 +108,11 @@ export default {
     }
   },
   data() {
+    const emojiEntities = parse(this.template.emoji, { assetType: 'png' })
+    const emojiSrc =
+      emojiEntities.length > 0
+        ? emojiEntities[0].url
+        : 'https://horsehead.me/72/72'
     return {
       id: this._uid,
       tags: this.template.tags.map((tag) => {
@@ -112,6 +121,7 @@ export default {
           icon: tagsIcons[tag]
         }
       }),
+      emojiSrc,
       roles: this.template.dprops.serialized_source_guild.roles
         .filter((role) => role.id !== 0)
         .reverse(),
@@ -132,8 +142,5 @@ export default {
 .d-tree-normalized-level {
   display: inline-block;
   width: 24px;
-}
-.d-emoji {
-  width: 35px;
 }
 </style>
