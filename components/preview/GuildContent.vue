@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'PreviewContent',
+  name: 'GuildContent',
   plugins: ['~/plugins/vue-discord-message.js']
 }
 </script>
