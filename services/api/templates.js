@@ -27,6 +27,12 @@ export default {
     return templates.slice(0, 9)
   },
 
+  async getTemplateById(lang, id) {
+    const templates = await this.getAllTemplates(lang)
+    const template = templates.find((temp) => temp.id === id)
+    return template
+  },
+
   async search(lang, query, tags, options) {
     const templates = await this.getAllTemplates(lang)
     let results = []

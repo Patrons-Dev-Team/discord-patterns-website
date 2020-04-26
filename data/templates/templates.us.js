@@ -1458,7 +1458,7 @@ export const templates = [
     }
   },
   {
-    id: '0',
+    id: '1',
     title: 'GA Community template 2',
     description: 'Some giveaways, to test',
     emoji: '🕹️',

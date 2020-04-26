@@ -161,35 +161,31 @@ import { arrayToTree } from 'performant-array-to-tree'
 import { format } from 'date-fns'
 import { convertPerms } from '~/lib/discordperms'
 import templatesApi from '~/services/api/templates'
-import tagsIcons from '~/data/tags-icons'
+import tagsIcons from '~/data/tags'
 export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
   async asyncData({ params, redirect }) {
-    const { templates } = await templatesApi.getAllTemplates('us')
-    const templateData = Object.entries(templates).map(([key, value]) => {
-      if (key === params.id) {
-        return value
-      }
-    })
-    if (templateData[0] !== undefined) {
-      const emojiEntities = parse(templateData[0].emoji, { assetType: 'png' })
+    const templateData = await templatesApi.getTemplateById('us', params.id)
+    console.log('templateData', templateData)
+    if (templateData !== undefined) {
+      const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
       const emojiSrc =
         emojiEntities.length > 0
           ? emojiEntities[0].url
           : 'https://horsehead.me/72/72'
       return {
-        templateData: templateData[0],
+        templateData,
         emojiSrc,
-        tags: templateData[0].tags.map((tag) => {
+        tags: templateData.tags.map((tag) => {
           return {
             id: tag,
             icon: tagsIcons[tag]
           }
         }),
         channels: arrayToTree(
-          templateData[0].dprops.serialized_source_guild.channels,
+          templateData.dprops.serialized_source_guild.channels,
           { dataField: null, parentId: 'parent_id' }
         ),
         channelsIcons: {
@@ -197,15 +193,15 @@ export default {
           2: 'mdi-volume-high',
           5: 'mdi-bullhorn'
         },
-        roles: templateData[0].dprops.serialized_source_guild.roles
+        roles: templateData.dprops.serialized_source_guild.roles
           .filter((role) => role.id !== 0)
           .reverse(),
         createdDate: format(
-          new Date(templateData[0].dprops.created_at),
+          new Date(templateData.dprops.created_at),
           'MM/dd/yy'
         ),
         updatedDate: format(
-          new Date(templateData[0].dprops.updated_at),
+          new Date(templateData.dprops.updated_at),
           'MM/dd/yy'
         )
       }
