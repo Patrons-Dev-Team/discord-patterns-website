@@ -18,7 +18,16 @@
       </v-list-item-avatar>
     </v-list-item>
     <div>
-      <v-chip v-for="tag in tags" :key="tag.id" small outlined class="ma-1">
+      <v-chip
+        v-for="tag in tags"
+        :key="tag.id"
+        :to="localePath({ name: 'browse', query: { tags: [tag.id] } })"
+        active-class="no-active"
+        nuxt
+        small
+        outlined
+        class="ma-1"
+      >
         <v-icon left x-small>{{ tag.icon }}</v-icon
         >{{ $t(`listing.tags.${tag.id}`) }}</v-chip
       >
@@ -99,7 +108,7 @@
 <script>
 import { arrayToTree } from 'performant-array-to-tree'
 import { parse } from 'twemoji-parser'
-import tagsIcons from '~/data/tags-icons'
+import tagsIcons from '~/data/tags'
 export default {
   props: {
     template: {
@@ -142,5 +151,9 @@ export default {
 .d-tree-normalized-level {
   display: inline-block;
   width: 24px;
+}
+
+.v-chip--active.no-active::before {
+  opacity: 0 !important;
 }
 </style>
