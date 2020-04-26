@@ -91,7 +91,9 @@
         </v-list>
       </v-menu>
       <v-spacer></v-spacer>
-      <v-btn text>{{ $t('listing.card.DETAILS_BUTTON') }}</v-btn>
+      <v-btn text to="template/0">{{
+        $t('listing.card.DETAILS_BUTTON')
+      }}</v-btn>
       <v-btn text outlined>{{ $t('listing.card.CREATE_BUTTON') }}</v-btn>
     </v-card-actions>
   </v-card>
