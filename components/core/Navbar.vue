@@ -47,6 +47,7 @@
         :key="item.title"
         :to="localePath(item.link)"
         class="hidden-sm-and-down"
+        :active-class="item.activeClass"
         nuxt
         text
         >{{ item.title }}</v-btn
@@ -73,9 +74,10 @@ export default {
         },
         {
           title: this.$t('header.BROWSE'),
-          link: 'about'
+          link: 'browse'
         },
         {
+          activeClass: 'no-active',
           title: this.$t('header.POPULAR'),
           link: { name: 'browse', query: { sort: 'most-popular' } }
         }
@@ -84,3 +86,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.v-btn--active.no-active::before {
+  opacity: 0 !important;
+}
+</style>
