@@ -170,7 +170,6 @@
 
 <script>
 import DCardTemplate from '~/components/DCardTemplate'
-import templatesApi from '~/services/api/templates'
 import tags from '~/data/tags'
 import { getDefaultBrowseOrder, validateBrowseQuery } from '~/utils/utils'
 export default {
@@ -178,7 +177,7 @@ export default {
     DCardTemplate
   },
   async fetch() {
-    const res = await templatesApi.search(
+    const res = await this.$templatesApi.search(
       'us',
       this.search,
       this.selectedTags.map(String),
@@ -294,7 +293,7 @@ export default {
       clearTimeout(this.timeout)
       this.timeout = setTimeout(() => {
         this.performSearch()
-      }, 700)
+      }, 1000)
     }
   }
 }
