@@ -117,14 +117,13 @@
 
 <script>
 import DCardTemplate from '~/components/DCardTemplate'
-import templatesApi from '~/services/api/templates'
 import tags from '~/data/tags'
 export default {
   components: {
     DCardTemplate
   },
-  async asyncData() {
-    const templates = await templatesApi.getLatestTemplates('us')
+  async asyncData({ app: { $templatesApi } }) {
+    const templates = await $templatesApi.getLatestTemplates('us')
     return {
       templates,
       dTemplates: templates
