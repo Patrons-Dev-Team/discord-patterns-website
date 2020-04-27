@@ -254,7 +254,15 @@ export default {
   watch: {
     '$route.query': '$fetch',
     'options.page'() {
-      this.performSearch()
+      this.$router.replace(
+        this.localePath({
+          name: 'browse',
+          query: {
+            ...this.$route.query,
+            page: this.options.page
+          }
+        })
+      )
     }
   },
   watchQuery: ['q', 'tags', 'sort', 'order'],
