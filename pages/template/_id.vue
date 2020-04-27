@@ -168,6 +168,7 @@ export default {
   },
   async asyncData({ params, redirect }) {
     const templateData = await templatesApi.getTemplateById('us', params.id)
+    // eslint-disable-next-line no-console
     console.log('templateData', templateData)
     if (templateData !== undefined) {
       const emojiEntities = parse(templateData.emoji, { assetType: 'png' })

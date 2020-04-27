@@ -1,7 +1,7 @@
 <template>
   <v-menu bottom offset-y class="pa-2">
     <template v-slot:activator="{ on }">
-      <v-card color="rgba(0,0,0,0)" class="extended">
+      <v-card color="rgba(0,0,0,0)" class="extended" tile>
         <v-btn
           tile
           text
@@ -56,10 +56,10 @@
 
 <script>
 export default {
-  name: 'Guilds',
+  name: 'GuildBar',
   data() {
     return {
-      guildName: 'Template 1'
+      guildName: 'GA Community'
     }
   }
 }

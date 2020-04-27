@@ -3,7 +3,7 @@
     <div
       class="mt-1 d-flex justify-center align-center discord-avatar dcolor-bg-user"
     >
-      <img alt="Discord Logo" src="~static/discord-logo.png" width="32" />
+      <img alt="D-Patterns Logo" src="~static/discord-logo.png" width="32" />
     </div>
     <div class="separator my-2 mx-auto"></div>
   </div>
