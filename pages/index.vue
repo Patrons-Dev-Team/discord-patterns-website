@@ -60,7 +60,7 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-row v-resize="onResize">
+      <v-row>
         <v-col
           v-for="template in dTemplates"
           :key="template.id"
@@ -127,7 +127,7 @@ export default {
     const templates = await templatesApi.getLatestTemplates('us')
     return {
       templates,
-      dTemplates: [...templates]
+      dTemplates: templates
     }
   },
   data() {
@@ -172,15 +172,44 @@ export default {
       ]
     }
   },
-  mounted() {
-    this.onResize()
+  watch: {
+    '$vuetify.breakpoint.smOnly'() {
+      if (this.$vuetify.breakpoint.smOnly) {
+        this.dTemplates = this.templates.slice(0, 8)
+      }
+    },
+    '$vuetify.breakpoint.mdOnly'() {
+      if (this.$vuetify.breakpoint.mdOnly) {
+        this.dTemplates = this.templates.slice(0, 8)
+      }
+    },
+    '$vuetify.breakpoint.xlOnly'() {
+      if (this.$vuetify.breakpoint.xlOnly) {
+        this.dTemplates = this.templates.slice(0, 8)
+      }
+    },
+    '$vuetify.breakpoint.lgOnly'() {
+      if (this.$vuetify.breakpoint.lgOnly) {
+        this.dTemplates = this.templates
+      }
+    },
+    '$vuetify.breakpoint.xsOnly'() {
+      if (this.$vuetify.breakpoint.xsOnly) {
+        this.dTemplates = this.templates
+      }
+    }
+  },
+  beforeMount() {
+    this.setItems()
   },
   methods: {
-    onResize() {
-      if (window.innerWidth > 1904) {
+    setItems() {
+      if (
+        this.$vuetify.breakpoint.smOnly ||
+        this.$vuetify.breakpoint.mdOnly ||
+        this.$vuetify.breakpoint.xlOnly
+      ) {
         this.dTemplates = this.templates.slice(0, 8)
-      } else {
-        this.dTemplates = this.templates
       }
     },
     performSearch() {
