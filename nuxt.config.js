@@ -47,7 +47,9 @@ export default {
   plugins: [
     // Doc: https://vue-discord-message.netlify.app/
     // 'vue-discord-message'
-    { src: '~/plugins/vue-discord-message.js', mode: 'client' }
+    { src: '~/plugins/vue-discord-message.js', mode: 'client' },
+    { src: '~/plugins/api-client.js', mode: 'client' },
+    { src: '~/plugins/api-server.js', mode: 'server' }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -127,7 +129,17 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, { isClient }) {
+      if (isClient) {
+        config.output.globalObject = 'this'
+        // web workers are only available client-side
+        config.module.rules.push({
+          test: /\.worker\.js$/, // this will pick up all .js files that ends with ".worker.js"
+          loader: 'worker-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
   },
   /*
    ** Client side env variables
