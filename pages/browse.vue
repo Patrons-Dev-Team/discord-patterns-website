@@ -208,6 +208,7 @@ export default {
   watch: {
     '$route.query': '$fetch',
     'options.page'() {
+      // eslint-disable-next-line no-console
       console.log(this.page)
       this.performSearch()
     }

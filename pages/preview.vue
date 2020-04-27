@@ -1,7 +1,7 @@
 <template>
-  <v-card tile xs12>
+  <v-card id="preview-card" tile xs12>
     <client-only>
-      <v-container id="preview-container" class="ma-0 pa-0">
+      <v-container id="preview-container" class="ma-0 pa-0 extended">
         <v-row id="preview-header" class="ma-0 dcolor-bg-servers">
           <v-col id="preview-title" cols="1" class="pa-0 ml-2">
             <img
@@ -28,16 +28,40 @@
                   <guild-bar />
                 </v-row>
                 <v-row id="preview-guild-channels mx-0">
-                  <guild-channels :template="templates['0']" />
+                  <guild-channels
+                    v:bind:current-selection
+                    :template="templates['0']"
+                    @select-channel="receiveChannel"
+                  />
                 </v-row>
                 <v-row id="preview-member-info"></v-row>
               </v-col>
             </v-row>
           </v-col>
-          <v-col id="preview-guild-content" cols="8">
-            <guild-content />
+          <v-col id="preview-guild-content">
+            <v-row id="preview-channel-bar" no-gutters>
+              <channel-bar
+                :channel="
+                  templates[0].dprops.serialized_source_guild.channels[
+                    channel - 1
+                  ]
+                "
+                @open-members="openRightPannel"
+              />
+            </v-row>
+            <v-row id="preview-channel-content mx-0" no-gutters>
+              <v-col>
+                <guild-content />
+              </v-col>
+              <v-col
+                v-if="membersOn"
+                id="preview-guild-members"
+                cols="2"
+                class="dcolor-bg-user"
+              ></v-col>
+            </v-row>
+            <v-row id="preview-channel-input"></v-row>
           </v-col>
-          <v-col id="preview-guild-members" cols="2"></v-col>
         </v-row>
       </v-container>
     </client-only>
@@ -45,6 +69,7 @@
 </template>
 
 <script>
+import ChannelBar from '~/components/preview/ChannelBar.vue'
 import GuildBar from '~/components/preview/GuildBar.vue'
 import GuildChannels from '~/components/preview/GuildChannels.vue'
 import GuildContent from '~/components/preview/GuildContent.vue'
@@ -53,21 +78,42 @@ import templatesApi from '~/services/api/templates'
 
 export default {
   components: {
+    ChannelBar,
     GuildBar,
     GuildChannels,
     GuildContent,
     GuildsList
   },
   async asyncData() {
-    const { templates } = await templatesApi.getAllTemplates('us')
+    const templates = await templatesApi.getLatestTemplates('us')
     return {
-      templates
+      templates,
+      dTemplates: [...templates]
+    }
+  },
+  data() {
+    return {
+      channel: 1,
+      membersOn: true
+    }
+  },
+  methods: {
+    receiveChannel(ch) {
+      if (
+        this.templates[0].dprops.serialized_source_guild.channels[ch - 1]
+          .type === 0
+      ) {
+        this.channel = ch
+      }
+    },
+    openRightPannel(membersOn) {
+      this.membersOn = membersOn
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 .extended {
   height: 100%;
   width: 100%;
@@ -98,5 +144,9 @@ export default {
   width: 45%;
   background-color: #2d2f32;
   border-radius: 1px;
+}
+
+#preview-card {
+  height: 800px;
 }
 </style>
