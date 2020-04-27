@@ -160,16 +160,13 @@ import { parse } from 'twemoji-parser'
 import { arrayToTree } from 'performant-array-to-tree'
 import { format } from 'date-fns'
 import { convertPerms } from '~/lib/discordperms'
-import templatesApi from '~/services/api/templates'
 import tagsIcons from '~/data/tags'
 export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ params, redirect }) {
-    const templateData = await templatesApi.getTemplateById('us', params.id)
-    // eslint-disable-next-line no-console
-    console.log('templateData', templateData)
+  async asyncData({ params, redirect, app: { $templatesApi } }) {
+    const templateData = await $templatesApi.getTemplateById('us', params.id)
     if (templateData !== undefined) {
       const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
       const emojiSrc =
