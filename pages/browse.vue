@@ -38,9 +38,13 @@
         </v-col>
       </v-row>
       <v-data-iterator
+        :footer-props="footerProps"
         :loading="$fetchState.pending"
         :page.sync="options.page"
         :items="templates"
+        :locale="
+          $i18n.locales.find((locale) => locale.code === $i18n.locale).iso
+        "
         :items-per-page="options.itemsPerPage"
         :no-data-text="$t('dataTable.NO_DATA')"
         :no-results-text="$t('dataTable.NO_RESULTS')"
@@ -95,11 +99,45 @@
             >
               <d-card-template :template="template"></d-card-template>
             </v-col>
+            <v-col
+              class="hidden-sm-only hidden-md-only hidden-xl-only hidden-xs-only"
+              cols="12"
+              sm="6"
+              lg="4"
+              xl="3"
+            >
+              <v-card outlined>
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <v-img
+                        src="https://discord.fr/user/themes/discordfr/images/logo/500.png"
+                      ></v-img>
+                    </v-list-item-avatar>
+
+                    <v-list-item-content>
+                      <div class="overline">{{ $t('partners.TITLE') }}</div>
+                      <v-list-item-title>Discord.fr</v-list-item-title>
+                      <v-list-item-subtitle
+                        >Rejoignez discord.fr, la plus grosse communauté
+                        française</v-list-item-subtitle
+                      >
+                    </v-list-item-content>
+
+                    <v-list-item-action>
+                      <v-btn icon>
+                        <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
+                      </v-btn>
+                    </v-list-item-action>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-col>
           </v-row>
         </template>
       </v-data-iterator>
     </v-col>
-    <v-col cols="12" class="mt-10">
+    <v-col cols="12" class="hidden-lg-only mt-10">
       <v-card outlined>
         <v-list>
           <v-list-item>
@@ -149,6 +187,7 @@ export default {
       }
     )
     this.templates = res.result
+    this.updateSortIcon()
   },
   asyncData({ query }) {
     return {
@@ -161,7 +200,7 @@ export default {
             ? query.order
             : getDefaultBrowseOrder(query.sort || 'most-recent')
         ),
-        itemsPerPage: 9,
+        itemsPerPage: 8,
         page: Number(typeof query.page !== 'undefined' ? query.page : 0)
       }
     }
@@ -203,16 +242,26 @@ export default {
           value: 'most-popular'
         }
       ]
+    },
+    footerProps() {
+      return {
+        'items-per-page-options': [8, 20],
+        'page-text': this.$t('dataTable.PAGE_TEXT'),
+        'items-per-page-text': this.$t('dataTable.ITEMS_PER_PAGE_TEXT'),
+        'items-per-page-all-text': this.$t('dataTable.ITEMS_PER_PAGE_ALL_TEXT')
+      }
     }
   },
   watch: {
     '$route.query': '$fetch',
     'options.page'() {
-      console.log(this.page)
       this.performSearch()
     }
   },
   watchQuery: ['q', 'tags', 'sort', 'order'],
+  mounted() {
+    this.updateSortIcon()
+  },
   methods: {
     performSearch() {
       this.$router
@@ -232,10 +281,13 @@ export default {
           this.$fetch()
         })
     },
-    changeSort() {
+    updateSortIcon() {
       this.sortSelectedIcon = this.sortItems.filter(
         (item) => item.value === this.options.sortBy
       )[0].icon
+    },
+    changeSort() {
+      this.updateSortIcon()
       this.performSearch()
     },
     changeTags() {
