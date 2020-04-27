@@ -74,7 +74,6 @@ import GuildBar from '~/components/preview/GuildBar.vue'
 import GuildChannels from '~/components/preview/GuildChannels.vue'
 import GuildContent from '~/components/preview/GuildContent.vue'
 import GuildsList from '~/components/preview/Guilds.vue'
-import templatesApi from '~/services/api/templates'
 
 export default {
   components: {
@@ -84,8 +83,8 @@ export default {
     GuildContent,
     GuildsList
   },
-  async asyncData() {
-    const templates = await templatesApi.getLatestTemplates('us')
+  async asyncData({ app: { $templatesApi } }) {
+    const templates = await $templatesApi.getLatestTemplates('us')
     return {
       templates,
       dTemplates: [...templates]
