@@ -8,7 +8,7 @@ export default {
   footer: {
     MADE_WITH: 'Made with ',
     BY: 'by :',
-    DESCRIPTION: `Discord patterns is a website for the Discord community. It's a
+    DESCRIPTION: `Discord Patterns is a website for the Discord community. It's a
               template listing website, made for your eyes, and totally open
               source`,
     TITLE_LINKS: 'Links'
@@ -16,6 +16,16 @@ export default {
   parallax: {
     CONTENT: 'FOSS Templates, on your demand !',
     JOIN: 'Join our Discord Server !'
+  },
+  preview: {
+    BELL:
+      'Muting a channel prevents unread indicators and notifications from appearing unless you are mentioned.',
+    PIN: 'Pinned Messages',
+    MEMBERS: 'Member List',
+    AT: 'Recents Mentions',
+    HELP: 'Help',
+    RESEARCH: 'Search',
+    ONLINE: 'Online'
   },
   listing: {
     BROWSE_ALL: 'Browse all templates',
