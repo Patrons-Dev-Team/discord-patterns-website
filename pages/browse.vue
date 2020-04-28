@@ -254,6 +254,7 @@ export default {
       }
     }
   },
+  watchQuery: ['q', 'tags', 'sort', 'order'],
   watch: {
     ...['$route.query.q', '$route.query.sort', '$route.query.order'].reduce(
       (watchers, key) => ({
@@ -264,6 +265,15 @@ export default {
       }),
       {}
     ),
+    '$route.query.tags'(newVal, oldVal) {
+      if (String(newVal) !== String(oldVal)) {
+        this.selectedTags = (this.$route.query.tags
+          ? [...this.$route.query.tags]
+          : []
+        ).map(Number)
+        this.performSearch()
+      }
+    },
     'options.page'() {
       this.$router
         .replace(
@@ -331,7 +341,7 @@ export default {
     changeTags() {
       clearTimeout(this.timeout)
       this.timeout = setTimeout(() => {
-        this.performSearch().then(() => this.$fetch())
+        this.performSearch()
       }, 1000)
     }
   }
