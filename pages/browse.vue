@@ -284,6 +284,7 @@ export default {
             name: 'browse',
             query: {
               ...this.$route.query,
+              page: 1,
               items: this.options.itemsPerPage
             }
           })
