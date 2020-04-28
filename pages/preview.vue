@@ -58,7 +58,15 @@
                 id="preview-guild-members"
                 cols="2"
                 class="dcolor-bg-user"
-              ></v-col>
+              >
+                <guild-members
+                  :roles="
+                    templates[0].dprops.serialized_source_guild.roles
+                      .filter((role) => role.id !== 0)
+                      .reverse()
+                  "
+                />
+              </v-col>
             </v-row>
             <v-row id="preview-channel-input"></v-row>
           </v-col>
@@ -73,6 +81,7 @@ import ChannelBar from '~/components/preview/ChannelBar.vue'
 import GuildBar from '~/components/preview/GuildBar.vue'
 import GuildChannels from '~/components/preview/GuildChannels.vue'
 import GuildContent from '~/components/preview/GuildContent.vue'
+import GuildMembers from '~/components/preview/GuildMembers.vue'
 import GuildsList from '~/components/preview/Guilds.vue'
 
 export default {
@@ -81,10 +90,13 @@ export default {
     GuildBar,
     GuildChannels,
     GuildContent,
+    GuildMembers,
     GuildsList
   },
   async asyncData({ app: { $templatesApi } }) {
     const templates = await $templatesApi.getLatestTemplates('us')
+    // eslint-disable-next-line no-console
+    console.log(templates)
     return {
       templates,
       dTemplates: [...templates]
@@ -131,7 +143,7 @@ export default {
 }
 
 .dcolor-bg-user {
-  background-color: #36393f;
+  background-color: #2f3136;
 }
 
 .tl-rounded {
