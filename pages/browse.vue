@@ -52,14 +52,13 @@
         :loading-text="$t('dataTable.LOADING')"
       >
         <template v-slot:header="">
-          <v-row>
+          <v-row no-gutters>
             <v-select
               v-model="options.sortBy"
               dense
               rounded
               :items="sortItems"
               :prepend-icon="sortSelectedIcon"
-              class="ml-4"
               @change="changeSort"
             >
               <template v-slot:item="{ item, on, attrs }">
