@@ -14,7 +14,7 @@
       >
         <v-list-item-icon>
           <div>
-            <country-flag class="v-icon" :country="locale.code" size="medium" />
+            <country-flag class="v-icon" :country="locale.code" />
           </div>
         </v-list-item-icon>
         <v-list-item-title>{{ locale.code.toUpperCase() }}</v-list-item-title>
