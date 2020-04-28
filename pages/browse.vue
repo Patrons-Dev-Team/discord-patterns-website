@@ -106,75 +106,27 @@
               lg="4"
               xl="3"
             >
-              <v-card outlined>
-                <v-list>
-                  <v-list-item>
-                    <v-list-item-avatar>
-                      <v-img
-                        src="https://discord.fr/user/themes/discordfr/images/logo/500.png"
-                      ></v-img>
-                    </v-list-item-avatar>
-
-                    <v-list-item-content>
-                      <div class="overline">{{ $t('partners.TITLE') }}</div>
-                      <v-list-item-title>Discord.fr</v-list-item-title>
-                      <v-list-item-subtitle
-                        >Rejoignez discord.fr, la plus grosse communauté
-                        française</v-list-item-subtitle
-                      >
-                    </v-list-item-content>
-
-                    <v-list-item-action>
-                      <v-btn icon>
-                        <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
-                      </v-btn>
-                    </v-list-item-action>
-                  </v-list-item>
-                </v-list>
-              </v-card>
+              <d-partners></d-partners>
             </v-col>
           </v-row>
         </template>
       </v-data-iterator>
     </v-col>
     <v-col cols="12" class="hidden-lg-only mt-10">
-      <v-card outlined>
-        <v-list>
-          <v-list-item>
-            <v-list-item-avatar>
-              <v-img
-                src="https://discord.fr/user/themes/discordfr/images/logo/500.png"
-              ></v-img>
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <div class="overline">{{ $t('partners.TITLE') }}</div>
-              <v-list-item-title>Discord.fr</v-list-item-title>
-              <v-list-item-subtitle
-                >Rejoignez discord.fr, la plus grosse communauté
-                française</v-list-item-subtitle
-              >
-            </v-list-item-content>
-
-            <v-list-item-action>
-              <v-btn icon>
-                <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
-              </v-btn>
-            </v-list-item-action>
-          </v-list-item>
-        </v-list>
-      </v-card>
+      <d-partners></d-partners>
     </v-col>
   </v-row>
 </template>
 
 <script>
+import DPartners from '~/components/DPartners'
 import DCardTemplate from '~/components/DCardTemplate'
 import tags from '~/data/tags'
 import { getDefaultBrowseOrder, validateBrowseQuery } from '~/utils/utils'
 export default {
   components: {
-    DCardTemplate
+    DCardTemplate,
+    DPartners
   },
   async fetch() {
     const res = await this.$templatesApi.search(

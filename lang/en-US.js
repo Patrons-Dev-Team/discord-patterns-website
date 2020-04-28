@@ -17,6 +17,35 @@ export default {
     CONTENT: 'FOSS Templates, on your demand !',
     JOIN: 'Join our Discord Server !'
   },
+  partners: {
+    TITLE: 'Partnerships and links',
+    list: [
+      {
+        TITLE: 'Hachis parmentier FINDUS',
+        DESCRIPTION:
+          'En partenariat avec d-patterns, rejoignez notre discord autour de findus et ses produits',
+        LINK:
+          'https://www.findus.fr/produits/plats-cuisines/gratins/hachis-parmentier-pur-boeuf',
+        IMG_LINK:
+          'https://nomadfoodscdn.com/-/media/project/bluesteel/shared/logos/logo-findus-france.png?h=177&la=fr-FR&w=130&hash=2BF915C9DB1FFA092423DD5E484D1191'
+      },
+      {
+        TITLE: 'Vicord',
+        DESCRIPTION:
+          'D-patterns a bon goût avec vicord, son partenaire principal',
+        LINK: 'http://www.vico.fr/',
+        IMG_LINK:
+          'https://pbs.twimg.com/profile_images/870611963872718848/rvpArfw__400x400.jpg'
+      },
+      {
+        TITLE: 'Simon corporation',
+        DESCRIPTION:
+          'Simon corporation is promoting d-patterns. Create a free simoncorp template easily',
+        LINK: 'https://www.simonwork.fr',
+        IMG_LINK: 'https://horsehead.me/72/72'
+      }
+    ]
+  },
   preview: {
     BELL:
       'Muting a channel prevents unread indicators and notifications from appearing unless you are mentioned.',

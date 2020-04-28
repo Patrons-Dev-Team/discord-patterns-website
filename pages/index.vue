@@ -85,42 +85,19 @@
       >
     </v-col>
     <v-col cols="12" class="mt-10">
-      <v-card outlined>
-        <v-list>
-          <v-list-item>
-            <v-list-item-avatar>
-              <v-img
-                src="https://discord.fr/user/themes/discordfr/images/logo/500.png"
-              ></v-img>
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <div class="overline">{{ $t('partners.TITLE') }}</div>
-              <v-list-item-title>Discord.fr</v-list-item-title>
-              <v-list-item-subtitle
-                >Rejoignez discord.fr, la plus grosse communauté
-                française</v-list-item-subtitle
-              >
-            </v-list-item-content>
-
-            <v-list-item-action>
-              <v-btn icon>
-                <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
-              </v-btn>
-            </v-list-item-action>
-          </v-list-item>
-        </v-list>
-      </v-card>
+      <d-partners></d-partners>
     </v-col>
   </v-row>
 </template>
 
 <script>
+import DPartners from '~/components/DPartners'
 import DCardTemplate from '~/components/DCardTemplate'
 import tags from '~/data/tags'
 export default {
   components: {
-    DCardTemplate
+    DCardTemplate,
+    DPartners
   },
   async asyncData({ app: { $templatesApi } }) {
     const templates = await $templatesApi.getLatestTemplates('us')
