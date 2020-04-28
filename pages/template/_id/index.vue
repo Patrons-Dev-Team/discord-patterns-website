@@ -165,7 +165,7 @@ export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ params, redirect, app: { $templatesApi } }) {
+  async asyncData({ params, error, app: { $templatesApi } }) {
     const templateData = await $templatesApi.getTemplateById('us', params.id)
     if (templateData !== undefined) {
       const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
@@ -204,7 +204,7 @@ export default {
         )
       }
     } else {
-      redirect('/')
+      error({ statusCode: 404, message: 'Template not found' })
     }
   },
   data() {
