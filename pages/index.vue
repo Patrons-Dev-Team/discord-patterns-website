@@ -215,7 +215,7 @@ export default {
       this.$router.push(
         this.localePath({
           name: 'browse',
-          query: { q: this.search, tags: [1, 2, 3] }
+          query: { q: this.search }
         })
       )
     }
