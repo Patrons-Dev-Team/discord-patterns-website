@@ -68,7 +68,7 @@ export default {
 
 #channels-list {
   width: -webkit-fill-available;
-  color: #72767d;
+  color: #8e9297;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
