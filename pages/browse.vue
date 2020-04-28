@@ -21,6 +21,7 @@
             dense
             @click:append="performSearch"
             @keydown.enter="performSearch"
+            @click:clear="clearSearch"
           ></v-text-field>
         </v-col>
         <v-col cols="12" class="py-0 my-0">
@@ -45,7 +46,7 @@
         :locale="
           $i18n.locales.find((locale) => locale.code === $i18n.locale).iso
         "
-        :items-per-page="options.itemsPerPage"
+        :items-per-page.sync="options.itemsPerPage"
         :no-data-text="$t('dataTable.NO_DATA')"
         :no-results-text="$t('dataTable.NO_RESULTS')"
         :loading-text="$t('dataTable.LOADING')"
@@ -199,8 +200,10 @@ export default {
             ? query.order
             : getDefaultBrowseOrder(query.sort || 'most-recent')
         ),
-        itemsPerPage: 8,
-        page: Number(typeof query.page !== 'undefined' ? query.page : 0)
+        itemsPerPage: Number(
+          typeof query.items !== 'undefined' ? query.items : 8
+        ),
+        page: Number(typeof query.page !== 'undefined' ? query.page : 1)
       }
     }
   },
@@ -213,7 +216,7 @@ export default {
       templates: [],
       selectedTags: [],
       options: {
-        page: 0,
+        page: 1,
         sortBy: 'most-recent',
         sortDesc: true
       },
@@ -252,26 +255,52 @@ export default {
     }
   },
   watch: {
-    '$route.query': '$fetch',
+    ...['$route.query.q', '$route.query.sort', '$route.query.order'].reduce(
+      (watchers, key) => ({
+        ...watchers,
+        [key]() {
+          this.$fetch()
+        }
+      }),
+      {}
+    ),
     'options.page'() {
-      this.$router.replace(
-        this.localePath({
-          name: 'browse',
-          query: {
-            ...this.$route.query,
-            page: this.options.page
-          }
-        })
-      )
+      this.$router
+        .replace(
+          this.localePath({
+            name: 'browse',
+            query: {
+              ...this.$route.query,
+              page: this.options.page
+            }
+          })
+        )
+        .catch(() => {})
+    },
+    'options.itemsPerPage'() {
+      this.$router
+        .replace(
+          this.localePath({
+            name: 'browse',
+            query: {
+              ...this.$route.query,
+              items: this.options.itemsPerPage
+            }
+          })
+        )
+        .catch(() => {})
     }
   },
-  watchQuery: ['q', 'tags', 'sort', 'order'],
   mounted() {
     this.updateSortIcon()
   },
   methods: {
+    clearSearch() {
+      this.search = ''
+      this.$nextTick(() => this.performSearch())
+    },
     performSearch() {
-      this.$router
+      return this.$router
         .replace(
           this.localePath({
             name: 'browse',
@@ -280,7 +309,8 @@ export default {
               tags: this.selectedTags,
               sort: this.options.sortBy,
               order: Number(this.options.sortDesc),
-              page: this.options.page
+              page: 1,
+              items: this.options.itemsPerPage
             }
           })
         )
@@ -300,7 +330,7 @@ export default {
     changeTags() {
       clearTimeout(this.timeout)
       this.timeout = setTimeout(() => {
-        this.performSearch()
+        this.performSearch().then(() => this.$fetch())
       }, 1000)
     }
   }

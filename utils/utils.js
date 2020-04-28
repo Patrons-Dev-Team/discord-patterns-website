@@ -1,4 +1,7 @@
 export function validateBrowseQuery(query) {
+  if (query.items && !/^8|20$/.test(query.items)) {
+    return false
+  }
   if (query.page && !/^\d+$/.test(query.page)) {
     return false
   }
