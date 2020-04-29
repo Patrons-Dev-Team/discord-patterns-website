@@ -97,7 +97,9 @@
               lg="4"
               xl="3"
             >
-              <d-card-template :template="template"></d-card-template>
+              <v-lazy min-height="195">
+                <d-card-template :template="template"></d-card-template
+              ></v-lazy>
             </v-col>
             <v-col
               class="hidden-sm-only hidden-md-only hidden-xl-only hidden-xs-only"
