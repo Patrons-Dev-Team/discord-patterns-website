@@ -20,7 +20,6 @@
             <v-chip
               v-for="tag in tags"
               :key="tag.id"
-              small
               outlined
               class="mt-1 mr-1"
             >
@@ -34,26 +33,40 @@
     <v-row>
       <v-col cols="12" md="8">
         <h3>Description</h3>
-        <p>{{ templateData.description }}</p>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div v-html="compiledMarkdown"></div>
         <span class="font-italic grey--text"
-          >Created on {{ createdDate }}. Updated on {{ updatedDate }}.</span
+          >Created on <strong>{{ createdDate }}</strong
+          >.</span
+        ><span
+          v-if="createdDate !== updatedDate"
+          class="font-italic grey--text"
         >
+          Updated on <strong>{{ updatedDate }}</strong
+          >.
+        </span>
       </v-col>
       <v-col cols="12" md="4">
-        <v-btn to="/" width="100%" class="mb-1 primary">
+        <v-btn to="/" block x-large class="mb-1 primary">
+          <v-icon left>mdi-open-in-new</v-icon>
           Use this template
         </v-btn>
-        <v-btn to="/" width="100%" class="mb-1">
+        <v-btn to="/" block class="mb-1">
           How do I proceed ?
         </v-btn>
-        <v-btn to="/" width="100%" class="mb-1">
-          Preview
+        <v-btn to="/" block class="mb-1">
+          <v-icon left>mdi-play</v-icon>
+          Run template in preview mode
         </v-btn>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" md="8">
-        <v-sheet color="#121212" class="pa-1 overflow-y-auto" max-height="35vh">
+        <h4>Channels</h4>
+        <p class="caption">
+          Hover a channel to show its permissions and more
+        </p>
+        <v-sheet color="#121212" class="pa-1 overflow-y-auto" max-height="500">
           <v-treeview
             expand-icon="mdi-chevron-down"
             class="caption"
@@ -77,7 +90,9 @@
         </v-sheet>
       </v-col>
       <v-col cols="12" md="4">
-        <v-sheet color="#121212" class="pa-1 overflow-y-auto" max-height="35vh">
+        <h4>Roles</h4>
+        <p class="caption">Click on a role to show permissions</p>
+        <v-sheet color="#121212" class="pa-1 overflow-y-auto" max-height="500">
           <v-chip
             v-for="role in roles"
             :key="role.id"
@@ -97,9 +112,306 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mt-4">
       <v-col>
-        <h3>Not important info</h3>
+        <v-card>
+          <v-card-text>
+            <v-list-group
+              no-action
+              active-class="white--text"
+              prepend-icon="mdi-information"
+              value="true"
+            >
+              <template v-slot:activator>
+                <v-list-item-title>General information</v-list-item-title>
+              </template>
+              <v-list dense>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Code:</v-list-item-title>
+                        <v-list-item-subtitle
+                          >Template discord code</v-list-item-subtitle
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd>{{ templateData.dprops.code }}</kbd>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Name:</v-list-item-title>
+                        <v-list-item-subtitle
+                          >Original template name</v-list-item-subtitle
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>{{ templateData.dprops.name }}</p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Description:</v-list-item-title>
+                        <v-list-item-subtitle
+                          >Original template description</v-list-item-subtitle
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>{{ templateData.dprops.description }}</p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Number of uses:</v-list-item-title>
+                        <v-list-item-subtitle
+                          >At crawl time</v-list-item-subtitle
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>{{ templateData.dprops.usage_count }}</p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Created by:</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd
+                      >{{ templateData.dprops.creator.username }}#{{
+                        templateData.dprops.creator.discriminator
+                      }}</kbd
+                    >
+                  </v-row>
+                </v-list-item>
+              </v-list>
+            </v-list-group>
+            <v-list-group
+              active-class="white--text"
+              no-action
+              prepend-icon="mdi-forum"
+            >
+              <template v-slot:activator>
+                <v-list-item-title>Source guild</v-list-item-title>
+              </template>
+              <v-list dense>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Name:</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{ templateData.dprops.serialized_source_guild.name }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Source guild id</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd>{{ templateData.dprops.source_guild_id }}</kbd>
+                  </v-row>
+                </v-list-item>
+                <v-list-item
+                  v-if="templateData.dprops.serialized_source_guild.description"
+                >
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Description:</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild.description
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Region:</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd>{{
+                      templateData.dprops.serialized_source_guild.region
+                    }}</kbd>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title
+                          >Verification level:</v-list-item-title
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .verification_level
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title
+                          >Default message notifications:</v-list-item-title
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .default_message_notifications
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title
+                          >Explicit content filter</v-list-item-title
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .explicit_content_filter
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Preferred locale</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd>{{
+                      templateData.dprops.serialized_source_guild
+                        .preferred_locale
+                    }}</kbd>
+                  </v-row>
+                </v-list-item>
+                <v-list-item>
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>AFK timeout</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild.afk_timeout
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item
+                  v-if="
+                    templateData.dprops.serialized_source_guild.afk_channel_id
+                  "
+                >
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>AFK channel id</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .afk_channel_id
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item
+                  v-if="
+                    templateData.dprops.serialized_source_guild
+                      .system_channel_id
+                  "
+                >
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>System channel id</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .system_channel_id
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item
+                  v-if="
+                    templateData.dprops.serialized_source_guild
+                      .system_channel_flags
+                  "
+                >
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title
+                          >System channel flags</v-list-item-title
+                        >
+                      </v-list-item-content>
+                    </v-col>
+                    <p>
+                      {{
+                        templateData.dprops.serialized_source_guild
+                          .system_channel_flags
+                      }}
+                    </p>
+                  </v-row>
+                </v-list-item>
+                <v-list-item
+                  v-if="templateData.dprops.serialized_source_guild.icon_hash"
+                >
+                  <v-row no-gutters align="center">
+                    <v-col>
+                      <v-list-item-content>
+                        <v-list-item-title>Icon hash</v-list-item-title>
+                      </v-list-item-content>
+                    </v-col>
+                    <kbd>
+                      {{
+                        templateData.dprops.serialized_source_guild.icon_hash
+                      }}
+                    </kbd>
+                  </v-row>
+                </v-list-item>
+              </v-list>
+            </v-list-group>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
     <v-row justify="center">
@@ -159,52 +471,52 @@
 import { parse } from 'twemoji-parser'
 import { arrayToTree } from 'performant-array-to-tree'
 import { format } from 'date-fns'
+import marked from 'marked'
+import sanitizeHtml from 'sanitize-html'
+import { fr } from 'date-fns/locale'
 import { convertPerms } from '~/lib/discordperms'
 import tagsIcons from '~/data/tags'
+const localesDateFns = {
+  fr
+}
 export default {
+  layout: 'dense',
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
   async asyncData({ params, error, app: { $templatesApi } }) {
     const templateData = await $templatesApi.getTemplateById('us', params.id)
-    if (templateData !== undefined) {
-      const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
-      const emojiSrc =
-        emojiEntities.length > 0
-          ? emojiEntities[0].url
-          : 'https://horsehead.me/72/72'
-      return {
-        templateData,
-        emojiSrc,
-        tags: templateData.tags.map((tag) => {
-          return {
-            id: tag,
-            icon: tagsIcons[tag]
-          }
-        }),
-        channels: arrayToTree(
-          templateData.dprops.serialized_source_guild.channels,
-          { dataField: null, parentId: 'parent_id' }
-        ),
-        channelsIcons: {
-          0: 'mdi-pound',
-          2: 'mdi-volume-high',
-          5: 'mdi-bullhorn'
-        },
-        roles: templateData.dprops.serialized_source_guild.roles
-          .filter((role) => role.id !== 0)
-          .reverse(),
-        createdDate: format(
-          new Date(templateData.dprops.created_at),
-          'MM/dd/yy'
-        ),
-        updatedDate: format(
-          new Date(templateData.dprops.updated_at),
-          'MM/dd/yy'
-        )
-      }
-    } else {
+    if (!templateData) {
       error({ statusCode: 404, message: 'Template not found' })
+      return
+    }
+    const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
+    const emojiSrc =
+      emojiEntities.length > 0
+        ? emojiEntities[0].url
+        : 'https://horsehead.me/72/72'
+    return {
+      compiledMarkdown: sanitizeHtml(
+        marked(templateData.longDescription || templateData.description)
+      ),
+      templateData,
+      emojiSrc,
+      tags: templateData.tags.map((tag) => {
+        return {
+          id: tag,
+          icon: tagsIcons[tag]
+        }
+      }),
+      channels: arrayToTree(
+        templateData.dprops.serialized_source_guild.channels,
+        { dataField: null, parentId: 'parent_id' }
+      ),
+      channelsIcons: {
+        0: 'mdi-pound',
+        2: 'mdi-volume-high',
+        5: 'mdi-bullhorn'
+      },
+      roles: templateData.dprops.serialized_source_guild.roles.reverse()
     }
   },
   data() {
@@ -212,6 +524,26 @@ export default {
       modalRoleIsOn: false,
       modalRoleData: null,
       modalRoleName: ''
+    }
+  },
+  computed: {
+    createdDate() {
+      return format(
+        new Date(this.templateData.dprops.created_at),
+        'iii, MMMM d yyyy, h:mm a',
+        {
+          locale: localesDateFns[this.$i18n.locale]
+        }
+      )
+    },
+    updatedDate() {
+      return format(
+        new Date(this.templateData.dprops.updated_at),
+        'iii, MMMM d yyyy, h:mm a',
+        {
+          locale: localesDateFns[this.$i18n.locale]
+        }
+      )
     }
   },
   methods: {
