@@ -1,23 +1,25 @@
 <template>
-  <v-menu top offset-y>
+  <v-menu auto top offset-y>
     <template v-slot:activator="{ on }">
       <v-btn class="btnLocaleActivation" text v-on="on">
         <v-icon>mdi-earth</v-icon>
         &nbsp;{{ displayLocale }}
       </v-btn>
     </template>
-    <v-list>
+    <v-list dense>
       <v-list-item
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
       >
-        <v-list-item-icon>
-          <div>
-            <country-flag class="v-icon" :country="locale.code" />
+        <v-list-item-icon dense>
+          <div class="d-flex justify-center align-center">
+            <country-flag size="small" class="v-icon" :country="locale.code" />
           </div>
         </v-list-item-icon>
-        <v-list-item-title>{{ locale.code.toUpperCase() }}</v-list-item-title>
+        <v-list-item-title class="body-1">{{
+          locale.code.toUpperCase()
+        }}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-menu>
