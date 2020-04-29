@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined>
+  <v-card>
     <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">
