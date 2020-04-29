@@ -3,6 +3,7 @@ export const templates = [
     id: '0',
     title: 'GA Community template',
     description: 'Some giveaways, to test',
+    longDescription: '*Support also markdown* ![](https://google.com)',
     emoji: '🕹️',
     tags: ['0', '1', '2', '3'],
     dprops: {
