@@ -2,7 +2,7 @@
   <v-card outlined>
     <v-list>
       <v-list-item>
-        <v-list-item-avatar>
+        <v-list-item-avatar left size="60">
           <v-img :src="$t(`partners.list[${partnerId}].IMG_LINK`)"></v-img>
         </v-list-item-avatar>
 
@@ -13,10 +13,11 @@
           }}</v-list-item-title>
           <v-list-item-subtitle
             :title="$t(`partners.list[${partnerId}].DESCRIPTION`)"
-            >{{
-              $t(`partners.list[${partnerId}].DESCRIPTION`)
-            }}</v-list-item-subtitle
           >
+            <span class="text-wrap overflow-auto">
+              {{ $t(`partners.list[${partnerId}].DESCRIPTION`) }}
+            </span>
+          </v-list-item-subtitle>
         </v-list-item-content>
 
         <v-list-item-action>
