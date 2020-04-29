@@ -1,7 +1,7 @@
 <template>
   <v-parallax
     class="blue-grey darken-4"
-    height="300"
+    :height="height"
     src="parallax_background.png"
   >
     <v-row justify="space-around" align="center">
@@ -20,6 +20,12 @@
 
 <script>
 export default {
+  props: {
+    height: {
+      type: String,
+      default: '300'
+    }
+  },
   data() {
     return {
       appTitle: process.env.APP_TITLE
