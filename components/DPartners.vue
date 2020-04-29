@@ -11,9 +11,12 @@
           <v-list-item-title>{{
             $t(`partners.list[${partnerId}].TITLE`)
           }}</v-list-item-title>
-          <v-list-item-subtitle>{{
-            $t(`partners.list[${partnerId}].DESCRIPTION`)
-          }}</v-list-item-subtitle>
+          <v-list-item-subtitle
+            :title="$t(`partners.list[${partnerId}].DESCRIPTION`)"
+            >{{
+              $t(`partners.list[${partnerId}].DESCRIPTION`)
+            }}</v-list-item-subtitle
+          >
         </v-list-item-content>
 
         <v-list-item-action>
