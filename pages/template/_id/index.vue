@@ -94,8 +94,8 @@
         <p class="caption">Click on a role to show permissions</p>
         <v-sheet color="#121212" class="pa-1 overflow-y-auto" max-height="500">
           <v-chip
-            v-for="role in roles"
-            :key="role.id"
+            v-for="(role, index) in roles"
+            :key="'role' + role.id"
             :color="
               role.color !== 0
                 ? '#' + role.color.toString(16).padStart(6, '0')
@@ -104,7 +104,7 @@
             small
             outlined
             class="ma-1"
-            @click.stop="openModalRole(role)"
+            @click.stop="openModalRole(role, index)"
           >
             <v-icon left x-small>mdi-circle</v-icon>
             <span class="white--text"> {{ role.name }}</span></v-chip
@@ -415,7 +415,11 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-dialog v-model="modalRoleIsOn" max-width="80%">
+      <v-dialog
+        v-model="modalRoleIsOn"
+        max-width="80%"
+        transition="slide-x-reverse-transition"
+      >
         <v-card>
           <v-row class="mx-0">
             <v-col md="3" class="pa-0 accent">
@@ -429,36 +433,82 @@
               </v-list-item>
               <v-divider></v-divider>
               <v-list dense nav class="accent scroll-y" max-height="80%">
-                <template v-for="(role, index) in roles">
-                  <v-list-item :key="role.id" @click="setActualRole(role)">
-                    {{ role.name }}
-                  </v-list-item>
-                  <v-divider
-                    v-if="index + 1 < roles.length"
-                    :key="role.id"
-                  ></v-divider>
-                </template>
+                <v-list-item-group :model="modalRoleModel">
+                  <template v-for="(role, index) in roles">
+                    <v-list-item
+                      :key="role.id"
+                      @click="setActualRole(role, index)"
+                      :color="
+                        role.color !== 0
+                          ? '#' +
+                            role.color.toString(16).padStart(6, '0') +
+                            ' !important'
+                          : 'rgb(212,212,212) !important'
+                      "
+                    >
+                      {{ role.name }}
+                    </v-list-item>
+                    <v-divider
+                      v-if="index + 1 < roles.length"
+                      :key="'list-role-' + role.id"
+                    ></v-divider>
+                  </template>
+                </v-list-item-group>
               </v-list>
             </v-col>
             <v-col md="9">
-              <v-list two-line>
-                <h3>{{ modalRoleName }}</h3>
-                <v-list-item
-                  v-for="(value, index) in modalRoleData"
-                  :key="index"
-                >
-                  <v-list-item-content>
-                    <v-list-item-title
-                      v-text="$t('perms.' + value[0] + '.title')"
-                    ></v-list-item-title>
-                    <v-list-item-subtitle
-                      v-text="$t('perms.' + value[0] + '.content')"
-                    ></v-list-item-subtitle>
-                  </v-list-item-content>
-                  <v-icon v-if="value[1]" right class="green">mdi-check</v-icon>
-                  <v-icon v-else right class="red">mdi-close</v-icon>
-                </v-list-item>
-              </v-list>
+              <v-fade-transition>
+                <v-list two-line>
+                  <h3 :style="'color: ' + modalRoleColor + ';'">
+                    {{ modalRoleName }}
+                  </h3>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title
+                        v-text="$t('perms.hoist.title')"
+                      ></v-list-item-title>
+                      <v-list-item-subtitle
+                        v-text="$t('perms.hoist.content')"
+                      ></v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-icon v-if="modalRoleData.hoist" right class="green"
+                      >mdi-check</v-icon
+                    >
+                    <v-icon v-else right class="red">mdi-close</v-icon>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title
+                        v-text="$t('perms.mentionable.title')"
+                      ></v-list-item-title>
+                      <v-list-item-subtitle
+                        v-text="$t('perms.mentionable.content')"
+                      ></v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-icon v-if="modalRoleData.mentionable" right class="green"
+                      >mdi-check</v-icon
+                    >
+                    <v-icon v-else right class="red">mdi-close</v-icon>
+                  </v-list-item>
+                  <v-list-item
+                    v-for="(value, index) in modalRoleData.perms"
+                    :key="'perm-' + index"
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title
+                        v-text="$t('perms.' + value[0] + '.title')"
+                      ></v-list-item-title>
+                      <v-list-item-subtitle
+                        v-text="$t('perms.' + value[0] + '.content')"
+                      ></v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-icon v-if="value[1]" right class="green"
+                      >mdi-check</v-icon
+                    >
+                    <v-icon v-else right class="red">mdi-close</v-icon>
+                  </v-list-item>
+                </v-list>
+              </v-fade-transition>
             </v-col>
           </v-row>
         </v-card>
@@ -522,8 +572,14 @@ export default {
   data() {
     return {
       modalRoleIsOn: false,
-      modalRoleData: null,
-      modalRoleName: ''
+      modalRoleData: {
+        perms: null,
+        mentionable: null,
+        hoist: null
+      },
+      modalRoleName: '',
+      modalRoleColor: '',
+      modalRoleModel: 0
     }
   },
   computed: {
@@ -547,17 +603,35 @@ export default {
     }
   },
   methods: {
-    openModalRole(role) {
+    openModalRole(role, index) {
       this.modalRoleIsOn = true
-      this.modalRoleData = Object.entries(convertPerms(role.permissions))
+      this.modalRoleData = {
+        perms: Object.entries(convertPerms(role.permissions)),
+        mentionable: role.mentionable,
+        hoist: role.hoist
+      }
       this.modalRoleName = role.name
+      this.modalRoleColor =
+        role.color !== 0
+          ? '#' + role.color.toString(16).padStart(6, '0') + ' !important'
+          : 'rgb(212,212,212) !important'
+      this.modalRoleModel = index
     },
     closeModalrole() {
       this.modalRoleIsOn = false
     },
-    setActualRole(role) {
-      this.modalRoleData = Object.entries(convertPerms(role.permissions))
+    setActualRole(role, index) {
+      this.modalRoleData = {
+        perms: Object.entries(convertPerms(role.permissions)),
+        mentionable: role.mentionable,
+        hoist: role.hoist
+      }
       this.modalRoleName = role.name
+      this.modalRoleColor =
+        role.color !== 0
+          ? '#' + role.color.toString(16).padStart(6, '0') + ' !important'
+          : 'rgb(212,212,212) !important'
+      this.modalRoleModel = index
     }
   }
 }
