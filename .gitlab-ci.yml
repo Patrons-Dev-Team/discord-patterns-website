@@ -9,7 +9,7 @@ cache:
 
 pages:
   script:
-    - npm run generate
+    - npm run generate-quiet
   artifacts:
     paths:
       - public
