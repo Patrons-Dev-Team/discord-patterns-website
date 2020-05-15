@@ -95,8 +95,6 @@ export default {
   },
   async asyncData({ app: { $templatesApi } }) {
     const templates = await $templatesApi.getLatestTemplates('us')
-    // eslint-disable-next-line no-console
-    console.log(templates)
     return {
       templates,
       dTemplates: [...templates]
