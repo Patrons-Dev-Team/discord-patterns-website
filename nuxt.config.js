@@ -1,3 +1,4 @@
+import FMMode from 'frontmatter-markdown-loader/mode'
 import colors from 'vuetify/es5/util/colors'
 import GitRevisionPlugin from 'git-revision-webpack-plugin'
 const gitRevisionPlugin = new GitRevisionPlugin()
@@ -8,7 +9,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: '%s - Discord Patterns',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -17,6 +18,16 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Discord patterns'
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#7289DA'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
@@ -29,7 +40,8 @@ export default {
    ** Generate part
    */
   generate: {
-    dir: 'public'
+    dir: 'public',
+    concurrency: 150
   },
   /**
    * Customize the base url
@@ -57,18 +69,26 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    [
+      '~/modules/templates/',
+      {
+        langs: ['us']
+      }
+    ]
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    // '@nuxtjs/dotenv',
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
-    'nuxt-i18n'
+    'nuxt-i18n',
+    // Doc: https://github.com/nandenjin/nuxt-cache-payload
+    'nuxt-cache-payload'
   ],
   /*
    ** Axios module configuration
@@ -138,6 +158,26 @@ export default {
           loader: 'worker-loader',
           exclude: /(node_modules)/
         })
+      }
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          mode: [FMMode.VUE_COMPONENT]
+        }
+      })
+    },
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: false,
+        minifyJS: false,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true
       }
     }
   },
