@@ -11,15 +11,26 @@ export default {
     if (templates) {
       return templates
     }
-    switch (lang) {
-      case 'us':
-      default:
-        templates = (await import('~/data/templates/templates.us')).templates
-        for (let i = 2; i < 300; i++) {
-          templates.push({ ...templates[0], id: i })
-        }
-        return templates
+    try {
+      templates = (
+        await import(
+          /* webpackChunkName: "templatedata-[request]" */ `~/data/templates/templates.${lang}`
+        )
+      ).templates
+    } catch (e) {
+      templates = (
+        await import(
+          /* webpackChunkName: "templatedata-[request]" */ `~/data/templates/templates.us`
+        )
+      ).templates
     }
+    if (templates.length < 200) {
+      for (let i = 2; i < 300; i++) {
+        templates.push({ ...templates[0], id: String(i) })
+      }
+    }
+
+    return templates
   },
 
   async getLatestTemplates(lang) {
