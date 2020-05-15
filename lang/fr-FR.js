@@ -183,5 +183,15 @@ export default {
       title: 'Gérer les émojis',
       content: ''
     }
+  },
+  template: {
+    tutorial: {
+      CREATE_ACCOUNT_IMG: 'img/fr/create_account.png',
+      SETUP_COMMUNITY_IMG: 'img/fr/create_server.png',
+      TITLE:
+        'Créer un serveur discord {templateMainTag} avec le modèle {templateName} en 3 étapes',
+      DESCRIPTION:
+        'Tutoriel pour créer facilement ta communauté discord {templateMainTag} et bien la gérer à l’aide du modèle {templateName}. Des astuces pour rendre ta commu populaire !'
+    }
   }
 }

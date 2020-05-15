@@ -210,5 +210,19 @@ export default {
       title: 'Manage Emojis',
       content: ''
     }
+  },
+  template: {
+    tutorial: {
+      CREATE_ACCOUNT_IMG: 'img/us/create_account.png',
+      SETUP_COMMUNITY_IMG: 'img/us/create_server.png',
+      TITLE:
+        'Create a {templateMainTag} discord server with the template {templateName} in 3 steps.',
+      DESCRIPTION:
+        'Easy tutorial to create your discord {templateMainTag} community and make it successful with the template {templateName}. Tips and tricks to make your community popular and gain members !'
+    },
+    details: {
+      DESCRIPTION:
+        'Create your {templateMainTag} discord server with the template {templateName}'
+    }
   }
 }
