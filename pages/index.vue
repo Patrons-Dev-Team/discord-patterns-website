@@ -101,8 +101,16 @@ export default {
     DCardTemplate,
     DPartners
   },
-  async asyncData({ app: { $templatesApi } }) {
-    const templates = await $templatesApi.getLatestTemplates('us')
+  async asyncData({
+    payload,
+    getPayload,
+    route: { path },
+    app: { $templatesApi }
+  }) {
+    const templates =
+      payload ||
+      (await getPayload(path)) ||
+      (await $templatesApi.getLatestTemplates('us'))
     return {
       templates,
       dTemplates: templates
