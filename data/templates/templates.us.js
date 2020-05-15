@@ -6,6 +6,7 @@ export const templates = [
     longDescription: '*Support also markdown* ![](https://google.com)',
     emoji: '🕹️',
     tags: ['0', '1', '2', '3'],
+    mtag: ['0'],
     dprops: {
       code: 'EPAukKQArtg3',
       name: 'Giveaways, GA Community \u2192  By Maxerbox, Discord Patterns',
