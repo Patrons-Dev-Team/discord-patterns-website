@@ -51,7 +51,17 @@
           <v-icon left>mdi-open-in-new</v-icon>
           Use this template
         </v-btn>
-        <v-btn to="/" block class="mb-1">
+        <v-btn
+          nuxt
+          :to="
+            localePath({
+              name: 'template-id-tutorial',
+              params: { id: templateData.id }
+            })
+          "
+          block
+          class="mb-1"
+        >
           How do I proceed ?
         </v-btn>
         <v-btn to="/" block class="mb-1">
@@ -437,7 +447,6 @@
                   <template v-for="(role, index) in roles">
                     <v-list-item
                       :key="role.id"
-                      @click="setActualRole(role, index)"
                       :color="
                         role.color !== 0
                           ? '#' +
@@ -445,6 +454,7 @@
                             ' !important'
                           : 'rgb(212,212,212) !important'
                       "
+                      @click="setActualRole(role, index)"
                     >
                       {{ role.name }}
                     </v-list-item>
@@ -534,8 +544,18 @@ export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ params, error, app: { $templatesApi } }) {
-    const templateData = await $templatesApi.getTemplateById('us', params.id)
+  async asyncData({
+    params,
+    error,
+    payload,
+    getPayload,
+    route: { path },
+    app: { $templatesApi }
+  }) {
+    const templateData =
+      payload ||
+      (await getPayload(path)) ||
+      (await $templatesApi.getTemplateById('us', params.id))
     if (!templateData) {
       error({ statusCode: 404, message: 'Template not found' })
       return
@@ -632,6 +652,40 @@ export default {
           ? '#' + role.color.toString(16).padStart(6, '0') + ' !important'
           : 'rgb(212,212,212) !important'
       this.modalRoleModel = index
+    }
+  },
+  head() {
+    const vars = {
+      templateName: this.templateData.title,
+      templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`)
+    }
+    return {
+      title: this.templateData.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('template.details.DESCRIPTION', vars)
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.templateData.description
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      ],
+      link: [
+        {
+          type: 'application/json+oembed',
+          href: `oembeds/${this.$templatesLangs.getFallbackLang(
+            this.$i18n.locale
+          )}-template.${this.templateData.id}.json`
+        }
+      ]
     }
   }
 }
