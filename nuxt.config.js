@@ -5,6 +5,7 @@ const gitRevisionPlugin = new GitRevisionPlugin()
 
 export default {
   mode: 'universal',
+  ignore: ['pages/template/_id/cpreview/*'],
   /*
    ** Headers of the page
    */
