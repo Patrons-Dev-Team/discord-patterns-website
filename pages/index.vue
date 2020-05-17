@@ -105,11 +105,11 @@ export default {
     payload,
     getPayload,
     route: { path },
-    app: { $templatesApi }
+    app: { $templatesApi, router }
   }) {
     const templates =
       payload ||
-      (await getPayload(path)) ||
+      (await getPayload(router.options.base + path)) ||
       (await $templatesApi.getLatestTemplates('us'))
     return {
       templates,

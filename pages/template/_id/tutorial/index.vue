@@ -14,11 +14,11 @@ export default {
     payload,
     getPayload,
     route: { path },
-    app: { $templatesApi }
+    app: { $templatesApi, router }
   }) {
     const templateData =
       payload ||
-      (await getPayload(path)) ||
+      (await getPayload(router.options.base + path)) ||
       (await $templatesApi.getTemplateById('us', params.id))
 
     if (!templateData) {
@@ -86,14 +86,19 @@ export default {
           hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary_large_image'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content:
+            this.$router.options.base +
+            `thumbnails/${this.$i18n.locale}-template.${this.templateData.id}.png`
         }
       ],
       link: [
         {
           type: 'application/json+oembed',
-          href: `oembeds/${this.$templatesLangs.getFallbackLang(
-            this.$i18n.locale
-          )}-template.${this.templateData.id}.json`
+          href: `oembeds/${this.$i18n.locale}-template.${this.templateData.id}.json`
         }
       ]
     }
