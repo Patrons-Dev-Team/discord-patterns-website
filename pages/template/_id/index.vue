@@ -682,13 +682,17 @@ export default {
           name: 'og:image',
           content:
             this.$router.options.base +
-            `thumbnails/${this.$i18n.locale}-template.${this.templateData.id}.png`
+            `thumbnails/${this.$templatesLangs.getFallbackLang(
+              this.$i18n.locale
+            )}-template.${this.templateData.id}.png`
         }
       ],
       link: [
         {
           type: 'application/json+oembed',
-          href: `oembeds/${this.$i18n.locale}-template.${this.templateData.id}.json`
+          href: `oembeds/${this.$templatesLangs.getFallbackLang(
+            this.$i18n.locale
+          )}-template.${this.templateData.id}.json`
         }
       ]
     }
