@@ -1,6 +1,8 @@
 image: buildkite/puppeteer:latest
 
 before_script:
+  - apt-get update
+  - apt-get install -y git
   - npm install
 
 cache:
