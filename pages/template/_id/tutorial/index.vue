@@ -100,9 +100,11 @@ export default {
       link: [
         {
           type: 'application/json+oembed',
-          href: `oembeds/${this.$templatesLangs.getFallbackLang(
-            this.$i18n.locale
-          )}-template.${this.templateData.id}.json`
+          href:
+            this.$router.options.base +
+            `oembeds/${this.$templatesLangs.getFallbackLang(
+              this.$i18n.locale
+            )}-template.${this.templateData.id}.json`
         }
       ]
     }
