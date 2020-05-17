@@ -74,6 +74,15 @@ export default {
     }
   },
   perms: {
+    HOIST: {
+      title: 'Display role members separately from online members',
+      content: ''
+    },
+    MENTIONABLE: {
+      title: 'Allow anyone to @mention this role',
+      content:
+        'Note: Members with "Mention @everyone, @here, and All roles" permission will always be able to ping this role.'
+    },
     CREATE_INSTANT_INVITE: {
       title: 'Create Invite',
       content: ''

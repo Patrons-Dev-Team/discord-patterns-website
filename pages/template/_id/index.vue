@@ -432,7 +432,7 @@
       >
         <v-card>
           <v-row class="mx-0">
-            <v-col md="3" class="pa-0 accent">
+            <v-col md="3" class="pa-0 roleModal">
               <v-list-item>
                 <v-list-item-avatar>
                   <v-icon @click="closeModalrole">mdi-close</v-icon>
@@ -442,7 +442,7 @@
                 </v-list-item-content>
               </v-list-item>
               <v-divider></v-divider>
-              <v-list dense nav class="accent scroll-y" max-height="80%">
+              <v-list dense nav class="roleModal scroll-y" max-height="80%">
                 <v-list-item-group :model="modalRoleModel">
                   <template v-for="(role, index) in roles">
                     <v-list-item
@@ -475,10 +475,10 @@
                   <v-list-item>
                     <v-list-item-content>
                       <v-list-item-title
-                        v-text="$t('perms.hoist.title')"
+                        v-text="$t('perms.HOIST.title')"
                       ></v-list-item-title>
                       <v-list-item-subtitle
-                        v-text="$t('perms.hoist.content')"
+                        v-text="$t('perms.HOIST.content')"
                       ></v-list-item-subtitle>
                     </v-list-item-content>
                     <v-icon v-if="modalRoleData.hoist" right class="green"
@@ -489,10 +489,10 @@
                   <v-list-item>
                     <v-list-item-content>
                       <v-list-item-title
-                        v-text="$t('perms.mentionable.title')"
+                        v-text="$t('perms.MENTIONABLE.title')"
                       ></v-list-item-title>
                       <v-list-item-subtitle
-                        v-text="$t('perms.mentionable.content')"
+                        v-text="$t('perms.MENTIONABLE.content')"
                       ></v-list-item-subtitle>
                     </v-list-item-content>
                     <v-icon v-if="modalRoleData.mentionable" right class="green"
@@ -626,7 +626,10 @@ export default {
     openModalRole(role, index) {
       this.modalRoleIsOn = true
       this.modalRoleData = {
-        perms: Object.entries(convertPerms(role.permissions)),
+        perms: convertPerms(role.permissions, {
+          ordered: true,
+          readableNames: false
+        }),
         mentionable: role.mentionable,
         hoist: role.hoist
       }
@@ -642,7 +645,10 @@ export default {
     },
     setActualRole(role, index) {
       this.modalRoleData = {
-        perms: Object.entries(convertPerms(role.permissions)),
+        perms: convertPerms(role.permissions, {
+          ordered: true,
+          readableNames: false
+        }),
         mentionable: role.mentionable,
         hoist: role.hoist
       }
