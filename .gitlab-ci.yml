@@ -1,4 +1,4 @@
-image: node:10
+image: buildkite/puppeteer:latest
 
 before_script:
   - npm install
