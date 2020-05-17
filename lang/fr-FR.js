@@ -45,6 +45,16 @@ export default {
     }
   },
   perms: {
+    HOIST: {
+      title:
+        'Afficher les membres ayant ce rôle séparément des autres membres en ligne',
+      content: ''
+    },
+    MENTIONABLE: {
+      title: 'Permettre à tout le monde de @mentionner ce rôle',
+      content:
+        'Note : Les membres avec la permission « mentionner @everyone, @here et tous les rôles » pourront toujours mentionner ce rôle.'
+    },
     CREATE_INSTANT_INVITE: {
       title: 'Créer une invitation',
       content: ''
