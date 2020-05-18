@@ -1,9 +1,12 @@
-import { join, resolve } from 'path'
-import { Nuxt, Builder } from 'nuxt'
-import captureWebsite from 'capture-website'
-import pLimit from 'p-limit'
-import { ensureDir, copy } from 'fs-extra'
-import { logger } from './utils'
+const { join, resolve } = require('path')
+const { Nuxt, Builder } = require('nuxt')
+const cacache = require('cacache')
+const hash = require('object-hash')
+const captureWebsite = require('capture-website')
+const pLimit = require('p-limit')
+const pRetry = require('p-retry')
+const { ensureDir, copy, pathExists } = require('fs-extra')
+const { logger } = require('./utils')
 
 let nuxt = null
 
@@ -21,25 +24,39 @@ export function stopServer() {
   nuxt.close()
 }
 
-export async function generateThumbnails(dir, templates, lang, isFallback) {
+export async function generateThumbnails() {}
+
+export async function generateLangThumbnails(
+  dir,
+  templates,
+  lang,
+  isFallback,
+  concurrency = 5
+) {
   const prefix = !isFallback ? `/${lang}` : ''
 
   await ensureDir(join(dir, '.thumbnails'))
 
   const promises = []
-  const limit = pLimit(5)
+  const limit = pLimit(concurrency)
   for (const template of templates) {
     promises.push(
       limit(() =>
-        captureWebsite.file(
-          `http://localhost:4444${prefix}/template/${template.id}/cpreview`,
-          join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
-          {
-            launchOptions: {
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
-            },
-            waitForElement: '#loaded-trigger'
-          }
+        pRetry(
+          () =>
+            captureWebsite.file(
+              `http://localhost:4444${prefix}/template/${template.id}/cpreview`,
+              join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
+              {
+                launchOptions: {
+                  args: ['--no-sandbox', '--disable-setuid-sandbox']
+                },
+                waitForElement: '#loaded-trigger',
+                overwrite: true,
+                timeout: 30
+              }
+            ),
+          { retries: 3 }
         )
       )
     )
@@ -51,4 +68,25 @@ export async function copyTemplates(dir, distDir) {
   const src = join(dir, '.thumbnails')
   await ensureDir(src)
   await copy(src, join(distDir, 'thumbnails'))
+}
+
+export async function getThumbnailsToGenerate(cachePath, lang, templates) {
+  const templatesToGenerates = []
+  for (const template of templates) {
+    const templateHash = hash(template)
+    if (
+      (
+        await cacache.get(cachePath, `${lang}-${template.id}`).catch(() => {
+          return { data: Buffer.from('') }
+        })
+      ).data.toString() !== templateHash ||
+      !(await pathExists(
+        join(cachePath, `../${lang}-template.${template.id}.png`)
+      ))
+    ) {
+      templatesToGenerates.push(template)
+      await cacache.put(cachePath, `${lang}-${template.id}`, templateHash)
+    }
+  }
+  return templatesToGenerates
 }

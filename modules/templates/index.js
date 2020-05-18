@@ -1,15 +1,14 @@
 import { resolve } from 'path'
-import cacache from 'cacache'
-import hash from 'object-hash'
 import { logger, getAllTemplates } from './utils'
 import oembedGenerator from './oembed-generate'
 import templateRoutesGenerator from './generate-template-routes'
 
 import {
   startServer,
-  generateThumbnails,
+  generateLangThumbnails,
   stopServer,
-  copyTemplates
+  copyTemplates,
+  getThumbnailsToGenerate
 } from './thumbnail-generate'
 
 const cachePath = resolve(__dirname, '../../.thumbnails/entries')
@@ -37,27 +36,18 @@ export default async function templatesModule(moduleOptions) {
       const templates = await getAllTemplates(lang)
       await oembedGenerator(distDir, templates, lang)
       logger.success(`Generated oembeds for lang ${lang}`)
-      const templatesToGenerates = []
-      for (const template of templates) {
-        const templateHash = hash(template)
-        if (
-          (
-            await cacache.get(cachePath, `${lang}-${template.id}`).catch(() => {
-              return { data: Buffer.from('') }
-            })
-          ).data.toString() !== templateHash
-        ) {
-          templatesToGenerates.push(template)
-          await cacache.put(cachePath, `${lang}-${template.id}`, templateHash)
-        }
-      }
+      const templatesToGenerates = getThumbnailsToGenerate(
+        cachePath,
+        lang,
+        templates
+      )
 
       if (templatesToGenerates.length > 0) {
         if (!isServerStarted) {
           await startServer()
           isServerStarted = true
         }
-        await generateThumbnails(
+        await generateLangThumbnails(
           rootDir,
           templatesToGenerates,
           lang,
@@ -76,4 +66,8 @@ export default async function templatesModule(moduleOptions) {
       langs: moduleOptions.langs
     }
   })
+}
+
+module.exports.meta = {
+  name: 'template'
 }
