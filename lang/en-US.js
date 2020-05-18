@@ -1,5 +1,9 @@
 export default {
-  welcome: 'Welcome',
+  index: {
+    TITLE: 'Template listing',
+    DESCRIPTION:
+      'Create a discord server easily by find a ready made template for your discord server'
+  },
   header: {
     BROWSE: 'Browse',
     POPULAR: 'Popular',
@@ -58,6 +62,9 @@ export default {
   },
   listing: {
     BROWSE_ALL: 'Browse all templates',
+    TITLE: 'Browse templates',
+    DESCRIPTION:
+      'Browse a curated list of popular templates to create your discord server in 1 minute.',
     pophover: {
       CHANNELS: 'Channels',
       ROLES: 'Roles'

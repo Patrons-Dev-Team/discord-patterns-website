@@ -206,6 +206,19 @@ export default {
         })
       )
     }
+  },
+  head() {
+    return {
+      title: this.$t('index.TITLE'),
+      titleTemplate: process.env.APP_TITLE + ' - %s',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('index.DESCRIPTION')
+        }
+      ]
+    }
   }
 }
 </script>

@@ -1,5 +1,4 @@
 export default {
-  welcome: 'Bonjour',
   header: {
     BROWSE: 'Découvrir',
     POPULAR: 'Populaire',

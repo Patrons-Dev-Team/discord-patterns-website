@@ -297,6 +297,18 @@ export default {
         this.performSearch()
       }, 1000)
     }
+  },
+  head() {
+    return {
+      title: this.$t('listing.TITLE'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('listing.DESCRIPTION')
+        }
+      ]
+    }
   }
 }
 </script>
