@@ -1,6 +1,5 @@
 import { resolve } from 'path'
 import { logger, getAllTemplates } from './utils'
-import oembedGenerator from './oembed-generate'
 import templateRoutesGenerator from './generate-template-routes'
 
 import {
@@ -34,7 +33,6 @@ export default async function templatesModule(moduleOptions) {
     let isServerStarted = false
     for (const lang of moduleOptions.langs) {
       const templates = await getAllTemplates(lang)
-      await oembedGenerator(distDir, templates, lang)
       logger.success(`Generated oembeds for lang ${lang}`)
       const templatesToGenerates = getThumbnailsToGenerate(
         cachePath,

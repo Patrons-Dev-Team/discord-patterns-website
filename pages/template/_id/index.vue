@@ -665,6 +665,11 @@ export default {
       templateName: this.templateData.title,
       templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`)
     }
+    const thumbnailsUrl =
+      this.$router.options.base +
+      `thumbnails/${this.$templatesLangs.getFallbackLang(
+        this.$i18n.locale
+      )}-template.${this.templateData.id}.png`
     return {
       title: this.templateData.title,
       meta: [
@@ -674,33 +679,69 @@ export default {
           content: this.$t('template.details.DESCRIPTION', vars)
         },
         {
-          hid: 'og:description',
-          name: 'og:description',
-          content: this.templateData.description
-        },
-        {
           hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary_large_image'
         },
         {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.templateData.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.templateData.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: thumbnailsUrl
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: `${this.templateData.dprops.creator.username}#${this.templateData.dprops.creator.discriminator}`
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.templateData.title
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: './'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.templateData.description
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: process.env.APP_TITLE
+        },
+        {
           hid: 'og:image',
           name: 'og:image',
-          content:
-            this.$router.options.base +
-            `thumbnails/${this.$templatesLangs.getFallbackLang(
-              this.$i18n.locale
-            )}-template.${this.templateData.id}.png`
-        }
-      ],
-      link: [
+          content: thumbnailsUrl
+        },
         {
-          type: 'application/json+oembed',
-          href:
-            this.$router.options.base +
-            `oembeds/${this.$templatesLangs.getFallbackLang(
-              this.$i18n.locale
-            )}-template.${this.templateData.id}.json`
+          hid: 'og:image:type',
+          name: 'og:image:type',
+          content: 'image/png'
+        },
+        {
+          hid: 'og:image:width',
+          name: 'og:image:width',
+          content: '1280'
+        },
+        {
+          hid: 'og:image:height',
+          name: 'og:image:height',
+          content: '800'
         }
       ]
     }

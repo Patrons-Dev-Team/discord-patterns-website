@@ -26,6 +26,11 @@ export default {
         content: 'Discord patterns'
       },
       {
+        hid: 'twitter:site',
+        name: 'twitter:site',
+        content: '@d-patterns'
+      },
+      {
         hid: 'theme-color',
         name: 'theme-color',
         content: '#7289DA'

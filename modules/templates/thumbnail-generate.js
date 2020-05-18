@@ -53,7 +53,10 @@ export async function generateLangThumbnails(
                 },
                 waitForElement: '#loaded-trigger',
                 overwrite: true,
-                timeout: 30
+                timeout: 30,
+                width: 1280,
+                height: 800,
+                scaleFactor: 1
               }
             ),
           { retries: 3 }
