@@ -33,8 +33,7 @@ export default async function templatesModule(moduleOptions) {
     let isServerStarted = false
     for (const lang of moduleOptions.langs) {
       const templates = await getAllTemplates(lang)
-      logger.success(`Generated oembeds for lang ${lang}`)
-      const templatesToGenerates = getThumbnailsToGenerate(
+      const templatesToGenerates = await getThumbnailsToGenerate(
         cachePath,
         lang,
         templates
@@ -56,7 +55,7 @@ export default async function templatesModule(moduleOptions) {
     if (isServerStarted) {
       stopServer()
     }
-    copyTemplates(rootDir, distDir)
+    await copyTemplates(rootDir, distDir)
   })
   this.addPlugin({
     src: resolve(__dirname, 'plugin.js'),
