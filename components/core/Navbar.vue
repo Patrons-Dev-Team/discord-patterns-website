@@ -69,10 +69,6 @@ export default {
     menuItems() {
       return [
         {
-          title: this.$t('header.PREVIEW'),
-          link: 'preview'
-        },
-        {
           title: this.$t('header.BROWSE'),
           link: 'browse'
         },
