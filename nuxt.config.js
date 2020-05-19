@@ -7,6 +7,11 @@ const analyzeGit = pify(analyze)
 export default async () => {
   const meta = await analyzeGit({
     folder: resolve(__dirname)
+  }).catch(() => {
+    return {
+      revision: 'unknown',
+      branch: 'unknown'
+    }
   })
   return {
     mode: 'universal',
