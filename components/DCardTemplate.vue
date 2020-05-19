@@ -129,7 +129,7 @@ export default {
         : 'https://horsehead.me/72/72'
     return {
       id: this._uid,
-      tags: this.template.tags.map((tag) => {
+      tags: this.template.tags.sort().map((tag) => {
         return {
           id: tag,
           icon: tagsIcons[tag]
