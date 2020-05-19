@@ -19,7 +19,6 @@
     "cacache": "^15.0.3",
     "capture-website": "^1.0.0",
     "date-fns": "^2.13.0",
-    "esm": "^3.2.25",
     "fast-glob": "^3.2.2",
     "flexsearch": "^0.6.32",
     "fs-extra": "^9.0.0",
@@ -47,9 +46,11 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "esm": "^3.2.25",
     "frontmatter-markdown-loader": "^3.4.3",
-    "git-revision-webpack-plugin": "^3.0.6",
+    "pify": "^5.0.0",
     "prettier": "^1.19.1",
+    "vizion": "^2.2.0",
     "worker-loader": "^2.0.0"
   }
 }

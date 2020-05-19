@@ -1,201 +1,206 @@
+import { resolve } from 'path'
 import FMMode from 'frontmatter-markdown-loader/mode'
 import colors from 'vuetify/es5/util/colors'
-import GitRevisionPlugin from 'git-revision-webpack-plugin'
-const gitRevisionPlugin = new GitRevisionPlugin()
-
-export default {
-  mode: 'universal',
-  ignore: ['pages/template/_id/cpreview/*'],
-  /*
-   ** Headers of the page
-   */
-  head: {
-    titleTemplate: '%s - Discord Patterns',
-    title: process.env.npm_package_name || '',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      },
-      {
-        hid: 'og:site_name',
-        name: 'og:site_name',
-        content: 'Discord patterns'
-      },
-      {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@d-patterns'
-      },
-      {
-        hid: 'theme-color',
-        name: 'theme-color',
-        content: '#7289DA'
-      }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
-  },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-  /*
-   ** Generate part
-   */
-  generate: {
-    dir: 'public',
-    concurrency: 150
-  },
-  /**
-   * Customize the base url
-   */
-  router: {
-    base: '/discord-patterns-website/'
-  },
-  /*
-   ** Global CSS
-   */
-  css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [
-    // Doc: https://vue-discord-message.netlify.app/
-    // 'vue-discord-message'
-    { src: '~/plugins/vue-discord-message.js', mode: 'client' },
-    { src: '~/plugins/api-client.js', mode: 'client' },
-    { src: '~/plugins/api-server.js', mode: 'server' }
-  ],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-    [
-      '~/modules/templates/',
-      {
-        langs: ['us']
-      }
-    ]
-  ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    // '@nuxtjs/dotenv',
-    // Doc: https://nuxt-community.github.io/nuxt-i18n/
-    'nuxt-i18n',
-    // Doc: https://github.com/nandenjin/nuxt-cache-payload
-    'nuxt-cache-payload'
-  ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
-  vuetify: {
-    treeShake: true,
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          roleModal: colors.grey.darken4
-        }
-      }
-    }
-  },
-  /*
-   ** nuxt-i18n module configuration
-   ** https://nuxt-community.github.io/nuxt-i18n/options-reference.html
-   */
-  i18n: {
-    locales: [
-      {
-        code: 'us',
-        iso: 'en-US',
-        file: 'en-US.js'
-      },
-      {
-        code: 'fr',
-        iso: 'fr-FR',
-        file: 'fr-FR.js'
-      }
-    ],
-    defaultLocale: 'us',
-    vueI18n: {
-      fallbackLocale: 'us'
-    },
-    seo: true,
-    lazy: true,
-    langDir: 'lang/'
-  },
-  /*
-   ** Build configuration
-   */
-  build: {
+import pify from 'pify'
+import { analyze } from 'vizion'
+const analyzeGit = pify(analyze)
+export default async () => {
+  const meta = await analyzeGit({
+    folder: resolve(__dirname)
+  })
+  return {
+    mode: 'universal',
+    ignore: ['pages/template/_id/cpreview/*'],
     /*
-     ** You can extend webpack config here
+     ** Headers of the page
      */
-    extend(config, { isClient }) {
-      if (isClient) {
-        config.output.globalObject = 'this'
-        // web workers are only available client-side
-        config.module.rules.push({
-          test: /\.worker\.js$/, // this will pick up all .js files that ends with ".worker.js"
-          loader: 'worker-loader',
-          exclude: /(node_modules)/
-        })
-      }
-      config.module.rules.push({
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        options: {
-          mode: [FMMode.VUE_COMPONENT]
+    head: {
+      titleTemplate: '%s - Discord Patterns',
+      title: process.env.npm_package_name || '',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: process.env.npm_package_description || ''
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: 'Discord patterns'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@d-patterns'
+        },
+        {
+          hid: 'theme-color',
+          name: 'theme-color',
+          content: '#7289DA'
         }
-      })
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
     },
-    html: {
-      minify: {
-        collapseBooleanAttributes: true,
-        decodeEntities: true,
-        minifyCSS: false,
-        minifyJS: false,
-        processConditionalComments: true,
-        removeEmptyAttributes: true,
-        removeRedundantAttributes: true,
-        trimCustomFragments: true,
-        useShortDoctype: true
+    /*
+     ** Customize the progress-bar color
+     */
+    loading: { color: '#fff' },
+    /*
+     ** Generate part
+     */
+    generate: {
+      dir: 'public',
+      concurrency: 150
+    },
+    /**
+     * Customize the base url
+     */
+    router: {
+      base: '/discord-patterns-website/'
+    },
+    /*
+     ** Global CSS
+     */
+    css: [],
+    /*
+     ** Plugins to load before mounting the App
+     */
+    plugins: [
+      // Doc: https://vue-discord-message.netlify.app/
+      // 'vue-discord-message'
+      { src: '~/plugins/vue-discord-message.js', mode: 'client' },
+      { src: '~/plugins/api-client.js', mode: 'client' },
+      { src: '~/plugins/api-server.js', mode: 'server' }
+    ],
+    /*
+     ** Nuxt.js dev-modules
+     */
+    buildModules: [
+      // Doc: https://github.com/nuxt-community/eslint-module
+      '@nuxtjs/eslint-module',
+      '@nuxtjs/vuetify',
+      [
+        '~/modules/templates/',
+        {
+          langs: ['us']
+        }
+      ]
+    ],
+    /*
+     ** Nuxt.js modules
+     */
+    modules: [
+      // Doc: https://axios.nuxtjs.org/usage
+      // '@nuxtjs/axios',
+      // Doc: https://github.com/nuxt-community/dotenv-module
+      // '@nuxtjs/dotenv',
+      // Doc: https://nuxt-community.github.io/nuxt-i18n/
+      'nuxt-i18n',
+      // Doc: https://github.com/nandenjin/nuxt-cache-payload
+      'nuxt-cache-payload'
+    ],
+    /*
+     ** Axios module configuration
+     ** See https://axios.nuxtjs.org/options
+     */
+    axios: {},
+    /*
+     ** vuetify module configuration
+     ** https://github.com/nuxt-community/vuetify-module
+     */
+    vuetify: {
+      treeShake: true,
+      customVariables: ['~/assets/variables.scss'],
+      theme: {
+        dark: true,
+        themes: {
+          dark: {
+            primary: colors.blue.darken2,
+            accent: colors.grey.darken3,
+            secondary: colors.amber.darken3,
+            info: colors.teal.lighten1,
+            warning: colors.amber.base,
+            error: colors.deepOrange.accent4,
+            success: colors.green.accent3,
+            roleModal: colors.grey.darken4
+          }
+        }
       }
+    },
+    /*
+     ** nuxt-i18n module configuration
+     ** https://nuxt-community.github.io/nuxt-i18n/options-reference.html
+     */
+    i18n: {
+      locales: [
+        {
+          code: 'us',
+          iso: 'en-US',
+          file: 'en-US.js'
+        },
+        {
+          code: 'fr',
+          iso: 'fr-FR',
+          file: 'fr-FR.js'
+        }
+      ],
+      defaultLocale: 'us',
+      vueI18n: {
+        fallbackLocale: 'us'
+      },
+      seo: true,
+      lazy: true,
+      langDir: 'lang/'
+    },
+    /*
+     ** Build configuration
+     */
+    build: {
+      /*
+       ** You can extend webpack config here
+       */
+      extend(config, { isClient }) {
+        if (isClient) {
+          config.output.globalObject = 'this'
+          // web workers are only available client-side
+          config.module.rules.push({
+            test: /\.worker\.js$/, // this will pick up all .js files that ends with ".worker.js"
+            loader: 'worker-loader',
+            exclude: /(node_modules)/
+          })
+        }
+        config.module.rules.push({
+          test: /\.md$/,
+          loader: 'frontmatter-markdown-loader',
+          options: {
+            mode: [FMMode.VUE_COMPONENT]
+          }
+        })
+      },
+      html: {
+        minify: {
+          collapseBooleanAttributes: true,
+          decodeEntities: true,
+          minifyCSS: false,
+          minifyJS: false,
+          processConditionalComments: true,
+          removeEmptyAttributes: true,
+          removeRedundantAttributes: true,
+          trimCustomFragments: true,
+          useShortDoctype: true
+        }
+      }
+    },
+    /*
+     ** Client side env variables
+     */
+    env: {
+      VERSION: process.env.npm_package_version,
+      COMMITHASH: meta.revision,
+      BRANCH: meta.branch,
+      APP_TITLE: 'Discord Patterns'
     }
-  },
-  /*
-   ** Client side env variables
-   */
-  env: {
-    VERSION: process.env.npm_package_version,
-    GIT_DESCRIBE_VERSION: gitRevisionPlugin.version(),
-    COMMITHASH: gitRevisionPlugin.commithash(),
-    BRANCH: gitRevisionPlugin.branch(),
-    APP_TITLE: 'Discord Patterns'
   }
 }
