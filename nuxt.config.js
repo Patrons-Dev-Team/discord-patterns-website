@@ -63,7 +63,7 @@ export default async () => {
      * Customize the base url
      */
     router: {
-      base: '/discord-patterns-website/'
+      base: process.env.BASE_URL || '/discord-patterns-website/'
     },
     /*
      ** Global CSS
