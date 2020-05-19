@@ -128,7 +128,7 @@ export default {
     return {
       templateData,
       emojiSrc,
-      tags: templateData.tags.map((tag) => {
+      tags: templateData.tags.sort().map((tag) => {
         return {
           id: tag,
           icon: tagsIcons[tag]
