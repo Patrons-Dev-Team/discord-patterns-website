@@ -38,6 +38,7 @@
     "write-json-file": "^4.3.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.0.1",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.2.0",
     "@nuxtjs/vuetify": "^1.11.2",
@@ -48,9 +49,12 @@
     "eslint-plugin-prettier": "^3.1.2",
     "esm": "^3.2.25",
     "frontmatter-markdown-loader": "^3.4.3",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "pify": "^5.0.0",
     "prettier": "^1.19.1",
     "vizion": "^2.2.0",
+    "webp-loader": "^0.6.0",
     "worker-loader": "^2.0.0"
   }
 }

@@ -91,7 +91,9 @@ export default async () => {
         {
           langs: ['us']
         }
-      ]
+      ],
+      // Doc: https://github.com/aceforth/nuxt-optimized-images
+      '@aceforth/nuxt-optimized-images'
     ],
     /*
      ** Nuxt.js modules
@@ -158,6 +160,21 @@ export default async () => {
       seo: true,
       lazy: true,
       langDir: 'lang/'
+    },
+    // Doc: https://aceforth.com/docs/nuxt-optimized-images/configuration/
+    optimizedImages: {
+      optimizeImages: true,
+      mozjpeg: {
+        quality: 85
+      },
+      optipng: false,
+      pngquant: {
+        speed: 7,
+        quality: [0.65, 0.8]
+      },
+      webp: {
+        quality: 85
+      }
     },
     /*
      ** Build configuration

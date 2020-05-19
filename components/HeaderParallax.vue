@@ -2,7 +2,7 @@
   <v-parallax
     class="blue-grey darken-4"
     :height="height"
-    src="parallax_background.png"
+    :src="require('~/assets/parallax_background.png?webp')"
   >
     <v-row justify="space-around" align="center">
       <div>
