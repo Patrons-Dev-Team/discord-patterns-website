@@ -1,31 +1,40 @@
 import PromiseWorker from 'promise-worker'
-import Worker from '~/services/api/templates.worker'
-const promisedWorker = new PromiseWorker(new Worker())
-
+let worker = null
 export default {
+  async getWorker() {
+    if (!worker) {
+      const Worker = (
+        await import(
+          /* webpackPreload: true */ '~/services/api/templates.worker'
+        )
+      ).default
+      worker = new PromiseWorker(new Worker())
+    }
+    return worker
+  },
   async getAllTemplates(lang) {
-    return await promisedWorker.postMessage({
+    return await (await this.getWorker()).postMessage({
       type: 'getAllTemplates',
       data: { lang }
     })
   },
 
   async getLatestTemplates(lang) {
-    return await promisedWorker.postMessage({
+    return await (await this.getWorker()).postMessage({
       type: 'getLatestTemplates',
       data: { lang }
     })
   },
 
   async getTemplateById(lang, id) {
-    return await promisedWorker.postMessage({
+    return await (await this.getWorker()).postMessage({
       type: 'getTemplateById',
       data: { lang, id }
     })
   },
 
   async search(lang, query, tags, options) {
-    return await promisedWorker.postMessage({
+    return await (await this.getWorker()).postMessage({
       type: 'search',
       data: { lang, query, tags, options }
     })

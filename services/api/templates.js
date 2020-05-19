@@ -14,13 +14,13 @@ export default {
     try {
       templates = (
         await import(
-          /* webpackChunkName: "templatedata-[request]" */ `~/data/templates/templates.${lang}`
+          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.${lang}`
         )
       ).templates
     } catch (e) {
       templates = (
         await import(
-          /* webpackChunkName: "templatedata-[request]" */ `~/data/templates/templates.us`
+          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.us`
         )
       ).templates
     }
