@@ -14,22 +14,16 @@ export default {
     try {
       templates = (
         await import(
-          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.${lang}`
+          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.${lang}.json`
         )
-      ).templates
+      ).default
     } catch (e) {
       templates = (
         await import(
-          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.us`
+          /* webpackChunkName: "templatedata" */ `~/data/templates/templates.us.json`
         )
-      ).templates
+      ).default
     }
-    if (templates.length < 200) {
-      for (let i = 2; i < 300; i++) {
-        templates.push({ ...templates[0], id: String(i) })
-      }
-    }
-
     return templates
   },
 
