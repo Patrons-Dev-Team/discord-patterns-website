@@ -2,7 +2,7 @@ export default {
   index: {
     TITLE: 'Template listing',
     DESCRIPTION:
-      'Create a discord server easily by find a ready made template for your discord server'
+      'List of popular and useful ready-made templates to create your discord server easily'
   },
   header: {
     BROWSE: 'Browse',
@@ -15,7 +15,10 @@ export default {
     DESCRIPTION: `Discord Patterns is a website for the Discord community. It's a
               template listing website, made for your eyes, and totally open
               source`,
-    TITLE_LINKS: 'Links'
+    TITLE_LINKS: 'Links',
+    ABOUT_LINK: 'About',
+    TEAM_LINK: 'The team',
+    GITLAB_LINK: 'GitLab'
   },
   parallax: {
     CONTENT: 'FOSS Templates, on your demand !',
@@ -25,26 +28,16 @@ export default {
     TITLE: 'Partnerships and links',
     list: [
       {
-        TITLE: 'Hachis parmentier FINDUS',
-        DESCRIPTION:
-          'En partenariat avec d-patterns, rejoignez notre discord autour de findus et ses produits',
-        LINK:
-          'https://www.findus.fr/produits/plats-cuisines/gratins/hachis-parmentier-pur-boeuf',
+        TITLE: 'GA Community',
+        DESCRIPTION: "Join GA Community's discord and win free games!",
+        LINK: 'https://discord.gg/JXgT3Nj',
         IMG_LINK:
-          'https://nomadfoodscdn.com/-/media/project/bluesteel/shared/logos/logo-findus-france.png?h=177&la=fr-FR&w=130&hash=2BF915C9DB1FFA092423DD5E484D1191'
-      },
-      {
-        TITLE: 'Vicord',
-        DESCRIPTION:
-          'D-patterns a bon goût avec vicord, son partenaire principal',
-        LINK: 'http://www.vico.fr/',
-        IMG_LINK:
-          'https://pbs.twimg.com/profile_images/870611963872718848/rvpArfw__400x400.jpg'
+          'https://cdn.discordapp.com/icons/243805708204769292/4afb23b779001299e4dbd93ae1d2414c.webp?size=256'
       },
       {
         TITLE: 'Simon corporation',
         DESCRIPTION:
-          'Simon corporation is promoting d-patterns. Create a free simoncorp template easily',
+          'Simon corporation is promoting d-patterns. Create a free simoncorp template easily !',
         LINK: 'https://www.simonwork.fr',
         IMG_LINK: 'https://horsehead.me/72/72'
       }
@@ -61,6 +54,21 @@ export default {
     ONLINE: 'Online'
   },
   listing: {
+    index: {
+      TITLE: 'Awesome template list',
+      DESCRIPTION:
+        'Create your discord server in 1 minute with a ready-made template!'
+    },
+    browse: {
+      TITLE: 'Browse awesome templates',
+      DESCRIPTION: 'All of our best templates'
+    },
+    sort: {
+      MOST_RECENT: 'Most recent',
+      ALPHABETICAL: 'Alphabetical',
+      MOST_POPULAR: 'Most popular'
+    },
+    SEARCH: 'Search for a template',
     BROWSE_ALL: 'Browse all templates',
     TITLE: 'Browse templates',
     DESCRIPTION:
@@ -237,8 +245,53 @@ export default {
         'Easy tutorial to create your discord {templateMainTag} community and make it successful with the template {templateName}. Tips and tricks to make your community popular and gain members !'
     },
     details: {
+      DESC_TITLE: 'Description',
+      CREATED_ON: 'Created on',
+      UPDATED_ON: 'Updated on',
+      USE_TEMPLATE_BTN: 'Use this template',
+      HOW_TO_PROCEED_BTN: 'How to proceed?',
+      RUN_PREVIEW_BTN: 'Run in preview mode',
+      CHANNELS_TITLE: 'Channels',
+      CHANNELS_DESCRIPTION: '',
+      ROLES_TITLE: 'Roles',
+      ROLES_DESCRIPTION: 'Click on a role to show its permissions',
+      general: {
+        TITLE: 'General information',
+        CODE_TITLE: 'Code',
+        CODE_DESCRIPTION: 'Template code',
+        NAME_TITLE: 'Name',
+        NAME_DESCRIPTION: 'Original template name',
+        ORIGINAL_DESC_TITLE: 'Description',
+        ORGINAL_DESC_DESCRIPTION: 'Original template description',
+        NUMBER_OF_USES_TITLE: 'Number of uses',
+        NUMBER_OF_USES_DESCRIPTION: 'At crawl time',
+        CREATOR_TITLE: 'Creator'
+      },
+      source: {
+        TITLE: 'Source guild information',
+        NAME_TITLE: 'Guild name',
+        GUILD_ID_TITLE: 'Guild Discord ID',
+        REGION_TITLE: 'Discord region',
+        VERIFICATION_LVL_TITLE: 'Verification level',
+        DEFAULT_NOTIFS_MSG_TITLE: 'Default message notifications',
+        EXPLICIT_CONTENT_FILTER_TITLE: 'Explicit content filter',
+        PREFERRED_LOCALE_TITLE: 'Preferred locale',
+        AFK_TIMEOUT_TITLE: 'AFK timeout',
+        AFK_CHNL_ID_TITLE: 'AFK channel ID',
+        SYS_CHNL_ID_TITLE: 'System channel ID',
+        SYS_CHNL_FLAGS_TITLE: 'System channel flags',
+        ICON_HASH_TITLE: 'Icon hash'
+      },
       DESCRIPTION:
         'Create your {templateMainTag} discord server with the template {templateName}'
     }
+  },
+  dataTable: {
+    LOADING: 'Loading...',
+    ITEMS_PER_PAGE_TEXT: 'Templates per page:',
+    ITEMS_PER_PAGE_ALL_TEXT: 'All',
+    PAGE_TEXT: '{0}-{1} of {2}',
+    NO_DATA: 'No data',
+    NO_RESULTS: 'No results'
   }
 }

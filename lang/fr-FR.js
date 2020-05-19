@@ -1,20 +1,65 @@
 export default {
+  index: {
+    TITLE: 'Annuaire de modèles Discord',
+    DESCRIPTION:
+      'Liste de modèles/templates Discord populaires et utiles pour créer ton serveur Discord facilement'
+  },
   header: {
     BROWSE: 'Découvrir',
     POPULAR: 'Populaire',
-    SERVICE_DESCRIPTION: 'Template listing'
+    SERVICE_DESCRIPTION: 'Annuaire de modèles'
   },
   footer: {
     MADE_WITH: 'Fait avec ',
     BY: 'par :',
     DESCRIPTION: `Discord Patterns est un site web pour la communauté Discord. C'est un
-              site de listing de templates, fait pour vos yeux, et totallement open
+              site de listing de templates, fait pour vos yeux, et totalement open
               source`,
-    TITLE_LINKS: 'Liens'
+    TITLE_LINKS: 'Liens',
+    ABOUT_LINK: 'À propos',
+    TEAM_LINK: "L'équipe",
+    GITLAB_LINK: 'GitLab'
   },
   parallax: {
     CONTENT: 'Site web open source de partage de templates Discord !',
     JOIN: 'Rejoins notre serveur Discord !'
+  },
+  partners: {
+    TITLE: 'Partnerships and links',
+    list: [
+      {
+        TITLE: 'GA Community',
+        DESCRIPTION:
+          'Rejoint le Discord de GA Community et gagne des clés steams et des jeux gratuits',
+        LINK: 'https://discord.gg/UXzZV4u',
+        IMG_LINK:
+          'https://cdn.discordapp.com/icons/243805708204769292/4afb23b779001299e4dbd93ae1d2414c.webp?size=256'
+      },
+      {
+        TITLE: 'Hachis parmentier FINDUS',
+        DESCRIPTION:
+          'En partenariat avec d-patterns, rejoignez notre discord autour de findus et de ses produits',
+        LINK:
+          'https://www.findus.fr/produits/plats-cuisines/gratins/hachis-parmentier-pur-boeuf',
+        IMG_LINK:
+          'https://nomadfoodscdn.com/-/media/project/bluesteel/shared/logos/logo-findus-france.png?h=177&la=fr-FR&w=130&hash=2BF915C9DB1FFA092423DD5E484D1191'
+      },
+      {
+        TITLE: 'Vicord',
+        DESCRIPTION:
+          'D-patterns a bon goût avec vicord, son partenaire principal',
+        LINK: 'http://www.vico.fr/',
+        IMG_LINK:
+          'https://pbs.twimg.com/profile_images/870611963872718848/rvpArfw__400x400.jpg'
+      },
+      {
+        TITLE: 'Simon corporation',
+        DESCRIPTION:
+          'La Simon Corp fait de la pub pour d-patterns. Créér ton serveur Discord Simon Corp facilement avec Discord Patterns !',
+        LINK: 'https://www.simonwork.fr',
+        IMG_LINK: 'https://horsehead.me/72/72'
+      }
+    ]
   },
   preview: {
     BELL:
@@ -27,7 +72,25 @@ export default {
     ONLINE: 'En ligne'
   },
   listing: {
-    BROWSE_ALL: 'Browse all templates',
+    index: {
+      TITLE: 'Liste de superbes modèles Discord',
+      DESCRIPTION:
+        "Créer ton serveur discord en 1 minute avec un modèle prêt à l'emploi !"
+    },
+    browse: {
+      TITLE: 'Découvre de superbes modèles',
+      DESCRIPTION: 'Voici toutes nos meilleures templates !'
+    },
+    sort: {
+      MOST_RECENT: 'Le plus récent',
+      ALPHABETICAL: 'Alphabétique',
+      MOST_POPULAR: 'Le plus populaire'
+    },
+    SEARCH: 'Rechercher un modèle',
+    BROWSE_ALL: 'Explorer tous les modèles',
+    TITLE: 'Explorer tous les modèles',
+    DESCRIPTION:
+      'Explore cette liste de modèles Discord pour créer ton serveur Discord en 1 minute',
     pophover: {
       CHANNELS: 'Salons',
       ROLES: 'Rôles'
@@ -201,6 +264,55 @@ export default {
         'Créer un serveur discord {templateMainTag} avec le modèle {templateName} en 3 étapes',
       DESCRIPTION:
         'Tutoriel pour créer facilement ta communauté discord {templateMainTag} et bien la gérer à l’aide du modèle {templateName}. Des astuces pour rendre ta commu populaire !'
+    },
+    details: {
+      DESC_TITLE: 'Description',
+      CREATED_ON: 'Créée le',
+      UPDATED_ON: 'Mise à jour le',
+      USE_TEMPLATE_BTN: 'Utiliser ce modèle',
+      HOW_TO_PROCEED_BTN: 'Comment procéder ?',
+      RUN_PREVIEW_BTN: 'Prévisualiser ce modèle',
+      CHANNELS_TITLE: 'Salons',
+      CHANNELS_DESCRIPTION: '',
+      ROLES_TITLE: 'Rôles',
+      ROLES_DESCRIPTION: 'Clique sur un rôle pour voir ses permissions !',
+      general: {
+        TITLE: 'Informations générales',
+        CODE_TITLE: 'Code',
+        CODE_DESCRIPTION: 'Code du modèle',
+        NAME_TITLE: 'Nom',
+        NAME_DESCRIPTION: 'Nom originel du modèle',
+        ORIGINAL_DESC_TITLE: 'Description',
+        ORGINAL_DESC_DESCRIPTION: 'Description originelle du modèle',
+        NUMBER_OF_USES_TITLE: "Nombre d'utilisations",
+        NUMBER_OF_USES_DESCRIPTION: 'Mis-à-jour lors de la dernière build',
+        CREATOR_TITLE: 'Créateur'
+      },
+      source: {
+        TITLE: 'Informations sur le serveur source',
+        NAME_TITLE: 'Nom du serveur',
+        GUILD_ID_TITLE: 'ID Discord du serveur',
+        REGION_TITLE: 'Région Discord du serveur',
+        VERIFICATION_LVL_TITLE: 'Niveau de vérification',
+        DEFAULT_NOTIFS_MSG_TITLE: 'Notifications par défaut',
+        EXPLICIT_CONTENT_FILTER_TITLE: 'Filtre du contenu',
+        PREFERRED_LOCALE_TITLE: 'Langage preferré',
+        AFK_TIMEOUT_TITLE: 'Temps avant AFK',
+        AFK_CHNL_ID_TITLE: "ID du salon d'AFK",
+        SYS_CHNL_ID_TITLE: 'ID du salon système',
+        SYS_CHNL_FLAGS_TITLE: 'Drapeaux du salon système',
+        ICON_HASH_TITLE: "Hash de l'icône du serveur"
+      },
+      DESCRIPTION:
+        'Créer ton serveur Discord {templateMainTag} avec le modèle {templateName}'
     }
+  },
+  dataTable: {
+    LOADING: 'Chargement...',
+    ITEMS_PER_PAGE_TEXT: 'Modèles par page:',
+    ITEMS_PER_PAGE_ALL_TEXT: 'Tous',
+    PAGE_TEXT: '{0}-{1} de {2}',
+    NO_DATA: 'Aucunes données',
+    NO_RESULTS: 'Aucuns résultats'
   }
 }
