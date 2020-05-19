@@ -11,7 +11,7 @@
       </div>
       <div>
         <v-btn
-          ref="noopener"
+          rel="noopener"
           href="https://discord.gg/MFMXamv"
           target="_blank"
           outlined
