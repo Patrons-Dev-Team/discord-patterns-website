@@ -22,6 +22,7 @@
 
         <v-list-item-action>
           <v-btn
+            ref="noopener"
             target="blank"
             :href="$t(`partners.list[${partnerId}].LINK`)"
             icon

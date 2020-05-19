@@ -106,7 +106,8 @@ export default async () => {
       // Doc: https://nuxt-community.github.io/nuxt-i18n/
       'nuxt-i18n',
       // Doc: https://github.com/nandenjin/nuxt-cache-payload
-      'nuxt-cache-payload'
+      'nuxt-cache-payload',
+      'nuxt-webfontloader'
     ],
     /*
      ** Axios module configuration

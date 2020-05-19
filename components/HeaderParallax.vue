@@ -10,9 +10,13 @@
         <p>{{ $t('parallax.CONTENT') }}</p>
       </div>
       <div>
-        <v-btn href="https://discord.gg/MFMXamv" target="_blank" outlined>{{
-          $t('parallax.JOIN')
-        }}</v-btn>
+        <v-btn
+          ref="noopener"
+          href="https://discord.gg/MFMXamv"
+          target="_blank"
+          outlined
+          >{{ $t('parallax.JOIN') }}</v-btn
+        >
       </div>
     </v-row>
   </v-parallax>
