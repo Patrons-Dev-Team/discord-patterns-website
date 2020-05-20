@@ -132,7 +132,8 @@ export default async () => {
             warning: colors.amber.base,
             error: colors.deepOrange.accent4,
             success: colors.green.accent3,
-            roleModal: colors.grey.darken4
+            roleModal: colors.grey.darken4,
+            footerLink: colors.shades.white
           }
         }
       }
