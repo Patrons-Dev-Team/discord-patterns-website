@@ -106,7 +106,9 @@
         :to="localePath({ name: 'template-id', params: { id: template.id } })"
         >{{ $t('listing.card.DETAILS_BUTTON') }}</v-btn
       >
-      <v-btn text outlined>{{ $t('listing.card.CREATE_BUTTON') }}</v-btn>
+      <v-btn rel="noopener" target="blank" :href="creationLink" text outlined>{{
+        $t('listing.card.CREATE_BUTTON')
+      }}</v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -147,7 +149,8 @@ export default {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
         5: 'mdi-bullhorn'
-      }
+      },
+      creationLink: `https://discord.new/${this.template.dprops.code}`
     }
   }
 }
