@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/sitemap": "^2.3.0",
     "cacache": "^15.0.3",
     "capture-website": "^1.0.0",
     "date-fns": "^2.13.0",

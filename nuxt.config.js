@@ -107,7 +107,9 @@ export default async () => {
       'nuxt-i18n',
       // Doc: https://github.com/nandenjin/nuxt-cache-payload
       'nuxt-cache-payload',
-      'nuxt-webfontloader'
+      'nuxt-webfontloader',
+      // Doc: https://github.com/nuxt-community/sitemap-module
+      '@nuxtjs/sitemap'
     ],
     /*
      ** Axios module configuration
@@ -163,7 +165,10 @@ export default async () => {
       lazy: true,
       langDir: 'lang/'
     },
-    // Doc: https://aceforth.com/docs/nuxt-optimized-images/configuration/
+    /*
+     ** nuxt-optimized-images module configuration
+     ** Doc: https://aceforth.com/docs/nuxt-optimized-images/configuration/
+     */
     optimizedImages: {
       optimizeImages: true,
       mozjpeg: {
@@ -177,6 +182,15 @@ export default async () => {
       webp: {
         quality: 85
       }
+    },
+    /*
+     ** nuxt-site module configuration
+     ** https://github.com/nuxt-community/sitemap-module#sitemap-options
+     */
+    sitemap: {
+      hostname: 'https://d-patterns.js.org',
+      // shortcut notation (basic)
+      i18n: 'en'
     },
     /*
      ** Build configuration
