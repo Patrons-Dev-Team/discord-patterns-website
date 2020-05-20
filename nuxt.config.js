@@ -4,6 +4,7 @@ import colors from 'vuetify/es5/util/colors'
 import pify from 'pify'
 import { analyze } from 'vizion'
 const analyzeGit = pify(analyze)
+const base = process.env.BASE_URL || '/discord-patterns-website/' // for vercel
 export default async () => {
   const meta = await analyzeGit({
     folder: resolve(__dirname)
@@ -36,9 +37,39 @@ export default async () => {
           content: 'Discord patterns'
         },
         {
+          hid: 'og:image',
+          name: 'og:image',
+          content: base + 'discord-patterns-banner.png'
+        },
+        {
+          hid: 'og:image:type',
+          name: 'og:image:type',
+          content: 'image/png'
+        },
+        {
+          hid: 'og:image:width',
+          name: 'og:image:width',
+          content: '500'
+        },
+        {
+          hid: 'og:image:height',
+          name: 'og:image:height',
+          content: '500'
+        },
+        {
           hid: 'twitter:site',
           name: 'twitter:site',
           content: '@d-patterns'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: base + 'discord-patterns-banner.png'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
         },
         {
           hid: 'theme-color',
@@ -63,7 +94,7 @@ export default async () => {
      * Customize the base url
      */
     router: {
-      base: process.env.BASE_URL || '/discord-patterns-website/' // for vercel
+      base
     },
     /*
      ** Global CSS
