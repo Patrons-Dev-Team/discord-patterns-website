@@ -17,15 +17,17 @@
             </span>
           </v-list-item-title>
           <v-list-item-subtitle>
-            <v-chip
-              v-for="tag in tags"
-              :key="tag.id"
-              outlined
-              class="mt-1 mr-1"
-            >
-              <v-icon left x-small>{{ tag.icon }}</v-icon
-              >{{ $t(`listing.tags.${tag.id}`) }}
-            </v-chip>
+            <div>
+              <v-chip
+                v-for="tag in tags"
+                :key="tag.id"
+                outlined
+                class="mt-1 mr-1"
+              >
+                <v-icon left x-small>{{ tag.icon }}</v-icon
+                >{{ $t(`listing.tags.${tag.id}`) }}
+              </v-chip>
+            </div>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>

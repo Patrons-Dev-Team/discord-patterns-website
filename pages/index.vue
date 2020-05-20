@@ -17,7 +17,6 @@
             clearable
             clear-icon="mdi-close"
             hide-details
-            autofocus
             dense
             @click:append="performSearch"
             @keydown.enter="performSearch"
