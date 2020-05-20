@@ -94,7 +94,8 @@ export default async () => {
      * Customize the base url
      */
     router: {
-      base
+      base,
+      trailingSlash: true
     },
     /*
      ** Global CSS
