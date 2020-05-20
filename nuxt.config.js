@@ -90,10 +90,10 @@ export default async () => {
       dir: 'public',
       concurrency: 150
     },
-    /**
-     * Customize the base url
-     */
     router: {
+      /**
+       * Customize the base url
+       */
       base,
       trailingSlash: true
     },
