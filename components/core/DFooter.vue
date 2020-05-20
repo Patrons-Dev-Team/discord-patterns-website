@@ -54,7 +54,7 @@
             <span class="hidden-sm-and-down">&nbsp;- </span>
             {{ $t('footer.MADE_WITH') }}
             <v-icon small class="red--text">mdi-cards-heart</v-icon>
-            {{ $t('footer.BY') }} Patrons Dev Team
+            Copyright 2020 Patrons Dev Team
           </span>
         </div>
       </v-container>

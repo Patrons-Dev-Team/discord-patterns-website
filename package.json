@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Discord templates listing website",
   "author": "Patrons Dev Team",
+  "license": "GPL-3.0-or-later",
   "private": true,
   "scripts": {
     "dev": "nuxt",
