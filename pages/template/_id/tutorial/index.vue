@@ -5,9 +5,6 @@
 <script>
 export default {
   layout: 'dense',
-  validate({ params }) {
-    return /^\d+$/.test(params.id)
-  },
   async asyncData({
     params,
     error,

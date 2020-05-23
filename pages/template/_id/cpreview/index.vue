@@ -105,9 +105,6 @@ import tagsIcons from '~/data/tags'
 
 export default {
   layout: 'content-only',
-  validate({ params }) {
-    return /^\d+$/.test(params.id)
-  },
   async asyncData({
     params,
     error,

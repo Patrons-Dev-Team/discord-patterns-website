@@ -256,9 +256,6 @@ export default {
     DTemplateDetails
   },
   layout: 'dense',
-  validate({ params }) {
-    return /^\d+$/.test(params.id)
-  },
   async asyncData({
     params,
     error,
