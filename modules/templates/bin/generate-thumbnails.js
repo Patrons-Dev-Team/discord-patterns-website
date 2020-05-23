@@ -7,7 +7,7 @@ const fg = require('fast-glob')
 require = require('esm')(module)
 const thumbnails = require('../thumbnail-generate.js')
 const { getAllTemplates } = require('../utils.js')
-const config = require(join(process.cwd(), 'nuxt.config.js')).default
+const configFile = require(join(process.cwd(), 'nuxt.config.js')).default
 
 NuxtCommand.run({
   name: 'thumbnails',
@@ -24,6 +24,7 @@ NuxtCommand.run({
     }
   },
   async run(cmd) {
+    const config = await configFile()
     const rootDir = process.cwd()
     const cachePath = join(rootDir, cmd.argv.dir || '.thumbnails/entries')
     const langs = await (
