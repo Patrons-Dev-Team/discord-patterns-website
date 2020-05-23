@@ -1,0 +1,1168 @@
+[{
+    "id": "dfr-0",
+    "title": "Cours de dance",
+    "description": "Pour vous donner rendez-vous, vous organiser et rester en contact.",
+    "longDescription": "Pour vous donner rendez-vous, vous organiser et rester en contact.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["3"],
+    "mtag": "3",
+    "dprops": {
+      "code": "F8SjaPbpSYnF",
+      "name": "Cours de dance \u2192Par mobarzik#0110, Discord Patterns",
+      "description": "Pour vous donner rendez-vous, vous organiser et rester en contact. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:27:56+00:00",
+      "updated_at": "2020-05-23T10:27:56+00:00",
+      "source_guild_id": "713689491059245076",
+      "serialized_source_guild": {
+        "name": "Cours de dance",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104324673,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Informations",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "accueil-et-r\u00e8gles",
+          "position": 1,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "annonces",
+          "position": 2,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. C'est pour les annonces importantes.",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "documents",
+          "position": 3,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde.",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 4,
+          "type": 0
+        }, {
+          "name": "Salons textuels",
+          "position": 4,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 5,
+          "topic": "Ici, tout le monde peut parler !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 0
+        }, {
+          "name": "planification-r\u00e9union",
+          "position": 6,
+          "topic": "Vous planifiez des rencontres pour votre communaut\u00e9? Postez-les et discutez-en ici!",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 7,
+          "type": 0
+        }, {
+          "name": "hors-sujet",
+          "position": 7,
+          "topic": "Vous avez quelque chose \u00e0 dire au hasard et hors sujet? Ce channel est pour vous!",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 8,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 8,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 9,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 9,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [],
+          "id": 10,
+          "type": 2
+        }, {
+          "name": "Salle de r\u00e9union",
+          "position": 10,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [],
+          "id": 11,
+          "type": 2
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 6,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-1",
+    "title": "Club de lecture",
+    "description": "Pour collaborer, conceptualiser et partager tes créations.",
+    "longDescription": "**Créez ensemble.** Pour collaborer, conceptualiser et partager tes créations.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["3", "4"],
+    "mtag": "3",
+    "dprops": {
+      "code": "ehebFsDhgTSa",
+      "name": "Club de lecture\u2192 Par mobarzik#0110, Discord Patterns",
+      "description": "Pour collaborer, conceptualiser et partager tes cr\u00e9ations. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:22:58+00:00",
+      "updated_at": "2020-05-23T10:22:58+00:00",
+      "source_guild_id": "713692606403575858",
+      "serialized_source_guild": {
+        "name": "Club de lecture",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104324673,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Informations",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "accueil-et-r\u00e8gles",
+          "position": 1,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "annonces",
+          "position": 2,
+          "topic": "Visible par tous les membres. Publiez des annonces importantes !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "Salons textuels",
+          "position": 3,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 4,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 4,
+          "topic": "Ici, tout le monde peut parler !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 0
+        }, {
+          "name": "\u00e9v\u00e9nements",
+          "position": 5,
+          "topic": "Des \u00e9v\u00e9nements \u00e0 venir? Postez-les ou discutez-en ici avec votre communaut\u00e9 !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 0
+        }, {
+          "name": "id\u00e9es-et-suggestions",
+          "position": 6,
+          "topic": "Vous souhaitez partager certains concepts ou faire rebondir certaines id\u00e9es ? Publiez-les ici pour obtenir des suggestions et des commentaires !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 7,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 7,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 8,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 8,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 8,
+          "permission_overwrites": [],
+          "id": 9,
+          "type": 2
+        }, {
+          "name": "Rencontre",
+          "position": 9,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 8,
+          "permission_overwrites": [],
+          "id": 10,
+          "type": 2
+        }, {
+          "name": "Salle de diffusion",
+          "position": 10,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 8,
+          "permission_overwrites": [],
+          "id": 11,
+          "type": 2
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 5,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-2",
+    "title": "Communauté globale",
+    "description": "Pour vous coordonner, partager des ressources et animer des événements.",
+    "longDescription": "**Rassemble tes amis du monde entier.** Pour vous coordonner, partager des ressources et animer des événements.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["3"],
+    "mtag": "3",
+    "dprops": {
+      "code": "c2nbTA8rUkwt",
+      "name": "Communaut\u00e9 globale \u2192Par mobarzik#0110, Discord Patterns",
+      "description": "Pour vous coordonner, partager des ressources et animer des \u00e9vents. Propos\u00e9 par DPatterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:29:52+00:00",
+      "updated_at": "2020-05-23T10:29:52+00:00",
+      "source_guild_id": "713694877438836796",
+      "serialized_source_guild": {
+        "name": "Communaut\u00e9 globale",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 1,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104189505,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }, {
+          "id": 2,
+          "name": "moderateur",
+          "permissions": 2146955223,
+          "color": 11342935,
+          "hoist": true,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Informations",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 2048,
+            "deny": 0
+          }],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "accueil-et-regles",
+          "position": 1,
+          "topic": "Visible par tous les membres. Publiez des r\u00e8gles que votre communaut\u00e9 doit respecter !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 2048,
+            "deny": 0
+          }],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "annonces",
+          "position": 2,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde.  Publiez des annonces importantes !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 2048,
+            "deny": 0
+          }],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "documents",
+          "position": 3,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. N'h\u00e9sitez pas \u00e0 afficher toute ressource importante !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 2048,
+            "deny": 0
+          }],
+          "id": 4,
+          "type": 0
+        }, {
+          "name": "Salons textuels",
+          "position": 4,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 5,
+          "topic": "Ici, tout le monde peut parler !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 0
+        }, {
+          "name": "\u00e9v\u00e9nements",
+          "position": 6,
+          "topic": "Des \u00e9v\u00e9nements \u00e0 venir ? Postez-les ou discutez-les ici avec votre communaut\u00e9 !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 7,
+          "type": 0
+        }, {
+          "name": "hors-sujet",
+          "position": 7,
+          "topic": "Vous avez quelque chose qui sort du sujet ? Ce channel est fait pour vous !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 8,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 8,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 822091792
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 0,
+            "deny": 0
+          }],
+          "id": 9,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 9,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 822091792
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 0,
+            "deny": 0
+          }],
+          "id": 10,
+          "type": 2
+        }, {
+          "name": "La Communaut\u00e9",
+          "position": 10,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 822091792
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 0,
+            "deny": 0
+          }],
+          "id": 11,
+          "type": 2
+        }, {
+          "name": "Admins/Moderateurs seulement",
+          "position": 11,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 1049600
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 1049600,
+            "deny": 0
+          }],
+          "id": 12,
+          "type": 4
+        }, {
+          "name": "mod\u00e9ration-chat-prive",
+          "position": 12,
+          "topic": "Les canaux de cette cat\u00e9gorie ne sont accessibles qu'aux membres ayant le r\u00f4le de \"mod\u00e9rateur\", que vous pouvez attribuer dans Param\u00e8tres du serveur > Membres.",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 12,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 1049600
+          }, {
+            "id": 2,
+            "type": 0,
+            "allow": 1049600,
+            "deny": 0
+          }],
+          "id": 13,
+          "type": 0
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 6,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-3",
+    "title": "Famille et amis",
+    "description": "**Et tes proches.** Pour vous retrouver, vous amuser et être ensemble, comme à la maison.",
+    "longDescription": "Pour vous retrouver, vous amuser et être ensemble, comme à la maison.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["3", "6"],
+    "mtag": "6",
+    "dprops": {
+      "code": "EenfvZjkGtW8",
+      "name": "Famille et amis \u2192Par mobarzik#0110, Discord Patterns",
+      "description": "Pour vous retrouver, vous amuser et \u00eatre ensemble. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:23:44+00:00",
+      "updated_at": "2020-05-23T10:23:44+00:00",
+      "source_guild_id": "713688178573180999",
+      "serialized_source_guild": {
+        "name": "Amis et famille",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104324689,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Salons textuels",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 1,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "jeux-vid\u00e9os",
+          "position": 2,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "musique",
+          "position": 3,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [],
+          "id": 4,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 4,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 5,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 2
+        }, {
+          "name": "Salle de stream",
+          "position": 6,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 5,
+          "permission_overwrites": [],
+          "id": 7,
+          "type": 2
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 2,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-4",
+    "title": "Groupe d'étude",
+    "description": "Pour streamer des cours, poser des questions et étudier ensemble.",
+    "longDescription": "**Enseignez et apprenez ensemble.** Pour streamer des cours, poser des questions et étudier ensemble.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["4", "6"],
+    "mtag": "4",
+    "dprops": {
+      "code": "tb62KWwjyzFx",
+      "name": "Groupe d'\u00e9tude \u2192Par mobarzik#0110, Discord Patterns",
+      "description": "Pour streamer des cours, poser des questions et \u00e9tudier ensemble. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:26:28+00:00",
+      "updated_at": "2020-05-23T10:26:28+00:00",
+      "source_guild_id": "713689967590768640",
+      "serialized_source_guild": {
+        "name": "Groupe d'\u00e9tude",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104324673,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Informations",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "accueil-et-r\u00e8gles",
+          "position": 1,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "notes-ressources",
+          "position": 2,
+          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Poste ici les notes et ressources importantes !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [{
+            "id": 0,
+            "type": 0,
+            "allow": 0,
+            "deny": 2048
+          }],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "Salons textuels",
+          "position": 3,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 4,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 4,
+          "topic": "Ici, tout le monde peut parler !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 0
+        }, {
+          "name": "aide-aux-devoirs",
+          "position": 5,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 0
+        }, {
+          "name": "planification-session",
+          "position": 6,
+          "topic": "Tu souhaites planifier une rencontre ou une session de travail pour ton groupe ? Chat ici pour en parler !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 7,
+          "type": 0
+        }, {
+          "name": "hors-sujet",
+          "position": 7,
+          "topic": "Tu veux dire quelque chose de random et qui n'a pas de rapport avec le travail ? Ce salon est fait pour toi !",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 8,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 8,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 9,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 9,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [],
+          "id": 10,
+          "type": 2
+        }, {
+          "name": "Groupe d'\u00e9tude 1",
+          "position": 10,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [],
+          "id": 11,
+          "type": 2
+        }, {
+          "name": "Groupe d'\u00e9tude 2",
+          "position": 11,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 9,
+          "permission_overwrites": [],
+          "id": 12,
+          "type": 2
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 5,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-5",
+    "title": "Tout le reste",
+    "description": "Fais coucou, partage ton écran ou discute tout simplement.",
+    "longDescription": "**Ou simplement se retrouver, peu importe la raison.** Fais coucou, partage ton écran ou discute tout simplement.  *Ceci est une adapation du modèle officiel de Discord*",
+    "emoji": "🎀",
+    "tags": ["3"],
+    "mtag": "3",
+    "dprops": {
+      "code": "Pxw55fvYp85K",
+      "name": "Tout le reste, commu g\u00e9n\u00e9rale \u2192Par mobarzik#0110, Discord Patterns",
+      "description": "Fais coucou, partage ton \u00e9cran ou discute tout simplement. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-23T10:31:02+00:00",
+      "updated_at": "2020-05-23T10:31:02+00:00",
+      "source_guild_id": "713694910523506688",
+      "serialized_source_guild": {
+        "name": "Tout le reste",
+        "description": null,
+        "region": "europe",
+        "verification_level": 0,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 0,
+        "preferred_locale": "en-US",
+        "afk_timeout": 300,
+        "roles": [{
+          "id": 0,
+          "name": "@everyone",
+          "permissions": 104324673,
+          "color": 0,
+          "hoist": false,
+          "mentionable": false
+        }],
+        "channels": [{
+          "name": "Salons textuels",
+          "position": 0,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 1,
+          "type": 4
+        }, {
+          "name": "general",
+          "position": 1,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [],
+          "id": 2,
+          "type": 0
+        }, {
+          "name": "hors-sujet",
+          "position": 2,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 1,
+          "permission_overwrites": [],
+          "id": 3,
+          "type": 0
+        }, {
+          "name": "Canaux vocaux",
+          "position": 3,
+          "topic": "",
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": null,
+          "permission_overwrites": [],
+          "id": 4,
+          "type": 4
+        }, {
+          "name": "Lounge",
+          "position": 4,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 5,
+          "type": 2
+        }, {
+          "name": "General",
+          "position": 5,
+          "topic": null,
+          "bitrate": 64000,
+          "user_limit": 0,
+          "nsfw": false,
+          "rate_limit_per_user": 0,
+          "parent_id": 4,
+          "permission_overwrites": [],
+          "id": 6,
+          "type": 2
+        }],
+        "afk_channel_id": null,
+        "system_channel_id": 2,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  }
+]

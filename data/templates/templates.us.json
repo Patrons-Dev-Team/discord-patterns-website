@@ -1,10 +1,10 @@
 [{
     "id": "0",
-    "title": "GA Community template",
+    "title": "GA Community",
     "description": "Official GA Community template",
     "longDescription": "Since **GA Community** is an official partner, you can create your own giveway server on D-Patterns. GA Community has been making giveaways since 3 years.",
     "emoji": "🎀",
-    "tags": ["0", "1", "2", "3"],
+    "tags": ["0", "2", "3"],
     "mtag": "0",
     "dprops": {
       "code": "EPAukKQArtg3",
@@ -2427,7 +2427,7 @@
     "description": "Unofficial REX Network template",
     "longDescription": "Welcome to REX Network. REX Network is the biggest, highly loved and most authentic gaming network on Steam.    We deliver all the major services and gaming servers you can think of.",
     "emoji": "🎁",
-    "tags": ["0", "1", "2", "3"],
+    "tags": ["0", "2", "3"],
     "mtag": "0",
     "dprops": {
       "code": "z7XbwSqNZudW",
