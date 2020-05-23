@@ -82,10 +82,12 @@ export default {
       DETAILS_BUTTON: 'Details'
     },
     tags: {
-      '0': 'giveaways',
-      '1': 'steam',
       '2': 'gaming',
-      '3': 'social'
+      '3': 'community',
+      '1': 'school',
+      '5': 'roleplay',
+      '6': 'friends',
+      '0': 'giveaways'
     }
   },
   perms: {

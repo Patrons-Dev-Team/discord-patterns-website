@@ -1,10 +1,19 @@
 export default {
-  /* giveaways */
-  '0': 'mdi-gift',
-  /* steam */
-  '1': 'mdi-steam',
   /* gaming */
   '2': 'mdi-gamepad-square',
-  /* social */
-  '3': 'mdi-message'
+
+  /* community */
+  '3': 'mdi-message',
+
+  /* school */
+  '1': 'mdi-lead-pencil',
+
+  /* roleplay */
+  '5': 'mdi-drama-mask',
+
+  /* friends */
+  '6': 'mdi-mother-heart',
+
+  /* giveaways */
+  '0': 'mdi-gift'
 }
