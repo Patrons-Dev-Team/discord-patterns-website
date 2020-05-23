@@ -12,7 +12,7 @@ export default {
   '5': 'mdi-drama-masks',
 
   /* friends */
-  '6': 'mdi-mother-heart',
+  '4': 'mdi-mother-heart',
 
   /* giveaways */
   '0': 'mdi-gift'

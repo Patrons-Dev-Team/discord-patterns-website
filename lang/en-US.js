@@ -86,7 +86,7 @@ export default {
       '3': 'community',
       '1': 'school',
       '5': 'roleplay',
-      '6': 'friends',
+      '4': 'friends',
       '0': 'giveaways'
     }
   },

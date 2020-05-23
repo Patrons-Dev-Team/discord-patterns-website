@@ -98,12 +98,6 @@ export default {
     card: {
       CREATE_BUTTON: 'Créer mon serveur',
       DETAILS_BUTTON: 'Détails'
-    },
-    tags: {
-      '0': 'giveaways',
-      '1': 'steam',
-      '2': 'gaming',
-      '3': 'social'
     }
   },
   perms: {

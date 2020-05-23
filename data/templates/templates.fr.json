@@ -3,7 +3,7 @@
     "title": "Cours de dance",
     "description": "Pour vous donner rendez-vous, vous organiser et rester en contact.",
     "longDescription": "Pour vous donner rendez-vous, vous organiser et rester en contact.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
+    "emoji": "🎵",
     "tags": ["3"],
     "mtag": "3",
     "dprops": {
@@ -205,7 +205,7 @@
     "title": "Club de lecture",
     "description": "Pour collaborer, conceptualiser et partager tes créations.",
     "longDescription": "**Créez ensemble.** Pour collaborer, conceptualiser et partager tes créations.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
+    "emoji": "🖌️",
     "tags": ["3", "4"],
     "mtag": "3",
     "dprops": {
@@ -402,7 +402,7 @@
     "title": "Communauté globale",
     "description": "Pour vous coordonner, partager des ressources et animer des événements.",
     "longDescription": "**Rassemble tes amis du monde entier.** Pour vous coordonner, partager des ressources et animer des événements.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
+    "emoji": "🌍",
     "tags": ["3"],
     "mtag": "3",
     "dprops": {
@@ -703,10 +703,10 @@
   {
     "id": "dfr-3",
     "title": "Famille et amis",
-    "description": "**Et tes proches.** Pour vous retrouver, vous amuser et être ensemble, comme à la maison.",
+    "description": "Et tes proches. Pour vous retrouver, vous amuser et être ensemble, comme à la maison.",
     "longDescription": "Pour vous retrouver, vous amuser et être ensemble, comme à la maison.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
-    "tags": ["3", "6"],
+    "emoji": "❤️",
+    "tags": ["3", "4"],
     "mtag": "6",
     "dprops": {
       "code": "EenfvZjkGtW8",
@@ -839,8 +839,8 @@
     "title": "Groupe d'étude",
     "description": "Pour streamer des cours, poser des questions et étudier ensemble.",
     "longDescription": "**Enseignez et apprenez ensemble.** Pour streamer des cours, poser des questions et étudier ensemble.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
-    "tags": ["4", "6"],
+    "emoji": "📕",
+    "tags": ["1", "4"],
     "mtag": "4",
     "dprops": {
       "code": "tb62KWwjyzFx",
@@ -1048,7 +1048,7 @@
     "title": "Tout le reste",
     "description": "Fais coucou, partage ton écran ou discute tout simplement.",
     "longDescription": "**Ou simplement se retrouver, peu importe la raison.** Fais coucou, partage ton écran ou discute tout simplement.  *Ceci est une adapation du modèle officiel de Discord*",
-    "emoji": "🎀",
+    "emoji": "🎮",
     "tags": ["3"],
     "mtag": "3",
     "dprops": {
