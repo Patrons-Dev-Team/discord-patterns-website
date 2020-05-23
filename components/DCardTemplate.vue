@@ -138,9 +138,7 @@ export default {
         }
       }),
       emojiSrc,
-      roles: this.template.dprops.serialized_source_guild.roles
-        .filter((role) => role.id !== 0)
-        .reverse(),
+      roles: this.template.dprops.serialized_source_guild.roles.reverse(),
       channels: arrayToTree(
         this.template.dprops.serialized_source_guild.channels,
         { dataField: null, parentId: 'parent_id' }
