@@ -110,9 +110,12 @@ export default {
     error,
     payload,
     route: { path },
-    app: { $templatesApi }
+    app: { $templatesApi, i18n }
   }) {
-    const templateData = await $templatesApi.getTemplateById('us', params.id)
+    const templateData = await $templatesApi.getTemplateById(
+      i18n.locale,
+      params.id
+    )
     if (!templateData) {
       error({ statusCode: 404, message: 'Template not found' })
       return

@@ -131,7 +131,7 @@ export default {
   },
   async fetch() {
     const res = await this.$templatesApi.search(
-      'us',
+      this.$i18n.locale,
       this.search,
       this.selectedTags.map(String),
       {
