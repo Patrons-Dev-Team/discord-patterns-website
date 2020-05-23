@@ -121,7 +121,7 @@ export default async () => {
       [
         '~/modules/templates/',
         {
-          langs: ['us']
+          langs: ['us', 'fr']
         }
       ],
       // Doc: https://github.com/aceforth/nuxt-optimized-images
