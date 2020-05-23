@@ -83,7 +83,7 @@ export default {
     },
     tags: {
       '2': 'gaming',
-      '3': 'community',
+      '3': 'social',
       '1': 'school',
       '5': 'roleplay',
       '4': 'friends',

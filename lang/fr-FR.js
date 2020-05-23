@@ -98,6 +98,14 @@ export default {
     card: {
       CREATE_BUTTON: 'Créer mon serveur',
       DETAILS_BUTTON: 'Détails'
+    },
+    tags: {
+      '2': 'jeux-vidéos',
+      '3': 'social',
+      '1': 'scolaire',
+      '5': 'jeu de rôle',
+      '4': 'amis',
+      '0': 'giveaways'
     }
   },
   perms: {

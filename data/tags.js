@@ -2,7 +2,7 @@ export default {
   /* gaming */
   '2': 'mdi-gamepad-square',
 
-  /* community */
+  /* social */
   '3': 'mdi-message',
 
   /* school */
