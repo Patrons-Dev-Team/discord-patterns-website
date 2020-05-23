@@ -9,7 +9,7 @@ export default {
   '1': 'mdi-lead-pencil',
 
   /* roleplay */
-  '5': 'mdi-drama-mask',
+  '5': 'mdi-drama-masks',
 
   /* friends */
   '6': 'mdi-mother-heart',
