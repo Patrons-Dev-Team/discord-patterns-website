@@ -7,7 +7,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <d-footer class="mt-10" />
+    <d-footer :locale-changer-props="{ fallbackToIndex: true }" class="mt-10" />
   </v-app>
 </template>
 

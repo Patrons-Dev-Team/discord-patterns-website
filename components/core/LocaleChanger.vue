@@ -10,7 +10,7 @@
       <v-list-item
         v-for="locale in availableLocales"
         :key="locale.code"
-        :to="switchLocalePath(locale.code)"
+        :to="getLocalSwitchPath(locale.code)"
       >
         <v-list-item-icon dense>
           <div class="d-flex justify-center align-center">
@@ -33,8 +33,11 @@ export default {
   components: {
     CountryFlag
   },
-  data() {
-    return {}
+  props: {
+    fallbackToIndex: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     availableLocales() {
@@ -42,6 +45,13 @@ export default {
     },
     displayLocale() {
       return this.$i18n.locale
+    }
+  },
+  methods: {
+    getLocalSwitchPath(code) {
+      return this.fallbackToIndex
+        ? this.localePath('index', code)
+        : this.switchLocalePath(code)
     }
   }
 }

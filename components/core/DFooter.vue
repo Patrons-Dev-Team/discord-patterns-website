@@ -40,7 +40,9 @@
               </li>
             </ul>
           </v-col>
-          <v-col lg="1" cols="6"> <LocaleChanger /></v-col>
+          <v-col lg="1" cols="6">
+            <LocaleChanger v-bind="localeChangerProps"
+          /></v-col>
         </v-row>
       </v-container>
       <v-container class="caption py-3 px-7">
@@ -65,6 +67,14 @@
 import LocaleChanger from '~/components/core/LocaleChanger'
 export default {
   components: { LocaleChanger },
+  props: {
+    localeChangerProps: {
+      type: Object,
+      default: () => {
+        return {}
+      }
+    }
+  },
   data() {
     return {
       version: process.env.VERSION,
