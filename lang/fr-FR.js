@@ -73,7 +73,7 @@ export default {
   },
   listing: {
     index: {
-      TITLE: 'Liste de superbes modèles Discord',
+      TITLE: 'Liste de modèles Discord',
       DESCRIPTION:
         "Créer ton serveur discord en 1 minute avec un modèle prêt à l'emploi !"
     },
