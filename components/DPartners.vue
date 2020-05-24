@@ -53,11 +53,10 @@ export default {
       const partnerObj = JSON.parse(partnerJson)
       date = partnerObj.date
       id = partnerObj.id
-
+      id = id >= listLength ? 0 : id
       if (Date.now() - date > 1000 * 60 * 2) {
         id++
         id = id >= listLength ? 0 : id
-
         window.sessionStorage.setItem(
           'partner',
           JSON.stringify({
