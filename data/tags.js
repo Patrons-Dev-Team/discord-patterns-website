@@ -1,4 +1,4 @@
-export default {
+export const tags = {
   /* gaming */
   '2': 'mdi-gamepad-square',
 
@@ -17,3 +17,5 @@ export default {
   /* giveaways */
   '0': 'mdi-gift'
 }
+
+export const order = ['2', '3', '1', '5', '4', '0']

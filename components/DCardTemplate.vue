@@ -115,7 +115,7 @@
 <script>
 import { arrayToTree } from 'performant-array-to-tree'
 import { parse } from 'twemoji-parser'
-import tagsIcons from '~/data/tags'
+import { tags as tagsIcons } from '~/data/tags'
 export default {
   props: {
     template: {

@@ -25,14 +25,14 @@
         <v-col cols="12" class="py-0 my-0">
           <div>
             <v-chip
-              v-for="(icon, id) in tags"
+              v-for="id in order"
               :key="id"
               outlined
               class="mr-2 my-2"
               nuxt
               :to="localePath({ name: 'browse', query: { tags: [id] } })"
             >
-              <v-icon left>{{ icon }}</v-icon>
+              <v-icon left>{{ tags[id] }}</v-icon>
               {{ $t(`listing.tags.${id}`) }}
             </v-chip>
           </div>
@@ -94,7 +94,7 @@
 <script>
 import DPartners from '~/components/DPartners'
 import DCardTemplate from '~/components/DCardTemplate'
-import tags from '~/data/tags'
+import { tags, order } from '~/data/tags'
 export default {
   components: {
     DCardTemplate,
@@ -118,6 +118,7 @@ export default {
   data() {
     return {
       tags,
+      order,
       search: ''
     }
   },

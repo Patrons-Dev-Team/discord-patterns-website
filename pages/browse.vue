@@ -30,8 +30,8 @@
             column
             @change="changeTags"
           >
-            <v-chip v-for="(icon, id) in tags" :key="id" outlined filter nuxt>
-              <v-icon left>{{ icon }}</v-icon>
+            <v-chip v-for="id in order" :key="id" outlined filter nuxt>
+              <v-icon left>{{ tags[id] }}</v-icon>
               {{ $t(`listing.tags.${id}`) }}
             </v-chip>
           </v-chip-group>
@@ -122,7 +122,7 @@
 <script>
 import DPartners from '~/components/DPartners'
 import DCardTemplate from '~/components/DCardTemplate'
-import tags from '~/data/tags'
+import { tags, order } from '~/data/tags'
 import { getDefaultBrowseOrder, validateBrowseQuery } from '~/utils/utils'
 export default {
   components: {
@@ -133,7 +133,7 @@ export default {
     const res = await this.$templatesApi.search(
       this.$i18n.locale,
       this.search,
-      this.selectedTags.map(String),
+      this.selectedTags.map((num) => order[num]),
       {
         itemsPerPage: 300
       }
@@ -143,7 +143,9 @@ export default {
   },
   asyncData({ query }) {
     return {
-      selectedTags: (query.tags ? [...query.tags] : []).map(Number),
+      selectedTags: (query.tags ? [...query.tags] : []).map((num) =>
+        Number(order.indexOf(num))
+      ),
       search: query.q || '',
       options: {
         sortBy: query.sort || 'most-recent',
@@ -165,6 +167,7 @@ export default {
   data() {
     return {
       tags,
+      order,
       templates: [],
       selectedTags: [],
       options: {

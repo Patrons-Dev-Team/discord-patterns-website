@@ -246,7 +246,7 @@ import marked from 'marked'
 import sanitizeHtml from 'sanitize-html'
 import { fr } from 'date-fns/locale'
 import { convertPerms } from '~/lib/discordperms'
-import tagsIcons from '~/data/tags'
+import { tags as tagsIcons } from '~/data/tags'
 import DTemplateDetails from '~/components/DTemplateDetails'
 const localesDateFns = {
   fr

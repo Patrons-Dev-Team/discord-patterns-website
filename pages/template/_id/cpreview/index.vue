@@ -101,7 +101,7 @@
 <script>
 import { parse } from 'twemoji-parser'
 import { arrayToTree } from 'performant-array-to-tree'
-import tagsIcons from '~/data/tags'
+import { tags as tagsIcons } from '~/data/tags'
 
 export default {
   layout: 'content-only',
