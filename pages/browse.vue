@@ -135,7 +135,9 @@ export default {
       this.search,
       this.selectedTags.map((num) => order[num]),
       {
-        itemsPerPage: 300
+        itemsPerPage: 300,
+        sortDesc: this.options.sortDesc,
+        sortBy: this.options.sortBy
       }
     )
     this.templates = res.result

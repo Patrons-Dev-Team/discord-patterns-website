@@ -70,7 +70,7 @@ export default {
         page: `${options.page}`
       })
     }
-    const sortFunc = getSortFunction(options.sort, options.sortDesc)
+    const sortFunc = getSortFunction(options.sortBy, options.sortDesc)
     results.result = results.result
       .filter((template) =>
         tags.every((searchTag) => template.tags.includes(searchTag))
@@ -81,30 +81,22 @@ export default {
 }
 
 function getSortFunction(sort, sortDesc) {
-  switch (sort) {
-    case sort === 'most-recent' && !sortDesc:
-      return sortByUpdatedTime
-
-    case sort === 'most-recent' && sortDesc:
-      return sortByUpdatedTimeDesc
-
-    case sort === 'most-popular' && !sortDesc:
-      return sortByUses
-
-    case sort === 'most-popular' && sortDesc:
-      return sortByUsesDesc
-
-    case sort === 'alphabetical' && !sortDesc:
-      return sortByTitle
-
-    case sort === 'alphabetical' && sortDesc:
-      return sortByTitleDesc
-    default:
-      return sortByUpdatedTimeDesc
+  if (sort === 'most-recent' && !sortDesc) {
+    return sortByUpdatedTime
+  } else if (sort === 'most-popular' && !sortDesc) {
+    return sortByUses
+  } else if (sort === 'most-popular' && sortDesc) {
+    return sortByUsesDesc
+  } else if (sort === 'alphabetical' && !sortDesc) {
+    return sortByTitle
+  } else if (sort === 'alphabetical' && sortDesc) {
+    return sortByTitleDesc
+  } else {
+    return sortByUpdatedTimeDesc
   }
 }
 function sortByUpdatedTime(a, b) {
-  return new Date(a.dprops.updated_at) - new Date(b.dpops.updated_at)
+  return new Date(a.dprops.updated_at) - new Date(b.dprops.updated_at)
 }
 
 function sortByUpdatedTimeDesc(a, b) {
@@ -112,17 +104,17 @@ function sortByUpdatedTimeDesc(a, b) {
 }
 
 function sortByUses(a, b) {
-  return a.dpops.usage_count - b.dpops.usage_count
+  return a.dprops.usage_count - b.dprops.usage_count
 }
 
 function sortByUsesDesc(a, b) {
-  return b.dpops.usage_count - a.dpops.usage_count
+  return b.dprops.usage_count - a.dprops.usage_count
 }
 
 function sortByTitle(a, b) {
-  return a.title - b.title
+  return a.title === b.title ? 0 : +(a.title > b.title) || -1
 }
 
 function sortByTitleDesc(a, b) {
-  return a.title - b.title
+  return b.title === a.title ? 0 : +(b.title > a.title) || -1
 }
