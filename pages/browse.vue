@@ -133,7 +133,7 @@ export default {
     const res = await this.$templatesApi.search(
       this.$i18n.locale,
       this.search,
-      this.selectedTags.map((num) => order[num]),
+      this.selectedTagsIds,
       {
         itemsPerPage: 300,
         sortDesc: this.options.sortDesc,
@@ -209,6 +209,9 @@ export default {
         'items-per-page-text': this.$t('dataTable.ITEMS_PER_PAGE_TEXT'),
         'items-per-page-all-text': this.$t('dataTable.ITEMS_PER_PAGE_ALL_TEXT')
       }
+    },
+    selectedTagsIds() {
+      return this.selectedTags.map((num) => order[num])
     }
   },
   watchQuery: ['q', 'tags', 'sort', 'order'],
@@ -227,7 +230,7 @@ export default {
         this.selectedTags = (this.$route.query.tags
           ? [...this.$route.query.tags]
           : []
-        ).map(Number)
+        ).map((num) => Number(order.indexOf(num)))
         this.performSearch()
       }
     },
@@ -274,7 +277,7 @@ export default {
             name: 'browse',
             query: {
               q: this.search,
-              tags: this.selectedTags,
+              tags: this.selectedTagsIds,
               sort: this.options.sortBy,
               order: Number(this.options.sortDesc),
               page: 1,
