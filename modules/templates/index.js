@@ -17,14 +17,11 @@ export default async function templatesModule(moduleOptions) {
   for (const lang of this.options.i18n.locales.map((locale) => locale.code)) {
     const templates = await getAllTemplates(lang)
     logger.info(`${templates.length} templates for ${lang} locale`)
-    this.nuxt.hook('generate:extendRoutes', (routes) => {
-      templateRoutesGenerator(
-        this.options.i18n.defaultLocale === lang ? null : lang,
-        templates,
-        routes
-      )
-      logger.info(`Added payloads and generate routes for ${lang} templates`)
-    })
+    templateRoutesGenerator(
+      this.options.i18n.defaultLocale === lang ? null : lang,
+      templates,
+      this.options.generate.routes
+    )
   }
   this.nuxt.hook('generate:extendRoutes', (routes) => {
     logger.info(`${routes.length} routes to generate`)
