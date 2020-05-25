@@ -17,7 +17,7 @@
             </span>
           </v-list-item-title>
           <v-list-item-subtitle>
-            <div>
+            <div class="d-flex flex-wrap">
               <v-chip
                 v-for="tag in tags"
                 :key="tag.id"
