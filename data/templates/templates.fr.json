@@ -1,6 +1,6 @@
 [{
     "id": "dfr-0",
-    "title": "Cours de dance",
+    "title": "Cours de danse",
     "description": "Pour vous donner rendez-vous, vous organiser et rester en contact.",
     "longDescription": "Pour vous donner rendez-vous, vous organiser et rester en contact.  *Ceci est une adapation du modèle officiel de Discord*",
     "emoji": "🎵",
@@ -8,7 +8,7 @@
     "mtag": "3",
     "dprops": {
       "code": "F8SjaPbpSYnF",
-      "name": "Cours de dance \u2192Par mobarzik#0110, Discord Patterns",
+      "name": "Cours de danse \u2192Par mobarzik#0110, Discord Patterns",
       "description": "Pour vous donner rendez-vous, vous organiser et rester en contact. Propos\u00e9 par D-Patterns https://bit.ly/DiscordPatterns",
       "usage_count": 0,
       "creator_id": "695372268364103772",
