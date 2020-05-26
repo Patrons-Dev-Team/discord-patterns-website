@@ -77,7 +77,7 @@ export default async () => {
           content: '#7289DA'
         }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: base + 'favicon.ico' }]
     },
     /*
      ** Customize the progress-bar color
