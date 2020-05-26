@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "dfr-0",
     "title": "Cours de danse",
     "description": "Pour vous donner rendez-vous, vous organiser et rester en contact.",
@@ -31,167 +32,189 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104324673,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Informations",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
+        "roles": [
+          {
             "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "accueil-et-r\u00e8gles",
-          "position": 1,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "annonces",
-          "position": 2,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. C'est pour les annonces importantes.",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "documents",
-          "position": 3,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde.",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 4,
-          "type": 0
-        }, {
-          "name": "Salons textuels",
-          "position": 4,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 5,
-          "topic": "Ici, tout le monde peut parler !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 0
-        }, {
-          "name": "planification-r\u00e9union",
-          "position": 6,
-          "topic": "Vous planifiez des rencontres pour votre communaut\u00e9? Postez-les et discutez-en ici!",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 7,
-          "type": 0
-        }, {
-          "name": "hors-sujet",
-          "position": 7,
-          "topic": "Vous avez quelque chose \u00e0 dire au hasard et hors sujet? Ce channel est pour vous!",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 8,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 8,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 9,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 9,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [],
-          "id": 10,
-          "type": 2
-        }, {
-          "name": "Salle de r\u00e9union",
-          "position": 10,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [],
-          "id": 11,
-          "type": 2
-        }],
+            "name": "@everyone",
+            "permissions": 104324673,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Informations",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "accueil-et-r\u00e8gles",
+            "position": 1,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "annonces",
+            "position": 2,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. C'est pour les annonces importantes.",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "documents",
+            "position": 3,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde.",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 4,
+            "type": 0
+          },
+          {
+            "name": "Salons textuels",
+            "position": 4,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 5,
+            "topic": "Ici, tout le monde peut parler !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 0
+          },
+          {
+            "name": "planification-r\u00e9union",
+            "position": 6,
+            "topic": "Vous planifiez des rencontres pour votre communaut\u00e9? Postez-les et discutez-en ici!",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 7,
+            "type": 0
+          },
+          {
+            "name": "hors-sujet",
+            "position": 7,
+            "topic": "Vous avez quelque chose \u00e0 dire au hasard et hors sujet? Ce channel est pour vous!",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 8,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 8,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 9,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 9,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [],
+            "id": 10,
+            "type": 2
+          },
+          {
+            "name": "Salle de r\u00e9union",
+            "position": 10,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [],
+            "id": 11,
+            "type": 2
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 6,
         "system_channel_flags": 0,
@@ -233,162 +256,182 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104324673,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Informations",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
+        "roles": [
+          {
             "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "accueil-et-r\u00e8gles",
-          "position": 1,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "annonces",
-          "position": 2,
-          "topic": "Visible par tous les membres. Publiez des annonces importantes !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "Salons textuels",
-          "position": 3,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 4,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 4,
-          "topic": "Ici, tout le monde peut parler !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 0
-        }, {
-          "name": "\u00e9v\u00e9nements",
-          "position": 5,
-          "topic": "Des \u00e9v\u00e9nements \u00e0 venir? Postez-les ou discutez-en ici avec votre communaut\u00e9 !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 0
-        }, {
-          "name": "id\u00e9es-et-suggestions",
-          "position": 6,
-          "topic": "Vous souhaitez partager certains concepts ou faire rebondir certaines id\u00e9es ? Publiez-les ici pour obtenir des suggestions et des commentaires !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 7,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 7,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 8,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 8,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 8,
-          "permission_overwrites": [],
-          "id": 9,
-          "type": 2
-        }, {
-          "name": "Rencontre",
-          "position": 9,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 8,
-          "permission_overwrites": [],
-          "id": 10,
-          "type": 2
-        }, {
-          "name": "Salle de diffusion",
-          "position": 10,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 8,
-          "permission_overwrites": [],
-          "id": 11,
-          "type": 2
-        }],
+            "name": "@everyone",
+            "permissions": 104324673,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Informations",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "accueil-et-r\u00e8gles",
+            "position": 1,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "annonces",
+            "position": 2,
+            "topic": "Visible par tous les membres. Publiez des annonces importantes !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "Salons textuels",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 4,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 4,
+            "topic": "Ici, tout le monde peut parler !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 0
+          },
+          {
+            "name": "\u00e9v\u00e9nements",
+            "position": 5,
+            "topic": "Des \u00e9v\u00e9nements \u00e0 venir? Postez-les ou discutez-en ici avec votre communaut\u00e9 !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 0
+          },
+          {
+            "name": "id\u00e9es-et-suggestions",
+            "position": 6,
+            "topic": "Vous souhaitez partager certains concepts ou faire rebondir certaines id\u00e9es ? Publiez-les ici pour obtenir des suggestions et des commentaires !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 7,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 7,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 8,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 8,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [],
+            "id": 9,
+            "type": 2
+          },
+          {
+            "name": "Rencontre",
+            "position": 9,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [],
+            "id": 10,
+            "type": 2
+          },
+          {
+            "name": "Salle de diffusion",
+            "position": 10,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [],
+            "id": 11,
+            "type": 2
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 5,
         "system_channel_flags": 0,
@@ -430,268 +473,312 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104189505,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }, {
-          "id": 2,
-          "name": "moderateur",
-          "permissions": 2146955223,
-          "color": 11342935,
-          "hoist": true,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Informations",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
+        "roles": [
+          {
             "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }, {
+            "name": "@everyone",
+            "permissions": 104189505,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          },
+          {
             "id": 2,
-            "type": 0,
-            "allow": 2048,
-            "deny": 0
-          }],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "accueil-et-regles",
-          "position": 1,
-          "topic": "Visible par tous les membres. Publiez des r\u00e8gles que votre communaut\u00e9 doit respecter !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }, {
+            "name": "moderateur",
+            "permissions": 2146955223,
+            "color": 11342935,
+            "hoist": true,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Informations",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 2048,
+                "deny": 0
+              }
+            ],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "accueil-et-regles",
+            "position": 1,
+            "topic": "Visible par tous les membres. Publiez des r\u00e8gles que votre communaut\u00e9 doit respecter !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 2048,
+                "deny": 0
+              }
+            ],
             "id": 2,
-            "type": 0,
-            "allow": 2048,
-            "deny": 0
-          }],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "annonces",
-          "position": 2,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde.  Publiez des annonces importantes !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 2048,
-            "deny": 0
-          }],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "documents",
-          "position": 3,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. N'h\u00e9sitez pas \u00e0 afficher toute ressource importante !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 2048,
-            "deny": 0
-          }],
-          "id": 4,
-          "type": 0
-        }, {
-          "name": "Salons textuels",
-          "position": 4,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 5,
-          "topic": "Ici, tout le monde peut parler !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 0
-        }, {
-          "name": "\u00e9v\u00e9nements",
-          "position": 6,
-          "topic": "Des \u00e9v\u00e9nements \u00e0 venir ? Postez-les ou discutez-les ici avec votre communaut\u00e9 !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 7,
-          "type": 0
-        }, {
-          "name": "hors-sujet",
-          "position": 7,
-          "topic": "Vous avez quelque chose qui sort du sujet ? Ce channel est fait pour vous !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 8,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 8,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 822091792
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 0,
-            "deny": 0
-          }],
-          "id": 9,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 9,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 822091792
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 0,
-            "deny": 0
-          }],
-          "id": 10,
-          "type": 2
-        }, {
-          "name": "La Communaut\u00e9",
-          "position": 10,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 822091792
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 0,
-            "deny": 0
-          }],
-          "id": 11,
-          "type": 2
-        }, {
-          "name": "Admins/Moderateurs seulement",
-          "position": 11,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 1049600
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 1049600,
-            "deny": 0
-          }],
-          "id": 12,
-          "type": 4
-        }, {
-          "name": "mod\u00e9ration-chat-prive",
-          "position": 12,
-          "topic": "Les canaux de cette cat\u00e9gorie ne sont accessibles qu'aux membres ayant le r\u00f4le de \"mod\u00e9rateur\", que vous pouvez attribuer dans Param\u00e8tres du serveur > Membres.",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 12,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 1049600
-          }, {
-            "id": 2,
-            "type": 0,
-            "allow": 1049600,
-            "deny": 0
-          }],
-          "id": 13,
-          "type": 0
-        }],
+            "type": 0
+          },
+          {
+            "name": "annonces",
+            "position": 2,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde.  Publiez des annonces importantes !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 2048,
+                "deny": 0
+              }
+            ],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "documents",
+            "position": 3,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. N'h\u00e9sitez pas \u00e0 afficher toute ressource importante !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 2048,
+                "deny": 0
+              }
+            ],
+            "id": 4,
+            "type": 0
+          },
+          {
+            "name": "Salons textuels",
+            "position": 4,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 5,
+            "topic": "Ici, tout le monde peut parler !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 0
+          },
+          {
+            "name": "\u00e9v\u00e9nements",
+            "position": 6,
+            "topic": "Des \u00e9v\u00e9nements \u00e0 venir ? Postez-les ou discutez-les ici avec votre communaut\u00e9 !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 7,
+            "type": 0
+          },
+          {
+            "name": "hors-sujet",
+            "position": 7,
+            "topic": "Vous avez quelque chose qui sort du sujet ? Ce channel est fait pour vous !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 8,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 8,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 822091792
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 0,
+                "deny": 0
+              }
+            ],
+            "id": 9,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 9,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 822091792
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 0,
+                "deny": 0
+              }
+            ],
+            "id": 10,
+            "type": 2
+          },
+          {
+            "name": "La Communaut\u00e9",
+            "position": 10,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 822091792
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 0,
+                "deny": 0
+              }
+            ],
+            "id": 11,
+            "type": 2
+          },
+          {
+            "name": "Admins/Moderateurs seulement",
+            "position": 11,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1049600
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 1049600,
+                "deny": 0
+              }
+            ],
+            "id": 12,
+            "type": 4
+          },
+          {
+            "name": "mod\u00e9ration-chat-prive",
+            "position": 12,
+            "topic": "Les canaux de cette cat\u00e9gorie ne sont accessibles qu'aux membres ayant le r\u00f4le de \"mod\u00e9rateur\", que vous pouvez attribuer dans Param\u00e8tres du serveur > Membres.",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 12,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1049600
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 1049600,
+                "deny": 0
+              }
+            ],
+            "id": 13,
+            "type": 0
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 6,
         "system_channel_flags": 0,
@@ -733,99 +820,109 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104324689,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Salons textuels",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 1,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "jeux-vid\u00e9os",
-          "position": 2,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "musique",
-          "position": 3,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [],
-          "id": 4,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 4,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 5,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 2
-        }, {
-          "name": "Salle de stream",
-          "position": 6,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 5,
-          "permission_overwrites": [],
-          "id": 7,
-          "type": 2
-        }],
+        "roles": [
+          {
+            "id": 0,
+            "name": "@everyone",
+            "permissions": 104324689,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Salons textuels",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 1,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "jeux-vid\u00e9os",
+            "position": 2,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "musique",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [],
+            "id": 4,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 4,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 5,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 2
+          },
+          {
+            "name": "Salle de stream",
+            "position": 6,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 5,
+            "permission_overwrites": [],
+            "id": 7,
+            "type": 2
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 2,
         "system_channel_flags": 0,
@@ -867,174 +964,195 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104324673,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Informations",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [{
+        "roles": [
+          {
             "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "accueil-et-r\u00e8gles",
-          "position": 1,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "notes-ressources",
-          "position": 2,
-          "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Poste ici les notes et ressources importantes !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [{
-            "id": 0,
-            "type": 0,
-            "allow": 0,
-            "deny": 2048
-          }],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "Salons textuels",
-          "position": 3,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 4,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 4,
-          "topic": "Ici, tout le monde peut parler !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 0
-        }, {
-          "name": "aide-aux-devoirs",
-          "position": 5,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 0
-        }, {
-          "name": "planification-session",
-          "position": 6,
-          "topic": "Tu souhaites planifier une rencontre ou une session de travail pour ton groupe ? Chat ici pour en parler !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 7,
-          "type": 0
-        }, {
-          "name": "hors-sujet",
-          "position": 7,
-          "topic": "Tu veux dire quelque chose de random et qui n'a pas de rapport avec le travail ? Ce salon est fait pour toi !",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 8,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 8,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 9,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 9,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [],
-          "id": 10,
-          "type": 2
-        }, {
-          "name": "Groupe d'\u00e9tude 1",
-          "position": 10,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [],
-          "id": 11,
-          "type": 2
-        }, {
-          "name": "Groupe d'\u00e9tude 2",
-          "position": 11,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 9,
-          "permission_overwrites": [],
-          "id": 12,
-          "type": 2
-        }],
+            "name": "@everyone",
+            "permissions": 104324673,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Informations",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "accueil-et-r\u00e8gles",
+            "position": 1,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Publie tes r\u00e8gles pour ton groupe afin de les faire appliquer !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "notes-ressources",
+            "position": 2,
+            "topic": "Ce salon est accessible seulement en lecture pour tout le monde. Poste ici les notes et ressources importantes !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048
+              }
+            ],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "Salons textuels",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 4,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 4,
+            "topic": "Ici, tout le monde peut parler !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 0
+          },
+          {
+            "name": "aide-aux-devoirs",
+            "position": 5,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 0
+          },
+          {
+            "name": "planification-session",
+            "position": 6,
+            "topic": "Tu souhaites planifier une rencontre ou une session de travail pour ton groupe ? Chat ici pour en parler !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 7,
+            "type": 0
+          },
+          {
+            "name": "hors-sujet",
+            "position": 7,
+            "topic": "Tu veux dire quelque chose de random et qui n'a pas de rapport avec le travail ? Ce salon est fait pour toi !",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 8,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 8,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 9,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 9,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [],
+            "id": 10,
+            "type": 2
+          },
+          {
+            "name": "Groupe d'\u00e9tude 1",
+            "position": 10,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [],
+            "id": 11,
+            "type": 2
+          },
+          {
+            "name": "Groupe d'\u00e9tude 2",
+            "position": 11,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 9,
+            "permission_overwrites": [],
+            "id": 12,
+            "type": 2
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 5,
         "system_channel_flags": 0,
@@ -1076,89 +1194,1234 @@
         "explicit_content_filter": 0,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
-          "id": 0,
-          "name": "@everyone",
-          "permissions": 104324673,
-          "color": 0,
-          "hoist": false,
-          "mentionable": false
-        }],
-        "channels": [{
-          "name": "Salons textuels",
-          "position": 0,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 1,
-          "type": 4
-        }, {
-          "name": "general",
-          "position": 1,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [],
-          "id": 2,
-          "type": 0
-        }, {
-          "name": "hors-sujet",
-          "position": 2,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 1,
-          "permission_overwrites": [],
-          "id": 3,
-          "type": 0
-        }, {
-          "name": "Canaux vocaux",
-          "position": 3,
-          "topic": "",
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": null,
-          "permission_overwrites": [],
-          "id": 4,
-          "type": 4
-        }, {
-          "name": "Lounge",
-          "position": 4,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 5,
-          "type": 2
-        }, {
-          "name": "General",
-          "position": 5,
-          "topic": null,
-          "bitrate": 64000,
-          "user_limit": 0,
-          "nsfw": false,
-          "rate_limit_per_user": 0,
-          "parent_id": 4,
-          "permission_overwrites": [],
-          "id": 6,
-          "type": 2
-        }],
+        "roles": [
+          {
+            "id": 0,
+            "name": "@everyone",
+            "permissions": 104324673,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          }
+        ],
+        "channels": [
+          {
+            "name": "Salons textuels",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 1,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "hors-sujet",
+            "position": 2,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "Canaux vocaux",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 4,
+            "type": 4
+          },
+          {
+            "name": "Lounge",
+            "position": 4,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 5,
+            "type": 2
+          },
+          {
+            "name": "General",
+            "position": 5,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 4,
+            "permission_overwrites": [],
+            "id": 6,
+            "type": 2
+          }
+        ],
         "afk_channel_id": null,
         "system_channel_id": 2,
+        "system_channel_flags": 0,
+        "icon_hash": null
+      },
+      "is_dirty": null
+    }
+  },
+  {
+    "id": "dfr-6",
+    "title": "Dofus Guilde",
+    "description": "Modèle d'un serveur Discord d'une guilde sur le MMORPG Dofus.",
+    "longDescription": "Modèle d'un serveur Discord d'une guilde sur le MMORPG Dofus. *Celui-ci est basé sur le serveur Discord de la guilde Nostradamus du serveur Nidas.*",
+    "emoji": "🎮",
+    "tags": ["2", "3"],
+    "mtag": "3",
+    "dprops": {
+      "code": "tzMR5FJ7VbYw",
+      "name": "Guilde Dofus",
+      "description": "",
+      "usage_count": 0,
+      "creator_id": "695372268364103772",
+      "creator": {
+        "id": "695372268364103772",
+        "username": "Discord Template 1",
+        "avatar": "f5870c15a5446b4ced6a71933c7cce70",
+        "discriminator": "0992",
+        "public_flags": 0
+      },
+      "created_at": "2020-05-26T11:07:25+00:00",
+      "updated_at": "2020-05-26T11:23:31+00:00",
+      "source_guild_id": "714781758855315466",
+      "serialized_source_guild": {
+        "name": "Guilde Dofus",
+        "description": null,
+        "region": "europe",
+        "verification_level": 1,
+        "default_message_notifications": 0,
+        "explicit_content_filter": 1,
+        "preferred_locale": "en-US",
+        "afk_timeout": 900,
+        "roles": [
+          {
+            "id": 0,
+            "name": "@everyone",
+            "permissions": 37084736,
+            "color": 0,
+            "hoist": false,
+            "mentionable": false
+          },
+          {
+            "id": 2,
+            "name": "Bots",
+            "permissions": 104324673,
+            "color": 6323595,
+            "hoist": true,
+            "mentionable": false
+          },
+          {
+            "id": 3,
+            "name": "Candidature",
+            "permissions": 104320576,
+            "color": 16711680,
+            "hoist": false,
+            "mentionable": true
+          },
+          {
+            "id": 4,
+            "name": "Invité",
+            "permissions": 37084224,
+            "color": 2588365,
+            "hoist": true,
+            "mentionable": false
+          },
+          {
+            "id": 5,
+            "name": "Membre de la guilde",
+            "permissions": 103878144,
+            "color": 1752220,
+            "hoist": true,
+            "mentionable": true
+          },
+          {
+            "id": 6,
+            "name": "Bras Droit",
+            "permissions": 2146959103,
+            "color": 2123412,
+            "hoist": true,
+            "mentionable": true
+          },
+          {
+            "id": 7,
+            "name": "Meneur",
+            "permissions": 2146959359,
+            "color": 10038562,
+            "hoist": true,
+            "mentionable": true
+          }
+        ],
+        "channels": [
+          {
+            "name": "Accueil",
+            "position": 1,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [],
+            "id": 1,
+            "type": 4
+          },
+          {
+            "name": "accueil",
+            "position": 2,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 66560,
+                "deny": 871823441
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 871890001,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 871890001,
+                "deny": 0
+              }
+            ],
+            "id": 2,
+            "type": 0
+          },
+          {
+            "name": "arrivee-des-nouveaux",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 871823441
+              },
+              {
+                "id": 2,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 871890001,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 871890001,
+                "deny": 0
+              }
+            ],
+            "id": 3,
+            "type": 0
+          },
+          {
+            "name": "regles-candidature",
+            "position": 4,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 66560,
+                "deny": 805763153
+              },
+              {
+                "id": 3,
+                "type": 0,
+                "allow": 66560,
+                "deny": 805763153
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 0,
+                "deny": 805829713
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 0,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 0,
+                "deny": 0
+              }
+            ],
+            "id": 4,
+            "type": 0
+          },
+          {
+            "name": "candidature",
+            "position": 5,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 805829713
+              },
+              {
+                "id": 3,
+                "type": 0,
+                "allow": 379968,
+                "deny": 0
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 494656,
+                "deny": 805314577
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 519232,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 64,
+                "deny": 0
+              }
+            ],
+            "id": 5,
+            "type": 0
+          },
+          {
+            "name": "debat-candidature",
+            "position": 6,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              }
+            ],
+            "id": 6,
+            "type": 0
+          },
+          {
+            "name": "vote-candidature",
+            "position": 7,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 1,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              }
+            ],
+            "id": 7,
+            "type": 0
+          },
+          {
+            "name": "⭕ Dofus - Administratif ⭕",
+            "position": 8,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 871890001
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 115712,
+                "deny": 2048
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 125952,
+                "deny": 0
+              }
+            ],
+            "id": 8,
+            "type": 4
+          },
+          {
+            "name": "presentation-guilde",
+            "position": 11,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 65536,
+                "deny": 871824465
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 65536,
+                "deny": 805764177
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 66560,
+                "deny": 805763153
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 125952,
+                "deny": 0
+              }
+            ],
+            "id": 9,
+            "type": 0
+          },
+          {
+            "name": "discord-alliance",
+            "position": 12,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 871890001
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 0,
+                "deny": 805829713
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 115712,
+                "deny": 2048
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 125952,
+                "deny": 0
+              }
+            ],
+            "id": 10,
+            "type": 0
+          },
+          {
+            "name": "regles",
+            "position": 13,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 871890001
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 0,
+                "deny": 805829713
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 66560,
+                "deny": 805308433
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 125952,
+                "deny": 0
+              }
+            ],
+            "id": 11,
+            "type": 0
+          },
+          {
+            "name": "blacklist-guilde",
+            "position": 15,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 8,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 871890001
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 49152,
+                "deny": 68608
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 114688,
+                "deny": 3072
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 125952,
+                "deny": 0
+              }
+            ],
+            "id": 12,
+            "type": 0
+          },
+          {
+            "name": "⚪ Meneur ⚪",
+            "position": 16,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              }
+            ],
+            "id": 13,
+            "type": 4
+          },
+          {
+            "name": "leads",
+            "position": 17,
+            "topic": "Maison Bonta de droite | Code coffre Rez-de-chaussé : 1",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 13,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1024
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 1024,
+                "deny": 0
+              }
+            ],
+            "id": 14,
+            "type": 0
+          },
+          {
+            "name": "conv-lead",
+            "position": 0,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 13,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1049600
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 3145728,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 1048576,
+                "deny": 0
+              }
+            ],
+            "id": 15,
+            "type": 2
+          },
+          {
+            "name": "🌕 Divers - Vocal 🌕",
+            "position": 21,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1048576
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 36700160,
+                "deny": 29360384
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 36700160,
+                "deny": 29360384
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 66582848,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 871890257,
+                "deny": 0
+              }
+            ],
+            "id": 16,
+            "type": 4
+          },
+          {
+            "name": "Vocal (Membres de la guilde)",
+            "position": 1,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 16,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 3145728,
+                "deny": 805307409
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 3146752,
+                "deny": 822083601
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 36701184,
+                "deny": 834666769
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 66061584,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 66061584,
+                "deny": 0
+              }
+            ],
+            "id": 17,
+            "type": 2
+          },
+          {
+            "name": "Vocal (Invités)",
+            "position": 2,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 16,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2097152,
+                "deny": 1049600
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 35652608,
+                "deny": 30408704
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 36701184,
+                "deny": 29360128
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 66582848,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 871890257,
+                "deny": 0
+              }
+            ],
+            "id": 18,
+            "type": 2
+          },
+          {
+            "name": "Kolizeum",
+            "position": 3,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 3,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 16,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 1048576
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 36700160,
+                "deny": 29360384
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 36700160,
+                "deny": 29360384
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 66582848,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 871890257,
+                "deny": 0
+              }
+            ],
+            "id": 19,
+            "type": 2
+          },
+          {
+            "name": "AFK",
+            "position": 4,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 16,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 1048576,
+                "deny": 1024
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 34604032,
+                "deny": 31457536
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 34604032,
+                "deny": 31457536
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 64485696,
+                "deny": 2097152
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 869793105,
+                "deny": 2097152
+              }
+            ],
+            "id": 20,
+            "type": 2
+          },
+          {
+            "name": "🔴 Dofus - Textuel - Divers 🔴",
+            "position": 27,
+            "topic": null,
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": null,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2359360,
+                "deny": 869530641
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 21,
+            "type": 4
+          },
+          {
+            "name": "general",
+            "position": 28,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 21,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2359360,
+                "deny": 869530641
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 114688,
+                "deny": 3072
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 511040,
+                "deny": 0
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 379968,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 22,
+            "type": 0
+          },
+          {
+            "name": "screenshots",
+            "position": 29,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": true,
+            "rate_limit_per_user": 0,
+            "parent_id": 21,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2359360,
+                "deny": 869530641
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 114688,
+                "deny": 3072
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 23,
+            "type": 0
+          },
+          {
+            "name": "infos",
+            "position": 30,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 21,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2359360,
+                "deny": 869530641
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 114688,
+                "deny": 1024
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 115712,
+                "deny": 2048
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 24,
+            "type": 0
+          },
+          {
+            "name": "events",
+            "position": 36,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 21,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2097152,
+                "deny": 869792849
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 114688,
+                "deny": 3072
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 115712,
+                "deny": 0
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 25,
+            "type": 0
+          },
+          {
+            "name": "infos-ava",
+            "position": 38,
+            "topic": "",
+            "bitrate": 64000,
+            "user_limit": 0,
+            "nsfw": false,
+            "rate_limit_per_user": 0,
+            "parent_id": 21,
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 2097152,
+                "deny": 869792849
+              },
+              {
+                "id": 4,
+                "type": 0,
+                "allow": 114688,
+                "deny": 3072
+              },
+              {
+                "id": 5,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 6,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              },
+              {
+                "id": 7,
+                "type": 0,
+                "allow": 117760,
+                "deny": 0
+              }
+            ],
+            "id": 26,
+            "type": 0
+          }
+        ],
+        "afk_channel_id": 20,
+        "system_channel_id": 3,
         "system_channel_flags": 0,
         "icon_hash": null
       },
