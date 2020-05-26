@@ -25,7 +25,7 @@ export default {
     JOIN: 'Rejoins notre serveur Discord !'
   },
   partners: {
-    TITLE: 'Partnerships and links',
+    TITLE: 'Liens et partenaires',
     list: [
       {
         TITLE: 'GA Community',
