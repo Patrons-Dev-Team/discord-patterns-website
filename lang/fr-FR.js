@@ -105,6 +105,8 @@ export default {
       '1': 'scolaire',
       '5': 'jeu de rôle',
       '4': 'amis',
+      '6': 'clone',
+      '7': 'utilitaire',
       '0': 'giveaways'
     }
   },

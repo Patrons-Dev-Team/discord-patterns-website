@@ -14,8 +14,14 @@ export const tags = {
   /* friends */
   '4': 'mdi-mother-heart',
 
+  /* clone */
+  '6': 'mdi-content-copy',
+
+  /* utility */
+  '7': 'mdi-cog-outline',
+
   /* giveaways */
   '0': 'mdi-gift'
 }
 
-export const order = ['2', '3', '1', '5', '4', '0']
+export const order = ['2', '3', '1', '5', '4', '6', '7', '0']

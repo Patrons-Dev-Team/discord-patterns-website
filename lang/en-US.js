@@ -87,6 +87,8 @@ export default {
       '1': 'school',
       '5': 'roleplay',
       '4': 'friends',
+      '6': 'clone',
+      '7': 'utility',
       '0': 'giveaways'
     }
   },
