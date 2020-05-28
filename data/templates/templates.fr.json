@@ -1297,7 +1297,7 @@
     "title": "Dofus Guilde",
     "description": "Modèle d'un serveur Discord d'une guilde sur le MMORPG Dofus.",
     "longDescription": "Modèle d'un serveur Discord d'une guilde sur le MMORPG Dofus. *Celui-ci est basé sur le serveur Discord de la guilde Nostradamus du serveur Nidas.*",
-    "emoji": "🎮",
+    "emoji": "🥚",
     "tags": ["2", "3"],
     "mtag": "3",
     "dprops": {
@@ -2433,7 +2433,7 @@
     "title": "Salle de classe",
     "description": "Pour enseigner avec tes profs et poser des questions.",
     "longDescription": "Pour enseigner avec tes profs et poser des questions. Très pratique pour les cours à distance.",
-    "emoji": "📕",
+    "emoji": "👩‍🏫",
     "tags": ["1", "4"],
     "mtag": "4",
     "dprops": {
@@ -2835,7 +2835,7 @@
     "title": "Kit de démarrage",
     "description": "Pour bien commencer ton serveur.",
     "longDescription": "Pour bien commencer son serveur discord. Tout ce qu'il faut, avec un chat général et hors sujet, un endroit pour mettre des règles et un autre pour faire des annonces à ta commu. Des canaux réservés spécialement pour le staff.",
-    "emoji": "📕",
+    "emoji": "🛄",
     "tags": ["2", "3", "4"],
     "mtag": "3",
     "dprops": {
@@ -3508,7 +3508,7 @@
     "title": "Communauté gaming",
     "description": "Pour jouer avec tes amis.",
     "longDescription": "Pour jouer avec tes amis ou parler autour d'un jeu spécifique. Plusieurs chats internationaux. Un système de vérification. Des salons de modération pour tes logs et les signalements. Un salon pour organiser des giveaways et un autre pour attribuer des rôles automatiquement.",
-    "emoji": "📕",
+    "emoji": "🕹️",
     "tags": ["2", "3"],
     "mtag": "2",
     "dprops": {
@@ -6137,7 +6137,7 @@
     "title": "Serveur de dev",
     "description": "Pour les technologies et coder",
     "longDescription": "Pour coder et poser des questions sur les technologies. Plusieurs tchats d'aide sur différents langages de programmation. Une catégorie privée pour le staff. Une catégorie information permettant de publier ton github, des updates et des vidéos.",
-    "emoji": "📕",
+    "emoji": "🖱️",
     "tags": ["7"],
     "mtag": "7",
     "dprops": {
@@ -6906,7 +6906,7 @@
     "title": "Modèle simple",
     "description": "Modèle universel et pratique",
     "longDescription": "Modèle universel et pratique. Pour parler avec tes amis, ta famille, jouer avec tes potes, organiser une communauté autour d'un sujet que tu aimes. Bref, des salons pour le staff, deux salons pour un système de vérification. Une channel pour proposer des suggestions et une autre pour les partenaires. Envoi ta citation du jour dans #cdj.",
-    "emoji": "📕",
+    "emoji": "💮",
     "tags": ["3"],
     "mtag": "3",
     "dprops": {
@@ -7825,7 +7825,7 @@
     "title": "Serveur de pub",
     "description": "Pour lister des serveurs discord et faire de la publicité.",
     "longDescription": "Pour lister des serveurs discord et faire de la publicité. Ce serveur permet à tout le monde de faire de la pub pour leur commu discord. Publie tes règles dans le salon 'règles'. Un système de grade VIP permet de publier des annonces de serv pour les membres VIP. Il y a aussi une catégorie pour les autres types de pubs (réseaux sociaux, vidéos youtube ...).",
-    "emoji": "📕",
+    "emoji": "📢",
     "tags": ["3", "7"],
     "mtag": "3",
     "dprops": {
@@ -9172,7 +9172,7 @@
     "title": "THEKAIRI78",
     "description": "Tricératops",
     "longDescription": "Modèle du discord de THEKAIRI78. *Mais tu fais quoi, là ?* Serveur intégral de THEKAIRI78, avec tous les salons secrets (staff, event, thekairi). Les salons privés pour les VIP et les abonnés twitch, les salons de modérations, les salons d'events... Ce modèle est parfait pour administrer une grande communauté autour d'un youtubeur/thème. *Ceci est un modèle non officiel*",
-    "emoji": "📕",
+    "emoji": "🦖",
     "tags": ["6", "3", "1"],
     "mtag": "6",
     "dprops": {
@@ -21111,7 +21111,7 @@
     "title": "MisterMV",
     "description": "Incroyable du Q.",
     "longDescription": "Modèle du discord de MisterMV. Toi aussi, t'es *incroyable du Q* ? N'a tu jamais rêvé de créer ton propose serveur exactement comme celui de MisterMV, pour devenir à ton tour le Tigre Bois dominant ?  Serveur intégral de MisterMV, avec tous les salons secrets (staff, windows movie maker, bunker). Les salons privés pour les sbires et les abonnés twitch, les salons de modérations, les salons de MV... Des salons pour tous les jeux de MV, pratique ! Bref, tout pour créer ta commu gaming, ou imiter MV. *Ceci est un modèle non officiel*",
-    "emoji": "📕",
+    "emoji": "👓",
     "tags": ["6", "3", "1"],
     "mtag": "6",
     "dprops": {
@@ -25351,7 +25351,7 @@
     "title": "ZeratoR",
     "description": "La bande à zera",
     "longDescription": "Modèle du discord de ZeratoR. T'as envie de créer ton propre Zevent ? Ou peut être un petit concours sur trackmania ?  Serveur intégral de ZeratoR, avec tous les salons secrets (modération, salle secrète, palais de Rozerator). Les salons privés pour les VIP et les subs twitch... Des salons pour pas mal de jeux et plein de lobby ! Bref, tout pour créer ta commu gaming, ou imiter ZeratoR. *Ceci est un modèle non officiel*",
-    "emoji": "📕",
+    "emoji": "💚",
     "tags": ["6", "3", "1"],
     "mtag": "6",
     "dprops": {
@@ -28774,7 +28774,7 @@
     "title": "Rôles colorés",
     "description": "Roles représentant chaque couleurs.",
     "longDescription": "Pour des rôles colorés et nommés. Ca te permet de proposer à tes membres des couleurs qu'ils peuvent s'attribuer ensuite avec un bot d'auto-role. Ca t'évite les 20 minutes à créer les rôles.",
-    "emoji": "📕",
+    "emoji": "🌈",
     "tags": ["7"],
     "mtag": "7",
     "dprops": {
