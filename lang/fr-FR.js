@@ -28,36 +28,12 @@ export default {
     TITLE: 'Liens et partenaires',
     list: [
       {
-        TITLE: 'GA Community',
+        TITLE: 'Discord France',
         DESCRIPTION:
-          'Rejoint le Discord de GA Community et gagne des clés steams et des jeux gratuits',
-        LINK: 'https://discord.gg/UXzZV4u',
+          'Sur Discord-France.fr vous retrouverez des traductions du blog Discord, les dernières news concernant la plateforme, des articles fort sympathiques ou encore toute sorte de tutoriels pratiques !',
+        LINK: 'https://discrd.fr/dpatterns',
         IMG_LINK:
-          'https://cdn.discordapp.com/icons/243805708204769292/4afb23b779001299e4dbd93ae1d2414c.webp?size=256'
-      },
-      {
-        TITLE: 'Hachis parmentier FINDUS',
-        DESCRIPTION:
-          'En partenariat avec d-patterns, rejoignez notre discord autour de findus et de ses produits',
-        LINK:
-          'https://www.findus.fr/produits/plats-cuisines/gratins/hachis-parmentier-pur-boeuf',
-        IMG_LINK:
-          'https://nomadfoodscdn.com/-/media/project/bluesteel/shared/logos/logo-findus-france.png?h=177&la=fr-FR&w=130&hash=2BF915C9DB1FFA092423DD5E484D1191'
-      },
-      {
-        TITLE: 'Vicord',
-        DESCRIPTION:
-          'D-patterns a bon goût avec vicord, son partenaire principal',
-        LINK: 'http://www.vico.fr/',
-        IMG_LINK:
-          'https://pbs.twimg.com/profile_images/870611963872718848/rvpArfw__400x400.jpg'
-      },
-      {
-        TITLE: 'Simon corporation',
-        DESCRIPTION:
-          'La Simon Corp fait de la pub pour d-patterns. Créér ton serveur Discord Simon Corp facilement avec Discord Patterns !',
-        LINK: 'https://www.simonwork.fr',
-        IMG_LINK: 'https://horsehead.me/72/72'
+          'https://d-patterns.js.org/discord-france.webp'
       }
     ]
   },
