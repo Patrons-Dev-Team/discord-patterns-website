@@ -1,6 +1,6 @@
 export default {
   index: {
-    TITLE: 'Template listing',
+    TITLE: 'Discord templates and examples for servers',
     DESCRIPTION:
       'List of popular and useful ready-made templates to create your discord server easily'
   },
