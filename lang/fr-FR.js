@@ -1,6 +1,6 @@
 export default {
   index: {
-    TITLE: 'Annuaire de modèles Discord',
+    TITLE: 'Modèles et exemples de serveurs Discord',
     DESCRIPTION:
       'Liste de modèles/templates Discord populaires et utiles pour créer ton serveur Discord facilement'
   },
