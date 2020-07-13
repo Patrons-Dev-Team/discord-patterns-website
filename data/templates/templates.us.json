@@ -1,16 +1,21 @@
-[{
+[
+  {
     "id": "0",
     "title": "GA Community",
     "description": "Official GA Community template",
     "longDescription": "Since **GA Community** is an official partner, you can create your own giveway server on D-Patterns. GA Community has been making giveaways since 3 years.",
     "emoji": "🎀",
-    "tags": ["0", "2", "3"],
+    "tags": [
+      "0",
+      "2",
+      "3"
+    ],
     "mtag": "0",
     "dprops": {
       "code": "EPAukKQArtg3",
       "name": "Giveaways, GA Community →  By Maxerbox, Discord Patterns",
       "description": "GA Community template\nThis template is provided by Maxerbox from Discord Patterns. \nhttps://bit.ly/DiscordPatterns",
-      "usage_count": 0,
+      "usage_count": 5,
       "creator_id": "695372268364103772",
       "creator": {
         "id": "695372268364103772",
@@ -26,301 +31,342 @@
         "name": "Giveaways like GA Community",
         "description": null,
         "region": "eu-west",
+        "icon_hash": null,
         "verification_level": 2,
         "default_message_notifications": 1,
         "explicit_content_filter": 1,
         "preferred_locale": "en-US",
         "afk_timeout": 3600,
-        "roles": [{
+        "roles": [
+          {
             "id": 0,
             "name": "@everyone",
-            "permissions": 104140353,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 2,
             "name": "Verification Pending",
-            "permissions": 104140353,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 3,
             "name": "new role",
-            "permissions": 104173121,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104173121,
+            "permissions_new": "104173121"
           },
           {
             "id": 4,
             "name": "Eligible",
-            "permissions": 104140353,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 5,
             "name": "Bots",
-            "permissions": 104193601,
             "color": 3066993,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104193601,
+            "permissions_new": "104193601"
           },
           {
             "id": 6,
             "name": "TRADE BANNED",
-            "permissions": 104140353,
             "color": 16711680,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 7,
             "name": "✅ TRUSTED TRADER",
-            "permissions": 104139841,
             "color": 1376000,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104139841,
+            "permissions_new": "104139841"
           },
           {
             "id": 8,
             "name": "Active",
-            "permissions": 104189505,
             "color": 15420568,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 9,
             "name": "Regular",
-            "permissions": 104140353,
             "color": 10255871,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 10,
             "name": "Well-Known",
-            "permissions": 104140353,
             "color": 1752220,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 11,
             "name": "Famous",
-            "permissions": 104140353,
             "color": 16711680,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 12,
             "name": "Official GA Memer",
-            "permissions": 104140352,
             "color": 2474073,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140352,
+            "permissions_new": "104140352"
           },
           {
             "id": 13,
             "name": "Game Night #3 Winner (22/12/2019)",
-            "permissions": 104140352,
             "color": 15844367,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140352,
+            "permissions_new": "104140352"
           },
           {
             "id": 14,
             "name": "Game Night #2 Winner (07/07/2019)",
-            "permissions": 104140352,
             "color": 15844367,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140352,
+            "permissions_new": "104140352"
           },
           {
             "id": 15,
             "name": "Game Night #1 Winner (14/04/2019)",
-            "permissions": 104139840,
             "color": 15844367,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104139840,
+            "permissions_new": "104139840"
           },
           {
             "id": 16,
             "name": "❤️GA member",
-            "permissions": 104189505,
             "color": 11342935,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 17,
             "name": "Offline Donator 16/08/18 - 21/08/18",
-            "permissions": 104140353,
             "color": 15105570,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 18,
             "name": "🥉>10 keys donated",
-            "permissions": 104189505,
             "color": 15158332,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 19,
             "name": "🥈>50 keys donated",
-            "permissions": 104189505,
             "color": 5533306,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 20,
             "name": "🥇>100 keys donated",
-            "permissions": 104189505,
             "color": 15844367,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 21,
             "name": "💎>250 keys donated",
-            "permissions": 104189505,
             "color": 3447003,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 22,
             "name": "🦄>500 keys donated",
-            "permissions": 104189505,
             "color": 14286926,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 23,
             "name": "Contributor",
-            "permissions": 104173121,
             "color": 3066993,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104173121,
+            "permissions_new": "104173121"
           },
           {
             "id": 24,
             "name": "🌈>1000 keys donated",
-            "permissions": 104189505,
             "color": 4259648,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 25,
             "name": "V2 Design Team",
-            "permissions": 104181313,
             "color": 2588365,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104181313,
+            "permissions_new": "104181313"
           },
           {
             "id": 26,
             "name": "😍Patreon Supporter",
-            "permissions": 104189505,
             "color": 16514821,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 27,
             "name": "Elite Donator",
-            "permissions": 104193089,
             "color": 14822626,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104193089,
+            "permissions_new": "104193089"
           },
           {
             "id": 28,
             "name": "Muted",
-            "permissions": 104171073,
             "color": 8487814,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104171073,
+            "permissions_new": "104171073"
           },
           {
             "id": 29,
             "name": "Can't nickname",
-            "permissions": 37064257,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 37064257,
+            "permissions_new": "37064257"
           },
           {
             "id": 30,
             "name": "Retired Staff💖💖💖",
-            "permissions": 104140353,
             "color": 65431,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 31,
             "name": "💏GA Power Couple",
-            "permissions": 104140352,
             "color": 16757181,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140352,
+            "permissions_new": "104140352"
           },
           {
             "id": 32,
             "name": "❤️The Family❤️",
-            "permissions": 104140352,
             "color": 16711901,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140352,
+            "permissions_new": "104140352"
           },
           {
             "id": 33,
             "name": "Moderator",
-            "permissions": 238415559,
             "color": 10181046,
             "hoist": false,
-            "mentionable": true
+            "mentionable": true,
+            "permissions": 238415559,
+            "permissions_new": "238415559"
           },
           {
             "id": 34,
             "name": "👨‍💼 GA Manager",
-            "permissions": 2146959103,
             "color": 652799,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 2146959103,
+            "permissions_new": "2146959103"
           },
           {
             "id": 35,
             "name": "GA Bots",
-            "permissions": 372768320,
             "color": 2067276,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 372768320,
+            "permissions_new": "372768320"
           },
           {
             "id": 36,
             "name": "Banner",
-            "permissions": 104173127,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104173127,
+            "permissions_new": "104173127"
           }
         ],
-        "channels": [{
+        "channels": [
+          {
+            "id": 1,
+            "type": 0,
             "name": "giveaway-bot",
             "position": 0,
             "topic": "User donated key giveaways run through our bot! | Use **!ga enter** to enter | Use **!ga claim** to claim | To donate send **!ga donate** to the bot in DMs | Please don't talk in this channel!",
@@ -329,47 +375,60 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 536873024
+                "deny": 536873024,
+                "allow_new": "0",
+                "deny_new": "536873024"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 0,
-                "deny": 8256
+                "deny": 8256,
+                "allow_new": "0",
+                "deny_new": "8256"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 805829713,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "805829713",
+                "deny_new": "0"
               },
               {
                 "id": 35,
                 "type": 0,
                 "allow": 268445696,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "268445696",
+                "deny_new": "0"
               }
-            ],
-            "id": 1,
-            "type": 0
+            ]
           },
           {
+            "id": 2,
+            "type": 0,
             "name": "premium-giveaways",
             "position": 1,
             "topic": "Giveaways for games that are actually worth playing! Exclusive to this server!",
@@ -378,29 +437,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 2,
-            "type": 0
+            ]
           },
           {
+            "id": 3,
+            "type": 4,
             "name": "Important stuff",
             "position": 2,
             "topic": null,
@@ -409,16 +475,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 28,
-              "type": 0,
-              "allow": 0,
-              "deny": 2099264
-            }],
-            "id": 3,
-            "type": 4
+            "permission_overwrites": [
+              {
+                "id": 28,
+                "type": 0,
+                "allow": 0,
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
+              }
+            ]
           },
           {
+            "id": 4,
+            "type": 0,
             "name": "introduction",
             "position": 3,
             "topic": "Welcome to GA Community! Here's some info to help you get started!",
@@ -427,23 +497,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 3,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               }
-            ],
-            "id": 4,
-            "type": 0
+            ]
           },
           {
+            "id": 5,
+            "type": 0,
             "name": "rules",
             "position": 4,
             "topic": "Stuff you should read. This will help you understand what you can and cannot do in the GA Community.",
@@ -452,41 +527,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 3,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1024,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "1024",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 3136,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3136",
+                "deny_new": "0"
               }
-            ],
-            "id": 5,
-            "type": 0
+            ]
           },
           {
+            "id": 6,
+            "type": 0,
             "name": "announcements",
             "position": 5,
             "topic": "Things that are really important and that you should know.\nThe GA Community Managers will post updates and important messages here! Don't miss it!",
@@ -495,41 +581,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 3,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 64,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "64",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 0,
-                "deny": 10240
+                "deny": 10240,
+                "allow_new": "0",
+                "deny_new": "10240"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               }
-            ],
-            "id": 6,
-            "type": 0
+            ]
           },
           {
+            "id": 7,
+            "type": 0,
             "name": "community-partners",
             "position": 6,
             "topic": "Please check our pinned message for a synopsis of our Community Partner program.",
@@ -538,41 +635,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 3,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 10304
+                "deny": 10304,
+                "allow_new": "0",
+                "deny_new": "10304"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 0,
-                "deny": 10304
+                "deny": 10304,
+                "allow_new": "0",
+                "deny_new": "10304"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 805829713,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "805829713",
+                "deny_new": "0"
               }
-            ],
-            "id": 7,
-            "type": 0
+            ]
           },
           {
+            "id": 8,
+            "type": 4,
             "name": "Chats",
             "position": 7,
             "topic": null,
@@ -581,16 +689,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 28,
-              "type": 0,
-              "allow": 0,
-              "deny": 2099264
-            }],
-            "id": 8,
-            "type": 4
+            "permission_overwrites": [
+              {
+                "id": 28,
+                "type": 0,
+                "allow": 0,
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
+              }
+            ]
           },
           {
+            "id": 9,
+            "type": 0,
             "name": "general-chat",
             "position": 8,
             "topic": "Talk about anything!\nPlease keep it English in here. No bot commands either please!",
@@ -599,41 +711,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 1,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 5,
                 "type": 0,
                 "allow": 1024,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "1024",
+                "deny_new": "2048"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 35,
                 "type": 0,
                 "allow": 11264,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "11264",
+                "deny_new": "0"
               }
-            ],
-            "id": 9,
-            "type": 0
+            ]
           },
           {
+            "id": 10,
+            "type": 0,
             "name": "your-projects",
             "position": 9,
             "topic": "Do you have a great, big and good idea? Post it here!\nPost here DIY things related, or code etc... that you wanna share with us.\n**Don't forget that advertising (for discord servers, ask it to a mod) is still prohibited, so post a project that you are developping/creating in a, experimental purpose**\n\n__To post images & integrate links, you need to have the role GA Member__\n\n**You must follow this post format:**\n__Name:__\n__Type:__\n__Author(s):__\n__Description:__\n__Links__:\n__Pictures (optional):__\n\nExample: a github project, some pictures of your new homemade RC car, etc...",
@@ -642,29 +765,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 10,
-            "type": 0
+            ]
           },
           {
+            "id": 11,
+            "type": 0,
             "name": "non-english-room",
             "position": 10,
             "topic": "Here you can speak all languages except English, French and Dutch :)",
@@ -673,29 +803,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 11,
-            "type": 0
+            ]
           },
           {
+            "id": 12,
+            "type": 0,
             "name": "french-room",
             "position": 11,
             "topic": "French only in here! | Français seulement ici!",
@@ -704,29 +841,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 12,
-            "type": 0
+            ]
           },
           {
+            "id": 13,
+            "type": 0,
             "name": "dutch-room",
             "position": 12,
             "topic": "Dutch only or as they would say in Dutch, Alleen in het Nederlands (or maybe they don't. Google Translate can be a bit wrong)",
@@ -735,29 +879,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 13,
-            "type": 0
+            ]
           },
           {
+            "id": 14,
+            "type": 2,
             "name": "General",
             "position": 13,
             "topic": null,
@@ -766,29 +917,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2097152
+                "deny": 2097152,
+                "allow_new": "0",
+                "deny_new": "2097152"
               }
-            ],
-            "id": 14,
-            "type": 2
+            ]
           },
           {
+            "id": 15,
+            "type": 2,
             "name": "Music Room",
             "position": 14,
             "topic": null,
@@ -797,35 +955,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 8,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2097152
+                "deny": 2097152,
+                "allow_new": "0",
+                "deny_new": "2097152"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 5,
                 "type": 0,
                 "allow": 3146752,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3146752",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2097152
+                "deny": 2097152,
+                "allow_new": "0",
+                "deny_new": "2097152"
               }
-            ],
-            "id": 15,
-            "type": 2
+            ]
           },
           {
+            "id": 16,
+            "type": 4,
             "name": "Giveaway Community",
             "position": 15,
             "topic": null,
@@ -834,16 +1001,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 28,
-              "type": 0,
-              "allow": 0,
-              "deny": 2099264
-            }],
-            "id": 16,
-            "type": 4
+            "permission_overwrites": [
+              {
+                "id": 28,
+                "type": 0,
+                "allow": 0,
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
+              }
+            ]
           },
           {
+            "id": 17,
+            "type": 0,
             "name": "r-video-meme-anime",
             "position": 16,
             "topic": "r/Post your funny video, meme or anime here!\nThe no NSFW rule still counts!!!\nThat's an emulation of a subreddit to satisfy <@253557833289695232>",
@@ -852,29 +1023,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 17,
-            "type": 0
+            ]
           },
           {
+            "id": 18,
+            "type": 0,
             "name": "suggestions",
             "position": 17,
             "topic": "Want to see something added? Maybe even removed? Or just changed? Suggest it here!",
@@ -883,23 +1061,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               }
-            ],
-            "id": 18,
-            "type": 0
+            ]
           },
           {
+            "id": 19,
+            "type": 0,
             "name": "trading",
             "position": 18,
             "topic": "GA Community is not accountable for any mishaps that occur. Please trade with care! | \nGot stuff to trade? Trade it here!\nTip: Use this layout!\n[H] What you have to offer!\n[W] What you want!\nDo not trade with any money!",
@@ -908,35 +1091,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 6,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 19,
-            "type": 0
+            ]
           },
           {
+            "id": 20,
+            "type": 0,
             "name": "post-your-naked-steam-keys",
             "position": 19,
             "topic": "Feeling grateful? Post your key here!\nIf you see a key that doesn't have the :key: Reaction beneath it, then it is not used!\nIf you used a key, give the :key: reaction to it! Thanks!\nDo not talk here (use reactions)\n:warning:️**KEYS CAN BE DUPE**, that's normal,  don't to post it that's dupe, since everyone has the access to this channel. Report any spams.",
@@ -945,29 +1137,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 20,
-            "type": 0
+            ]
           },
           {
+            "id": 21,
+            "type": 0,
             "name": "free-game-links",
             "position": 20,
             "topic": "**See the rules in <#300634008323358730> before.**\nFree games! Free! Free!\nHere, links will be posted where you could win free keys, here you do need to do certain things like, visit a website, follow a Steam Curator or anything!\n\nWARNING: IF THE WEBSITE ASKS PERSONAL INFORMATION SUCH AS CELLPHONE NUMBERS, ID, HUMAN VERIFICATION, CLICK THE WEBSITE AWAY IMMEDIATELY!\n-No referral links\n-No advertising",
@@ -976,29 +1175,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 21,
-            "type": 0
+            ]
           },
           {
+            "id": 22,
+            "type": 0,
             "name": "good-game-deals",
             "position": 21,
             "topic": "A channel to share good deals on good games you find! Online stores only. If deal is specific to country please specify which country. No grey market resellers (no G2A, Kinguin etc.). No eBay or used listings either.",
@@ -1007,29 +1213,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 22,
-            "type": 0
+            ]
           },
           {
+            "id": 23,
+            "type": 0,
             "name": "community-shop",
             "position": 22,
             "topic": "GA Community is not accountable for any mishaps that occur. Please buy and sell with care! | \nPlanning to do big business? Set it up here!\nIf you sell a big amount of keys, put it here.\nYou can only talk in this channel if you own the >10 Keys Donated role!",
@@ -1038,89 +1251,116 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 6144
+                "deny": 6144,
+                "allow_new": "0",
+                "deny_new": "6144"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 6,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 18,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 19,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 20,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 21,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 22,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 26,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 27,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 807926865
+                "deny": 807926865,
+                "allow_new": "0",
+                "deny_new": "807926865"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 805829713,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "805829713",
+                "deny_new": "0"
               }
-            ],
-            "id": 23,
-            "type": 0
+            ]
           },
           {
+            "id": 24,
+            "type": 0,
             "name": "bot-commands",
             "position": 23,
             "topic": "Bliep bliep bloep? Use your the Bot Commands here!\nOur Bots:\nAyana\nTatsumaki\nDyno",
@@ -1129,29 +1369,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 131072
+                "deny": 131072,
+                "allow_new": "0",
+                "deny_new": "131072"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 24,
-            "type": 0
+            ]
           },
           {
+            "id": 25,
+            "type": 0,
             "name": "v2-discussion-archived",
             "position": 24,
             "topic": "**This is now a read-only archived channel. You can continue to use reactions to vote on ideas**\n|\nPlease check the pinned messages to see if your idea has already been accepted. All ideas are being bulk released in V2 and not over time.\n\nAs you can see, I have finally decided in which way the Giveaway Network will evolve.\n\nIn that textchannel, send any feature you wanna be added. It doesn't have to be necessarily related to Discord. \nYou can talk about web-related things, other platforms/social networks...\n\nI will pin into a list the features that interest me.",
@@ -1160,23 +1407,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 1024,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "1024",
+                "deny_new": "2048"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 25,
-            "type": 0
+            ]
           },
           {
+            "id": 26,
+            "type": 4,
             "name": "Giveaway Network",
             "position": 25,
             "topic": null,
@@ -1185,16 +1437,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 28,
-              "type": 0,
-              "allow": 0,
-              "deny": 2099264
-            }],
-            "id": 26,
-            "type": 4
+            "permission_overwrites": [
+              {
+                "id": 28,
+                "type": 0,
+                "allow": 0,
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
+              }
+            ]
           },
           {
+            "id": 27,
+            "type": 0,
             "name": "help",
             "position": 26,
             "topic": "Enter in if you need help and ask to moderation or to community. Please read the FAQ in #rules-and-faq before asking a question.",
@@ -1203,29 +1459,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 26,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 27,
-            "type": 0
+            ]
           },
           {
+            "id": 28,
+            "type": 0,
             "name": "ranks",
             "position": 27,
             "topic": "'How do I get a Rank?' Find it here!",
@@ -1234,41 +1497,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 26,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 0,
-                "deny": 8192
+                "deny": 8192,
+                "allow_new": "0",
+                "deny_new": "8192"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 10240,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "10240",
+                "deny_new": "0"
               }
-            ],
-            "id": 28,
-            "type": 0
+            ]
           },
           {
+            "id": 29,
+            "type": 0,
             "name": "changelog",
             "position": 28,
             "topic": null,
@@ -1277,29 +1551,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 26,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 29,
-            "type": 0
+            ]
           },
           {
+            "id": 30,
+            "type": 0,
             "name": "mxb-github",
             "position": 29,
             "topic": null,
@@ -1308,29 +1589,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 26,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 30,
-            "type": 0
+            ]
           },
           {
+            "id": 31,
+            "type": 4,
             "name": "Administration",
             "position": 30,
             "topic": null,
@@ -1339,35 +1627,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 31,
-            "type": 4
+            ]
           },
           {
+            "id": 32,
+            "type": 0,
             "name": "admin",
             "position": 31,
             "topic": "JUST ADMIN",
@@ -1376,29 +1673,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 31,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 32,
-            "type": 0
+            ]
           },
           {
+            "id": 33,
+            "type": 0,
             "name": "moderator-room",
             "position": 32,
             "topic": "The Room where our 'Magic' happens!\nThe Moderation Commands\n-?warn [user] [reason]: Warn an user with dynobot. Before using that command, warn the user verbally\n-?mute [user] [time] [reason]\n-?unmute [user]\n-?modlogs [user]: Display warning and mute cases for an user\n-?ban [@usermention] [reason]: Ban an user. You can execute that command every hour\nor\n-?ban [id] [reason]",
@@ -1407,35 +1711,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 31,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 3072,
-                "deny": 8192
+                "deny": 8192,
+                "allow_new": "3072",
+                "deny_new": "8192"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 8192,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "8192",
+                "deny_new": "0"
               }
-            ],
-            "id": 33,
-            "type": 0
+            ]
           },
           {
+            "id": 34,
+            "type": 0,
             "name": "mod-log",
             "position": 33,
             "topic": null,
@@ -1444,41 +1757,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 31,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 5,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 3072,
-                "deny": 8192
+                "deny": 8192,
+                "allow_new": "3072",
+                "deny_new": "8192"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 8192,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "8192",
+                "deny_new": "0"
               }
-            ],
-            "id": 34,
-            "type": 0
+            ]
           },
           {
+            "id": 35,
+            "type": 0,
             "name": "greeting",
             "position": 34,
             "topic": "welcome-room",
@@ -1487,35 +1811,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 31,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 5,
                 "type": 0,
                 "allow": 3072,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "3072",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 35,
-            "type": 0
+            ]
           },
           {
+            "id": 36,
+            "type": 4,
             "name": "v2-design",
             "position": 35,
             "topic": null,
@@ -1524,35 +1857,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 25,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 36,
-            "type": 4
+            ]
           },
           {
+            "id": 37,
+            "type": 0,
             "name": "v2-chat",
             "position": 36,
             "topic": null,
@@ -1561,29 +1903,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 36,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 805829713
+                "deny": 805829713,
+                "allow_new": "0",
+                "deny_new": "805829713"
               },
               {
                 "id": 25,
                 "type": 0,
                 "allow": 523329,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "523329",
+                "deny_new": "0"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 37,
-            "type": 0
+            ]
           },
           {
+            "id": 38,
+            "type": 0,
             "name": "drive-changes",
             "position": 37,
             "topic": null,
@@ -1592,35 +1941,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 36,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 25,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 8192
+                "deny": 8192,
+                "allow_new": "1049600",
+                "deny_new": "8192"
               }
-            ],
-            "id": 38,
-            "type": 0
+            ]
           },
           {
+            "id": 39,
+            "type": 2,
             "name": "vocal-discussion",
             "position": 38,
             "topic": null,
@@ -1629,35 +1987,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 36,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 25,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2097152
+                "deny": 2097152,
+                "allow_new": "0",
+                "deny_new": "2097152"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 39,
-            "type": 2
+            ]
           },
           {
+            "id": 40,
+            "type": 4,
             "name": "People",
             "position": 39,
             "topic": null,
@@ -1666,16 +2033,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 28,
-              "type": 0,
-              "allow": 0,
-              "deny": 2099264
-            }],
-            "id": 40,
-            "type": 4
+            "permission_overwrites": [
+              {
+                "id": 28,
+                "type": 0,
+                "allow": 0,
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
+              }
+            ]
           },
           {
+            "id": 41,
+            "type": 0,
             "name": "warning-people",
             "position": 40,
             "topic": "Is that person banned/muted/warned? Find it out here!",
@@ -1684,41 +2055,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 40,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 16384,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "16384",
+                "deny_new": "2112"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 5,
                 "type": 0,
                 "allow": 2048,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "2048",
+                "deny_new": "0"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 2048,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "2048",
+                "deny_new": "0"
               }
-            ],
-            "id": 41,
-            "type": 0
+            ]
           },
           {
+            "id": 42,
+            "type": 0,
             "name": "report-people",
             "position": 41,
             "topic": "So you found a rule breaker eh?! Report them here!\nMake sure you explain everything that happened!\nNO NSFW, for nsfw proofs, send it to a mod directly",
@@ -1727,29 +2109,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 40,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "0",
+                "deny_new": "0"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 42,
-            "type": 0
+            ]
           },
           {
+            "id": 43,
+            "type": 0,
             "name": "gifted-members",
             "position": 42,
             "topic": "Gifts! Gifts and Gifts!\nWhen you reach the >100 Keys Donated role, you get a gift from @xTase , contact him when you got the rank!",
@@ -1758,29 +2147,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 40,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 43,
-            "type": 0
+            ]
           },
           {
+            "id": 44,
+            "type": 4,
             "name": "Online shop",
             "position": 43,
             "topic": null,
@@ -1789,23 +2185,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               }
-            ],
-            "id": 44,
-            "type": 4
+            ]
           },
           {
+            "id": 45,
+            "type": 0,
             "name": "seller-announcements",
             "position": 44,
             "topic": "Having keys you want to buy?\nCheck out the new stuff coming to the shop! Credits are obtained by donating keys in the bot or selling the here!",
@@ -1814,35 +2215,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 44,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 35,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               }
-            ],
-            "id": 45,
-            "type": 0
+            ]
           },
           {
+            "id": 46,
+            "type": 0,
             "name": "shop-faq",
             "position": 45,
             "topic": "Having questions about the shop? Find it here!",
@@ -1851,29 +2261,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 44,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 46,
-            "type": 0
+            ]
           },
           {
+            "id": 47,
+            "type": 0,
             "name": "shop-news",
             "position": 46,
             "topic": "All the Shop-News you need to know!\nOne of the GA Community Managers will give you information about the shop!",
@@ -1882,35 +2299,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 44,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 805825616,
-                "deny": 4097
+                "deny": 4097,
+                "allow_new": "805825616",
+                "deny_new": "4097"
               }
-            ],
-            "id": 47,
-            "type": 0
+            ]
           },
           {
+            "id": 48,
+            "type": 4,
             "name": "GA Airlock™",
             "position": 47,
             "topic": null,
@@ -1919,35 +2345,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1051648
+                "deny": 1051648,
+                "allow_new": "0",
+                "deny_new": "1051648"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "1049600",
+                "deny_new": "2048"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 48,
-            "type": 4
+            ]
           },
           {
+            "id": 49,
+            "type": 0,
             "name": "verification",
             "position": 48,
             "topic": null,
@@ -1956,41 +2391,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 48,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1051648
+                "deny": 1051648,
+                "allow_new": "0",
+                "deny_new": "1051648"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 1024,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "1024",
+                "deny_new": "2048"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1048576,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "1048576",
+                "deny_new": "3072"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 49,
-            "type": 0
+            ]
           },
           {
+            "id": 50,
+            "type": 0,
             "name": "verification-warnings",
             "position": 49,
             "topic": null,
@@ -1999,41 +2445,52 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 48,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1051648
+                "deny": 1051648,
+                "allow_new": "0",
+                "deny_new": "1051648"
               },
               {
                 "id": 2,
                 "type": 0,
                 "allow": 1024,
-                "deny": 2048
+                "deny": 2048,
+                "allow_new": "1024",
+                "deny_new": "2048"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 1048576,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "1048576",
+                "deny_new": "3072"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 50,
-            "type": 0
+            ]
           },
           {
+            "id": 51,
+            "type": 4,
             "name": "Archive",
             "position": 50,
             "topic": null,
@@ -2042,29 +2499,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 51,
-            "type": 4
+            ]
           },
           {
+            "id": 52,
+            "type": 0,
             "name": "christmas-giveaways",
             "position": 51,
             "topic": null,
@@ -2073,29 +2537,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 52,
-            "type": 0
+            ]
           },
           {
+            "id": 53,
+            "type": 0,
             "name": "creeper",
             "position": 52,
             "topic": "awww man",
@@ -2104,23 +2575,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 53,
-            "type": 0
+            ]
           },
           {
+            "id": 54,
+            "type": 0,
             "name": "introduction-old",
             "position": 53,
             "topic": "A little but helpful Introduction to the GA Community!\nHere are all the things you need to know to become a real member of this great community. ;)",
@@ -2129,35 +2605,44 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 33,
                 "type": 0,
                 "allow": 0,
-                "deny": 8192
+                "deny": 8192,
+                "allow_new": "0",
+                "deny_new": "8192"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 2048,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "2048",
+                "deny_new": "0"
               }
-            ],
-            "id": 54,
-            "type": 0
+            ]
           },
           {
+            "id": 55,
+            "type": 0,
             "name": "features-request",
             "position": 54,
             "topic": "Here post what you don't like on the server and what the server need",
@@ -2166,23 +2651,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 55,
-            "type": 0
+            ]
           },
           {
+            "id": 56,
+            "type": 0,
             "name": "jorans-2000th-key",
             "position": 55,
             "topic": null,
@@ -2191,29 +2681,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 56,
-            "type": 0
+            ]
           },
           {
+            "id": 57,
+            "type": 0,
             "name": "halloween-giveaways-2018",
             "position": 56,
             "topic": null,
@@ -2222,29 +2719,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 57,
-            "type": 0
+            ]
           },
           {
+            "id": 58,
+            "type": 0,
             "name": "christmas-giveaways-planning-2018",
             "position": 57,
             "topic": null,
@@ -2253,29 +2757,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 58,
-            "type": 0
+            ]
           },
           {
+            "id": 59,
+            "type": 0,
             "name": "christmas-giveaways-2018",
             "position": 58,
             "topic": null,
@@ -2284,23 +2795,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 59,
-            "type": 0
+            ]
           },
           {
+            "id": 60,
+            "type": 0,
             "name": "discussion-questions",
             "position": 59,
             "topic": "If you have any questions you would like to ask at our Community Discussion (Sunday 10am UTC) ask them in here!",
@@ -2309,29 +2825,36 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 60,
-            "type": 0
+            ]
           },
           {
+            "id": 61,
+            "type": 0,
             "name": "endgame-spoiler-discussion",
             "position": 60,
             "topic": "Spoiler discussion for Marvel's Avengers: Endgame. No spoilers or discussing the film outside of this channel. #DontSpoilTheEndgame",
@@ -2340,29 +2863,36 @@
             "nsfw": true,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1049600
+                "deny": 1049600,
+                "allow_new": "0",
+                "deny_new": "1049600"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2099264
+                "deny": 2099264,
+                "allow_new": "0",
+                "deny_new": "2099264"
               },
               {
                 "id": 34,
                 "type": 0,
                 "allow": 1049600,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1049600",
+                "deny_new": "0"
               }
-            ],
-            "id": 61,
-            "type": 0
+            ]
           },
           {
+            "id": 62,
+            "type": 0,
             "name": "vote-the-game-for-the-next-tournament",
             "position": 61,
             "topic": "__How to vote ?__\nThe votes are powered by Tatsumaki.\nUse `t!vote <game-number>`\n\n__Available games:__\n1.Hide and Seek CS:GO \n2.Ultimate arena simulator (pm logorkill for more info)\n3.Rocket league\n4.Brawlhalla\n5.Deceit\n6.Garry's mod:Flood\n7.Garry's mod: PropHunt\n8.Battlerite\n9.SSF2 (A supersmash bros like, developped in Flash & free)",
@@ -2371,23 +2901,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 62,
-            "type": 0
+            ]
           },
           {
+            "id": 63,
+            "type": 0,
             "name": "bot-support-setup",
             "position": 62,
             "topic": "You need help to set up giveaways on your server ? Ask here ! Bot Page: https://bots.discord.pw/bots/298492601756024835",
@@ -2396,27 +2931,29 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 51,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 3072
+                "deny": 3072,
+                "allow_new": "0",
+                "deny_new": "3072"
               },
               {
                 "id": 28,
                 "type": 0,
                 "allow": 0,
-                "deny": 2112
+                "deny": 2112,
+                "allow_new": "0",
+                "deny_new": "2112"
               }
-            ],
-            "id": 63,
-            "type": 0
+            ]
           }
         ],
         "afk_channel_id": null,
         "system_channel_id": null,
-        "system_channel_flags": 0,
-        "icon_hash": null
+        "system_channel_flags": 0
       },
       "is_dirty": null
     }
@@ -2427,7 +2964,11 @@
     "description": "Unofficial REX Network template",
     "longDescription": "Welcome to REX Network. REX Network is the biggest, highly loved and most authentic gaming network on Steam.    We deliver all the major services and gaming servers you can think of.",
     "emoji": "🎁",
-    "tags": ["0", "2", "3"],
+    "tags": [
+      "0",
+      "2",
+      "3"
+    ],
     "mtag": "0",
     "dprops": {
       "code": "z7XbwSqNZudW",
@@ -2449,77 +2990,90 @@
         "name": "GIveaways like REX",
         "description": null,
         "region": "europe",
+        "icon_hash": null,
         "verification_level": 2,
         "default_message_notifications": 1,
         "explicit_content_filter": 1,
         "preferred_locale": "en-US",
         "afk_timeout": 300,
-        "roles": [{
+        "roles": [
+          {
             "id": 0,
             "name": "@everyone",
-            "permissions": 104140353,
             "color": 0,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 2,
             "name": "B.O.T",
-            "permissions": 104140353,
             "color": 3447003,
             "hoist": false,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104140353,
+            "permissions_new": "104140353"
           },
           {
             "id": 3,
             "name": "Buddy",
-            "permissions": 104189505,
             "color": 15105570,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 4,
             "name": "Donator",
-            "permissions": 104189505,
             "color": 2067276,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 5,
             "name": "Premium Donator",
-            "permissions": 104189505,
             "color": 3066993,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 6,
             "name": "Donator of the month",
-            "permissions": 104189505,
             "color": 15844367,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104189505,
+            "permissions_new": "104189505"
           },
           {
             "id": 7,
             "name": "Moderation Member",
-            "permissions": 267906759,
             "color": 7419530,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 267906759,
+            "permissions_new": "267906759"
           },
           {
             "id": 8,
             "name": "Creator",
-            "permissions": 104320585,
             "color": 15105570,
             "hoist": true,
-            "mentionable": false
+            "mentionable": false,
+            "permissions": 104320585,
+            "permissions_new": "104320585"
           }
         ],
-        "channels": [{
+        "channels": [
+          {
+            "id": 1,
+            "type": 0,
             "name": "fast-giveaway",
             "position": 0,
             "topic": "",
@@ -2528,16 +3082,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
-              "id": 0,
-              "type": 0,
-              "allow": 0,
-              "deny": 2048
-            }],
-            "id": 1,
-            "type": 0
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
+              }
+            ]
           },
           {
+            "id": 2,
+            "type": 4,
             "name": "chat rooms :O",
             "position": 0,
             "topic": null,
@@ -2546,11 +3104,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [],
-            "id": 2,
-            "type": 4
+            "permission_overwrites": []
           },
           {
+            "id": 3,
+            "type": 0,
             "name": "lobby",
             "position": 1,
             "topic": "Read the #rules first before chatting here!",
@@ -2559,11 +3117,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 2,
-            "permission_overwrites": [],
-            "id": 3,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 4,
+            "type": 0,
             "name": "donators-haven",
             "position": 2,
             "topic": null,
@@ -2572,23 +3130,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 2,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 6,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 4,
-            "type": 0
+            ]
           },
           {
+            "id": 5,
+            "type": 0,
             "name": "media",
             "position": 3,
             "topic": null,
@@ -2597,16 +3160,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 2,
-            "permission_overwrites": [{
-              "id": 0,
-              "type": 0,
-              "allow": 49152,
-              "deny": 0
-            }],
-            "id": 5,
-            "type": 0
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 49152,
+                "deny": 0,
+                "allow_new": "49152",
+                "deny_new": "0"
+              }
+            ]
           },
           {
+            "id": 6,
+            "type": 4,
             "name": "important stuffs",
             "position": 2,
             "topic": null,
@@ -2615,11 +3182,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [],
-            "id": 6,
-            "type": 4
+            "permission_overwrites": []
           },
           {
+            "id": 7,
+            "type": 0,
             "name": "announcements",
             "position": 6,
             "topic": null,
@@ -2628,16 +3195,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [{
-              "id": 0,
-              "type": 0,
-              "allow": 0,
-              "deny": 2048
-            }],
-            "id": 7,
-            "type": 0
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
+              }
+            ]
           },
           {
+            "id": 8,
+            "type": 0,
             "name": "rules",
             "position": 7,
             "topic": "Rules of this server",
@@ -2646,16 +3217,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [{
-              "id": 0,
-              "type": 0,
-              "allow": 0,
-              "deny": 2048
-            }],
-            "id": 8,
-            "type": 0
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
+              }
+            ]
           },
           {
+            "id": 9,
+            "type": 0,
             "name": "faq",
             "position": 8,
             "topic": "Frequently Asked Questions",
@@ -2664,16 +3239,20 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [{
-              "id": 0,
-              "type": 0,
-              "allow": 0,
-              "deny": 2048
-            }],
-            "id": 9,
-            "type": 0
+            "permission_overwrites": [
+              {
+                "id": 0,
+                "type": 0,
+                "allow": 0,
+                "deny": 2048,
+                "allow_new": "0",
+                "deny_new": "2048"
+              }
+            ]
           },
           {
+            "id": 10,
+            "type": 0,
             "name": "server-feedback",
             "position": 9,
             "topic": "You are welcome to post feedback and recommendations that you have for the server!",
@@ -2682,11 +3261,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [],
-            "id": 10,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 11,
+            "type": 0,
             "name": "applyformoderator",
             "position": 10,
             "topic": "You can apply here for becoming a moderator, convince us!",
@@ -2695,11 +3274,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [],
-            "id": 11,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 12,
+            "type": 0,
             "name": "report-people",
             "position": 11,
             "topic": "Only report people here",
@@ -2708,11 +3287,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [],
-            "id": 12,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 13,
+            "type": 0,
             "name": "donations-members",
             "position": 12,
             "topic": null,
@@ -2721,11 +3300,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 6,
-            "permission_overwrites": [],
-            "id": 13,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 14,
+            "type": 4,
             "name": "fun zone",
             "position": 3,
             "topic": null,
@@ -2734,11 +3313,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [],
-            "id": 14,
-            "type": 4
+            "permission_overwrites": []
           },
           {
+            "id": 15,
+            "type": 0,
             "name": "tavern",
             "position": 13,
             "topic": "Grab a drink and use Tatsumaki!",
@@ -2747,11 +3326,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 14,
-            "permission_overwrites": [],
-            "id": 15,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 16,
+            "type": 4,
             "name": "other giveaways & trading",
             "position": 4,
             "topic": null,
@@ -2760,11 +3339,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [],
-            "id": 16,
-            "type": 4
+            "permission_overwrites": []
           },
           {
+            "id": 17,
+            "type": 0,
             "name": "trading",
             "position": 14,
             "topic": "Trading is only allowed here",
@@ -2773,11 +3352,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [],
-            "id": 17,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 18,
+            "type": 0,
             "name": "post-your-steam-codes",
             "position": 15,
             "topic": "Only for posting Steam codes (preferably with game names).\n\nAdd a emoji to the posted code when u use the key or find it's already taken!",
@@ -2786,11 +3365,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [],
-            "id": 18,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 19,
+            "type": 0,
             "name": "free-game-links",
             "position": 16,
             "topic": "For posting links to MASS giveaways, NO referrals",
@@ -2799,11 +3378,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 16,
-            "permission_overwrites": [],
-            "id": 19,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 20,
+            "type": 4,
             "name": "music",
             "position": 5,
             "topic": null,
@@ -2812,11 +3391,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [],
-            "id": 20,
-            "type": 4
+            "permission_overwrites": []
           },
           {
+            "id": 21,
+            "type": 0,
             "name": "music",
             "position": 17,
             "topic": null,
@@ -2825,11 +3404,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 20,
-            "permission_overwrites": [],
-            "id": 21,
-            "type": 0
+            "permission_overwrites": []
           },
           {
+            "id": 22,
+            "type": 2,
             "name": "Music Room",
             "position": 0,
             "topic": null,
@@ -2838,11 +3417,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 20,
-            "permission_overwrites": [],
-            "id": 22,
-            "type": 2
+            "permission_overwrites": []
           },
           {
+            "id": 23,
+            "type": 2,
             "name": "Chill Room",
             "position": 1,
             "topic": null,
@@ -2851,11 +3430,11 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 20,
-            "permission_overwrites": [],
-            "id": 23,
-            "type": 2
+            "permission_overwrites": []
           },
           {
+            "id": 24,
+            "type": 4,
             "name": "moderator",
             "position": 6,
             "topic": null,
@@ -2864,23 +3443,28 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": null,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 7,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 24,
-            "type": 4
+            ]
           },
           {
+            "id": 25,
+            "type": 0,
             "name": "moderation",
             "position": 18,
             "topic": null,
@@ -2889,27 +3473,29 @@
             "nsfw": false,
             "rate_limit_per_user": 0,
             "parent_id": 24,
-            "permission_overwrites": [{
+            "permission_overwrites": [
+              {
                 "id": 0,
                 "type": 0,
                 "allow": 0,
-                "deny": 1024
+                "deny": 1024,
+                "allow_new": "0",
+                "deny_new": "1024"
               },
               {
                 "id": 7,
                 "type": 0,
                 "allow": 1024,
-                "deny": 0
+                "deny": 0,
+                "allow_new": "1024",
+                "deny_new": "0"
               }
-            ],
-            "id": 25,
-            "type": 0
+            ]
           }
         ],
         "afk_channel_id": null,
         "system_channel_id": 3,
-        "system_channel_flags": 0,
-        "icon_hash": null
+        "system_channel_flags": 0
       },
       "is_dirty": null
     }
