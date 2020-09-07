@@ -3,12 +3,12 @@
     <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">
-          <span style="white-space: normal;"> {{ template.title }} </span>
+          <span style="white-space: normal"> {{ template.title }} </span>
         </v-list-item-title>
         <v-list-item-subtitle>{{ template.description }}</v-list-item-subtitle>
       </v-list-item-content>
 
-      <v-list-item-avatar size="70" class="display-1 accent text-center "
+      <v-list-item-avatar size="70" class="display-1 accent text-center"
         ><v-img
           :src="emojiSrc"
           contain
@@ -120,8 +120,8 @@ export default {
   props: {
     template: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     const emojiEntities = parse(this.template.emoji, { assetType: 'png' })
@@ -134,7 +134,7 @@ export default {
       tags: this.template.tags.sort().map((tag) => {
         return {
           id: tag,
-          icon: tagsIcons[tag]
+          icon: tagsIcons[tag],
         }
       }),
       emojiSrc,
@@ -146,11 +146,11 @@ export default {
       channelsIcons: {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
-        5: 'mdi-bullhorn'
+        5: 'mdi-bullhorn',
       },
-      creationLink: `https://discord.new/${this.template.dprops.code}`
+      creationLink: `https://discord.new/${this.template.dprops.code}`,
     }
-  }
+  },
 }
 </script>
 <style scoped>

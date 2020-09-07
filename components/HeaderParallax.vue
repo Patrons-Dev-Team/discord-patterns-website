@@ -27,13 +27,13 @@ export default {
   props: {
     height: {
       type: String,
-      default: '300'
-    }
+      default: '300',
+    },
   },
   data() {
     return {
-      appTitle: process.env.APP_TITLE
+      appTitle: process.env.APP_TITLE,
     }
-  }
+  },
 }
 </script>

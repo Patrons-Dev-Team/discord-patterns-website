@@ -317,8 +317,8 @@ export default {
   props: {
     templateData: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>

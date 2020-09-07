@@ -59,9 +59,9 @@ export default {
   name: 'GuildBar',
   data() {
     return {
-      guildName: 'GA Community'
+      guildName: 'GA Community',
     }
-  }
+  },
 }
 </script>
 

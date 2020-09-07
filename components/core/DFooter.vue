@@ -72,16 +72,16 @@ export default {
       type: Object,
       default: () => {
         return {}
-      }
-    }
+      },
+    },
   },
   data() {
     return {
       version: process.env.VERSION,
       commitHash: process.env.COMMITHASH,
       branch: process.env.BRANCH,
-      appTitle: process.env.APP_TITLE
+      appTitle: process.env.APP_TITLE,
     }
-  }
+  },
 }
 </script>

@@ -62,7 +62,7 @@ export default {
   data() {
     return {
       appTitle: process.env.APP_TITLE,
-      drawer: false
+      drawer: false,
     }
   },
   computed: {
@@ -70,16 +70,16 @@ export default {
       return [
         {
           title: this.$t('header.BROWSE'),
-          link: 'browse'
+          link: 'browse',
         },
         {
           activeClass: 'no-active',
           title: this.$t('header.POPULAR'),
-          link: { name: 'browse', query: { sort: 'most-popular' } }
-        }
+          link: { name: 'browse', query: { sort: 'most-popular' } },
+        },
       ]
-    }
-  }
+    },
+  },
 }
 </script>
 <style scoped>

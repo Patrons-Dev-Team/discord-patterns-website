@@ -39,7 +39,7 @@
 export default {
   data() {
     return {
-      partnerId: 0
+      partnerId: 0,
     }
   },
   beforeMount() {
@@ -61,7 +61,7 @@ export default {
           'partner',
           JSON.stringify({
             date: Date.now(),
-            id
+            id,
           })
         )
       }
@@ -73,11 +73,11 @@ export default {
         'partner',
         JSON.stringify({
           date,
-          id
+          id,
         })
       )
     }
     this.partnerId = id
-  }
+  },
 }
 </script>

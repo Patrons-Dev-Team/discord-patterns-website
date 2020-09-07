@@ -29,8 +29,8 @@ export default {
   props: {
     template: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
@@ -41,13 +41,13 @@ export default {
       channelsIcons: {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
-        5: 'mdi-bullhorn'
+        5: 'mdi-bullhorn',
       },
       treeOptions: {
         propertyNames: {
-          text: 'name'
-        }
-      }
+          text: 'name',
+        },
+      },
     }
   },
   methods: {
@@ -55,8 +55,8 @@ export default {
       if (channel['0'] >= 0) {
         this.$emit('select-channel', channel['0'])
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

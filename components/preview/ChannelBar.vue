@@ -17,9 +17,7 @@
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
               <v-btn id="bellBtn" icon @click="bellOn = !bellOn" v-on="on">
-                <v-icon id="bell" color="#b9bbbe">
-                  mdi-bell
-                </v-icon>
+                <v-icon id="bell" color="#b9bbbe"> mdi-bell </v-icon>
                 <div v-if="!bellOn" id="bellOff"></div>
               </v-btn>
             </template>
@@ -109,7 +107,7 @@ export default {
   plugins: ['~/plugins/vue-discord-message.js'],
   props: {
     // eslint-disable-next-line vue/require-default-prop
-    channel: Object
+    channel: Object,
   },
   data() {
     return {
@@ -119,16 +117,16 @@ export default {
       channelsIcons: {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
-        5: 'mdi-bullhorn'
-      }
+        5: 'mdi-bullhorn',
+      },
     }
   },
   methods: {
     openMembers() {
       this.membersOn = !this.membersOn
       this.$emit('open-members', this.membersOn)
-    }
-  }
+    },
+  },
 }
 </script>
 

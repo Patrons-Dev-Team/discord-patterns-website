@@ -48,6 +48,6 @@
 <script>
 export default {
   name: 'GuildContent',
-  plugins: ['~/plugins/vue-discord-message.js']
+  plugins: ['~/plugins/vue-discord-message.js'],
 }
 </script>

@@ -31,13 +31,13 @@ import CountryFlag from 'vue-country-flag'
 export default {
   name: 'LocaleChanger',
   components: {
-    CountryFlag
+    CountryFlag,
   },
   props: {
     fallbackToIndex: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     availableLocales() {
@@ -45,14 +45,14 @@ export default {
     },
     displayLocale() {
       return this.$i18n.locale
-    }
+    },
   },
   methods: {
     getLocalSwitchPath(code) {
       return this.fallbackToIndex
         ? this.localePath('index', code)
         : this.switchLocalePath(code)
-    }
-  }
+    },
+  },
 }
 </script>

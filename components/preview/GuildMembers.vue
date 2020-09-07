@@ -46,12 +46,12 @@ import User from '~/components/preview/User.vue'
 
 export default {
   components: {
-    User
+    User,
   },
   props: {
     // eslint-disable-next-line vue/require-default-prop
-    roles: null
-  }
+    roles: null,
+  },
 }
 </script>
 

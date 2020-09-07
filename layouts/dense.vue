@@ -20,7 +20,7 @@ export default {
   components: {
     Navbar,
     DFooter,
-    ParallaxHeader
-  }
+    ParallaxHeader,
+  },
 }
 </script>
