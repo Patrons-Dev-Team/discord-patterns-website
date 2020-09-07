@@ -4,7 +4,7 @@ import colors from 'vuetify/es5/util/colors'
 import pify from 'pify'
 import { analyze } from 'vizion'
 const analyzeGit = pify(analyze)
-const base = process.env.BASE_URL || '/discord-patterns-website/' // for vercel
+const base = process.env.APP_BASE_URL || '/discord-patterns-website/' // for vercel
 export default async () => {
   const meta = await analyzeGit({
     folder: resolve(__dirname),
