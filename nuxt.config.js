@@ -7,11 +7,11 @@ const analyzeGit = pify(analyze)
 const base = process.env.BASE_URL || '/discord-patterns-website/' // for vercel
 export default async () => {
   const meta = await analyzeGit({
-    folder: resolve(__dirname)
+    folder: resolve(__dirname),
   }).catch(() => {
     return {
       revision: 'unknown',
-      branch: 'unknown'
+      branch: 'unknown',
     }
   })
   return {
@@ -29,55 +29,55 @@ export default async () => {
         {
           hid: 'description',
           name: 'description',
-          content: process.env.npm_package_description || ''
+          content: process.env.npm_package_description || '',
         },
         {
           hid: 'og:site_name',
           name: 'og:site_name',
-          content: 'Discord patterns'
+          content: 'Discord patterns',
         },
         {
           hid: 'og:image',
           name: 'og:image',
-          content: base + 'discord-patterns-banner.png'
+          content: base + 'discord-patterns-banner.png',
         },
         {
           hid: 'og:image:type',
           name: 'og:image:type',
-          content: 'image/png'
+          content: 'image/png',
         },
         {
           hid: 'og:image:width',
           name: 'og:image:width',
-          content: '500'
+          content: '500',
         },
         {
           hid: 'og:image:height',
           name: 'og:image:height',
-          content: '500'
+          content: '500',
         },
         {
           hid: 'twitter:site',
           name: 'twitter:site',
-          content: '@d-patterns'
+          content: '@d-patterns',
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: base + 'discord-patterns-banner.png'
+          content: base + 'discord-patterns-banner.png',
         },
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'theme-color',
           name: 'theme-color',
-          content: '#7289DA'
-        }
+          content: '#7289DA',
+        },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: base + 'favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: base + 'favicon.ico' }],
     },
     /*
      ** Customize the progress-bar color
@@ -88,14 +88,14 @@ export default async () => {
      */
     generate: {
       dir: 'public',
-      concurrency: 150
+      concurrency: 150,
     },
     router: {
       /**
        * Customize the base url
        */
       base,
-      trailingSlash: true
+      trailingSlash: true,
     },
     /*
      ** Global CSS
@@ -109,7 +109,7 @@ export default async () => {
       // 'vue-discord-message'
       { src: '~/plugins/vue-discord-message.js', mode: 'client' },
       { src: '~/plugins/api-client.js', mode: 'client' },
-      { src: '~/plugins/api-server.js', mode: 'server' }
+      { src: '~/plugins/api-server.js', mode: 'server' },
     ],
     /*
      ** Nuxt.js dev-modules
@@ -121,11 +121,11 @@ export default async () => {
       [
         '~/modules/templates/',
         {
-          langs: ['us', 'fr']
-        }
+          langs: ['us', 'fr'],
+        },
       ],
       // Doc: https://github.com/aceforth/nuxt-optimized-images
-      '@aceforth/nuxt-optimized-images'
+      '@aceforth/nuxt-optimized-images',
     ],
     /*
      ** Nuxt.js modules
@@ -141,7 +141,7 @@ export default async () => {
       'nuxt-cache-payload',
       'nuxt-webfontloader',
       // Doc: https://github.com/nuxt-community/sitemap-module
-      '@nuxtjs/sitemap'
+      '@nuxtjs/sitemap',
     ],
     /*
      ** Axios module configuration
@@ -167,10 +167,10 @@ export default async () => {
             error: colors.deepOrange.accent4,
             success: colors.green.accent3,
             roleModal: colors.grey.darken4,
-            footerLink: colors.shades.white
-          }
-        }
-      }
+            footerLink: colors.shades.white,
+          },
+        },
+      },
     },
     /*
      ** nuxt-i18n module configuration
@@ -181,21 +181,21 @@ export default async () => {
         {
           code: 'us',
           iso: 'en-US',
-          file: 'en-US.js'
+          file: 'en-US.js',
         },
         {
           code: 'fr',
           iso: 'fr-FR',
-          file: 'fr-FR.js'
-        }
+          file: 'fr-FR.js',
+        },
       ],
       defaultLocale: 'us',
       vueI18n: {
-        fallbackLocale: 'us'
+        fallbackLocale: 'us',
       },
       seo: true,
       lazy: true,
-      langDir: 'lang/'
+      langDir: 'lang/',
     },
     /*
      ** nuxt-optimized-images module configuration
@@ -204,16 +204,16 @@ export default async () => {
     optimizedImages: {
       optimizeImages: true,
       mozjpeg: {
-        quality: 85
+        quality: 85,
       },
       optipng: false,
       pngquant: {
         speed: 7,
-        quality: [0.65, 0.8]
+        quality: [0.65, 0.8],
       },
       webp: {
-        quality: 85
-      }
+        quality: 85,
+      },
     },
     /*
      ** nuxt-site module configuration
@@ -222,7 +222,7 @@ export default async () => {
     sitemap: {
       hostname: 'https://d-patterns.js.org',
       // shortcut notation (basic)
-      i18n: 'en'
+      i18n: 'en',
     },
     /*
      ** Build configuration
@@ -238,15 +238,15 @@ export default async () => {
           config.module.rules.push({
             test: /\.worker\.js$/, // this will pick up all .js files that ends with ".worker.js"
             loader: 'worker-loader',
-            exclude: /(node_modules)/
+            exclude: /(node_modules)/,
           })
         }
         config.module.rules.push({
           test: /\.md$/,
           loader: 'frontmatter-markdown-loader',
           options: {
-            mode: [FMMode.VUE_COMPONENT]
-          }
+            mode: [FMMode.VUE_COMPONENT],
+          },
         })
       },
       html: {
@@ -259,9 +259,9 @@ export default async () => {
           removeEmptyAttributes: true,
           removeRedundantAttributes: true,
           trimCustomFragments: true,
-          useShortDoctype: true
-        }
-      }
+          useShortDoctype: true,
+        },
+      },
     },
     /*
      ** Client side env variables
@@ -270,7 +270,7 @@ export default async () => {
       VERSION: process.env.npm_package_version,
       COMMITHASH: meta.revision,
       BRANCH: meta.branch,
-      APP_TITLE: 'Discord Patterns'
-    }
+      APP_TITLE: 'Discord Patterns',
+    },
   }
 }

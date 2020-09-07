@@ -49,14 +49,14 @@ export default {
           field: {
             title: {
               encode: 'simple',
-              tokenize: 'forward'
+              tokenize: 'forward',
             },
             description: {
               encode: 'simple',
-              tokenize: 'forward'
-            }
-          }
-        }
+              tokenize: 'forward',
+            },
+          },
+        },
       })
       for (const template of templates) {
         index.add(template)
@@ -67,7 +67,7 @@ export default {
     } else {
       results = await index.search(query, {
         limit: options.itemsPerPage,
-        page: `${options.page}`
+        page: `${options.page}`,
       })
     }
     const sortFunc = getSortFunction(options.sortBy, options.sortDesc)
@@ -77,7 +77,7 @@ export default {
       )
       .sort(sortFunc)
     return results
-  }
+  },
 }
 
 function getSortFunction(sort, sortDesc) {

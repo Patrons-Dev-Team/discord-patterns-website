@@ -16,12 +16,12 @@ NuxtCommand.run({
   options: {
     dir: {
       type: 'string',
-      description: 'thumbnails cache'
+      description: 'thumbnails cache',
     },
     concurrent: {
       description:
-        'Number of browser to launch in parallel to generate templates'
-    }
+        'Number of browser to launch in parallel to generate templates',
+    },
   },
   async run(cmd) {
     const config = await configFile()
@@ -62,5 +62,5 @@ NuxtCommand.run({
     if (isServerStarted) {
       thumbnails.stopServer()
     }
-  }
+  },
 })

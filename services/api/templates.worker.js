@@ -1,6 +1,6 @@
 import registerPromiseWorker from 'promise-worker/register'
 import templatesApi from '~/services/api/templates'
-registerPromiseWorker(async function(obj) {
+registerPromiseWorker(async function (obj) {
   switch (obj.type) {
     case 'getAllTemplates':
       return await templatesApi.getAllTemplates(obj.data.lang)

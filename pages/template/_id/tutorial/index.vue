@@ -11,7 +11,7 @@ export default {
     payload,
     getPayload,
     route: { path },
-    app: { $templatesApi, router, i18n }
+    app: { $templatesApi, router, i18n },
   }) {
     const templateData =
       payload ||
@@ -24,7 +24,7 @@ export default {
     }
     return {
       templateData,
-      roles: templateData.dprops.serialized_source_guild.roles.reverse()
+      roles: templateData.dprops.serialized_source_guild.roles.reverse(),
     }
   },
   data() {
@@ -33,7 +33,7 @@ export default {
       attributes: null,
       templateName: 'Test',
       title: '',
-      description: ''
+      description: '',
     }
   },
   created() {
@@ -58,16 +58,16 @@ export default {
             ),
             setupCommunityImgSrc: this.$t(
               'template.tutorial.SETUP_COMMUNITY_IMG'
-            )
+            ),
           }
-        }
+        },
       }
     }
   },
   head() {
     const vars = {
       templateName: this.templateData.title,
-      templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`)
+      templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`),
     }
     const thumbnailsUrl =
       this.$router.options.base +
@@ -82,71 +82,71 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('template.tutorial.DESCRIPTION', vars)
+          content: this.$t('template.tutorial.DESCRIPTION', vars),
         },
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.$t('template.tutorial.TITLE', vars)
+          content: this.$t('template.tutorial.TITLE', vars),
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.$t('template.tutorial.DESCRIPTION', vars)
+          content: this.$t('template.tutorial.DESCRIPTION', vars),
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: thumbnailsUrl
+          content: thumbnailsUrl,
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content: this.$t('template.tutorial.TITLE', vars)
+          content: this.$t('template.tutorial.TITLE', vars),
         },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: './'
+          content: './',
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: this.templateData.description
+          content: this.templateData.description,
         },
         {
           hid: 'og:site_name',
           name: 'og:site_name',
-          content: process.env.APP_TITLE
+          content: process.env.APP_TITLE,
         },
         {
           hid: 'og:image',
           name: 'og:image',
-          content: thumbnailsUrl
+          content: thumbnailsUrl,
         },
         {
           hid: 'og:image:type',
           name: 'og:image:type',
-          content: 'image/png'
+          content: 'image/png',
         },
         {
           hid: 'og:image:width',
           name: 'og:image:width',
-          content: '1280'
+          content: '1280',
         },
         {
           hid: 'og:image:height',
           name: 'og:image:height',
-          content: '800'
-        }
-      ]
+          content: '800',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

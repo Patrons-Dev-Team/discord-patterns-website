@@ -49,14 +49,14 @@ export async function generateLangThumbnails(
               join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
               {
                 launchOptions: {
-                  args: ['--no-sandbox', '--disable-setuid-sandbox']
+                  args: ['--no-sandbox', '--disable-setuid-sandbox'],
                 },
                 waitForElement: '#loaded-trigger',
                 overwrite: true,
                 timeout: 30,
                 width: 1280,
                 height: 800,
-                scaleFactor: 1
+                scaleFactor: 1,
               }
             ),
           { retries: 3 }

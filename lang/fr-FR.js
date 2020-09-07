@@ -2,12 +2,12 @@ export default {
   index: {
     TITLE: 'Modèles et exemples de serveurs Discord',
     DESCRIPTION:
-      'Liste de modèles/templates Discord populaires et utiles pour créer ton serveur Discord facilement'
+      'Liste de modèles/templates Discord populaires et utiles pour créer ton serveur Discord facilement',
   },
   header: {
     BROWSE: 'Découvrir',
     POPULAR: 'Populaire',
-    SERVICE_DESCRIPTION: 'Annuaire de modèles'
+    SERVICE_DESCRIPTION: 'Annuaire de modèles',
   },
   footer: {
     MADE_WITH: 'Fait avec ',
@@ -18,11 +18,11 @@ export default {
     TITLE_LINKS: 'Liens',
     ABOUT_LINK: 'À propos',
     TEAM_LINK: "L'équipe",
-    GITLAB_LINK: 'GitLab'
+    GITLAB_LINK: 'GitLab',
   },
   parallax: {
     CONTENT: 'Site web open source de partage de templates Discord !',
-    JOIN: 'Rejoins notre serveur Discord !'
+    JOIN: 'Rejoins notre serveur Discord !',
   },
   partners: {
     TITLE: 'Liens et partenaires',
@@ -32,10 +32,9 @@ export default {
         DESCRIPTION:
           'Sur Discord-France.fr vous retrouverez des traductions du blog Discord, les dernières news concernant la plateforme, des articles fort sympathiques ou encore toute sorte de tutoriels pratiques !',
         LINK: 'https://discrd.fr/dpatterns',
-        IMG_LINK:
-          'https://d-patterns.js.org/discord-france.webp'
-      }
-    ]
+        IMG_LINK: 'https://d-patterns.js.org/discord-france.webp',
+      },
+    ],
   },
   preview: {
     BELL:
@@ -45,22 +44,22 @@ export default {
     AT: 'Mentions récentes',
     HELP: 'Aide',
     RESEARCH: 'Rechercher',
-    ONLINE: 'En ligne'
+    ONLINE: 'En ligne',
   },
   listing: {
     index: {
       TITLE: 'Liste de modèles Discord',
       DESCRIPTION:
-        "Créer ton serveur discord en 1 minute avec un modèle prêt à l'emploi !"
+        "Créer ton serveur discord en 1 minute avec un modèle prêt à l'emploi !",
     },
     browse: {
       TITLE: 'Découvre de superbes modèles',
-      DESCRIPTION: 'Voici toutes nos meilleures templates !'
+      DESCRIPTION: 'Voici toutes nos meilleures templates !',
     },
     sort: {
       MOST_RECENT: 'Le plus récent',
       ALPHABETICAL: 'Alphabétique',
-      MOST_POPULAR: 'Le plus populaire'
+      MOST_POPULAR: 'Le plus populaire',
     },
     SEARCH: 'Rechercher un modèle',
     BROWSE_ALL: 'Explorer tous les modèles',
@@ -69,172 +68,172 @@ export default {
       'Explore cette liste de modèles Discord pour créer ton serveur Discord en 1 minute',
     pophover: {
       CHANNELS: 'Salons',
-      ROLES: 'Rôles'
+      ROLES: 'Rôles',
     },
     card: {
       CREATE_BUTTON: 'Créer mon serveur',
-      DETAILS_BUTTON: 'Détails'
+      DETAILS_BUTTON: 'Détails',
     },
     tags: {
-      '2': 'jeux-vidéos',
-      '3': 'social',
-      '1': 'scolaire',
-      '5': 'jeu de rôle',
-      '4': 'amis',
-      '6': 'clone',
-      '7': 'utilitaire',
-      '0': 'giveaways'
-    }
+      2: 'jeux-vidéos',
+      3: 'social',
+      1: 'scolaire',
+      5: 'jeu de rôle',
+      4: 'amis',
+      6: 'clone',
+      7: 'utilitaire',
+      0: 'giveaways',
+    },
   },
   perms: {
     HOIST: {
       title:
         'Afficher les membres ayant ce rôle séparément des autres membres en ligne',
-      content: ''
+      content: '',
     },
     MENTIONABLE: {
       title: 'Permettre à tout le monde de @mentionner ce rôle',
       content:
-        'Note : Les membres avec la permission « mentionner @everyone, @here et tous les rôles » pourront toujours mentionner ce rôle.'
+        'Note : Les membres avec la permission « mentionner @everyone, @here et tous les rôles » pourront toujours mentionner ce rôle.',
     },
     CREATE_INSTANT_INVITE: {
       title: 'Créer une invitation',
-      content: ''
+      content: '',
     },
     KICK_MEMBERS: {
       title: 'Expulser des membres',
-      content: ''
+      content: '',
     },
     BAN_MEMBERS: {
       title: 'Bannir des membres',
-      content: ''
+      content: '',
     },
     ADMINISTRATOR: {
       title: 'Administrateur',
       content:
-        "Les membres ayant cette permission ont toutes les permissions et peuvent aussi outrepasser les permissions associées à des salons spécifiques. Un grand pouvoir implique de grandes responsabilités, alors penses-y à deux fois avant d'accorder cette permissions !"
+        "Les membres ayant cette permission ont toutes les permissions et peuvent aussi outrepasser les permissions associées à des salons spécifiques. Un grand pouvoir implique de grandes responsabilités, alors penses-y à deux fois avant d'accorder cette permissions !",
     },
     MANAGE_CHANNELS: {
       title: 'Gérer les salons',
       content:
-        'Les membres ayant cette permission peuvent créer, modifier et supprimer des salons.'
+        'Les membres ayant cette permission peuvent créer, modifier et supprimer des salons.',
     },
     MANAGE_GUILD: {
       title: 'Gérer le serveur',
       content:
-        'Les membres ayant cette permission peuvent changer le nom du serveur ou changer sa région.'
+        'Les membres ayant cette permission peuvent changer le nom du serveur ou changer sa région.',
     },
     ADD_REACTIONS: {
       title: 'Ajouter des réactions',
       content:
-        "Les membres ayant cette permission peuvent ajouter des réactions à un message. Cette permission n'est pas nécessaire pour réagir avec les réactions déjà ajoutées aux messages."
+        "Les membres ayant cette permission peuvent ajouter des réactions à un message. Cette permission n'est pas nécessaire pour réagir avec les réactions déjà ajoutées aux messages.",
     },
     VIEW_AUDIT_LOG: {
       title: 'Voir les logs du serveur',
       content:
-        'Les membres ayant cette permission peuvent voir les logs du serveur.'
+        'Les membres ayant cette permission peuvent voir les logs du serveur.',
     },
     PRIORITY_SPEAKER: {
       title: 'Voix prioritaire',
       content:
-        "Les utilisateurs ayant cette permission peuvent être entendus plus facilement lorsqu'ils parlent. Lorsque ce mode est activé, le volume des autres utilisateurs n'ayant pas cette permission sera automatiquement baissé. La voix prioritaire est activée en actionnant la touche "
+        "Les utilisateurs ayant cette permission peuvent être entendus plus facilement lorsqu'ils parlent. Lorsque ce mode est activé, le volume des autres utilisateurs n'ayant pas cette permission sera automatiquement baissé. La voix prioritaire est activée en actionnant la touche ",
     },
     STREAM: {
       title: 'Vidéo',
       content:
-        'Les membres ayant cette permission peuvent streamer dans ce serveur.'
+        'Les membres ayant cette permission peuvent streamer dans ce serveur.',
     },
     VIEW_CHANNEL: {
       title: 'View Channel',
       content:
-        'Allows guild members to view a channel, which includes reading messages in text channels'
+        'Allows guild members to view a channel, which includes reading messages in text channels',
     },
     SEND_MESSAGES: {
       title: 'Envoyer des messages',
-      content: ''
+      content: '',
     },
     SEND_TTS_MESSAGES: {
       title: 'Envoyer des messages TTS',
       content:
-        'Les membres ayant cette permission peuvent envoyer des messages de synthèse vocale (TTS, ou text-to-speech) en commençant leur message par /tts. Ces messages peuvent être entendus par toutes les personnes pour qui le salon est en avant-plan.'
+        'Les membres ayant cette permission peuvent envoyer des messages de synthèse vocale (TTS, ou text-to-speech) en commençant leur message par /tts. Ces messages peuvent être entendus par toutes les personnes pour qui le salon est en avant-plan.',
     },
     MANAGE_MESSAGES: {
       title: 'Gérer les messages',
       content:
-        "Les membres ayant cette permission peuvent supprimer les messages des autres membres ou épingler n'importe quel message."
+        "Les membres ayant cette permission peuvent supprimer les messages des autres membres ou épingler n'importe quel message.",
     },
     EMBED_LINKS: {
       title: 'Intégrer des liens',
-      content: ''
+      content: '',
     },
     ATTACH_FILES: {
       title: 'Joindre des fichiers',
-      content: ''
+      content: '',
     },
     READ_MESSAGE_HISTORY: {
       title: 'Voir les anciens messages',
-      content: ''
+      content: '',
     },
     MENTION_EVERYONE: {
       title: 'Mentionner @everyone, @here, et tous les rôles',
       content:
-        'Les membres ayant cette permission peuvent utiliser @everyone et @here pour mentionner tous les membres de ce salon. Ils peuvent aussi utiliser @mention pour tous les rôles, même si leur permission "Autoriser tout le monde à mentionner ce rôle" est désactivée.'
+        'Les membres ayant cette permission peuvent utiliser @everyone et @here pour mentionner tous les membres de ce salon. Ils peuvent aussi utiliser @mention pour tous les rôles, même si leur permission "Autoriser tout le monde à mentionner ce rôle" est désactivée.',
     },
     USE_EXTERNAL_EMOJIS: {
       title: 'Utiliser des émojis externes',
       content:
-        "Les membres ayant cette permission peuvent utiliser des émojis provenant d'autres serveurs sur ce serveur."
+        "Les membres ayant cette permission peuvent utiliser des émojis provenant d'autres serveurs sur ce serveur.",
     },
     CONNECT: {
       title: 'Se connecter',
-      content: ''
+      content: '',
     },
     SPEAK: {
       title: 'Parler',
-      content: ''
+      content: '',
     },
     MUTE_MEMBERS: {
       title: 'Couper le micro de membres',
-      content: ''
+      content: '',
     },
     DEAFEN_MEMBERS: {
       title: 'Mettre en sourdine des membres',
-      content: ''
+      content: '',
     },
     MOVE_MEMBERS: {
       title: 'Déplacer des membres',
       content:
-        "Les membres ayant cette permission peuvent déplacer d'autres membres présents dans ce salon vers un autre salon, à condition qu'ils aient tous les deux accès à cet autre salon."
+        "Les membres ayant cette permission peuvent déplacer d'autres membres présents dans ce salon vers un autre salon, à condition qu'ils aient tous les deux accès à cet autre salon.",
     },
     USE_VAD: {
       title: 'Utiliser la Détection de la voix',
       content:
-        'Les membres doivent utiliser le mode Appuyer-pour-parler dans ce salon si cette permission est retirée.'
+        'Les membres doivent utiliser le mode Appuyer-pour-parler dans ce salon si cette permission est retirée.',
     },
     CHANGE_NICKNAME: {
       title: 'Changer le pseudo',
       content:
-        'Les membres ayant cette permission peuvent changer leur propre pseudo.'
+        'Les membres ayant cette permission peuvent changer leur propre pseudo.',
     },
     MANAGE_NICKNAMES: {
       title: 'Gérer les pseudos',
       content:
-        'Les membres ayant cette permission peuvent changer le pseudo des autres membres.'
+        'Les membres ayant cette permission peuvent changer le pseudo des autres membres.',
     },
     MANAGE_ROLES: {
       title: 'Gérer les rôles',
       content:
-        'Les membres ayant cette permission peuvent créer de nouveaux rôles et modifier/effacer les rôles moins élevés que celui-ci.'
+        'Les membres ayant cette permission peuvent créer de nouveaux rôles et modifier/effacer les rôles moins élevés que celui-ci.',
     },
     MANAGE_WEBHOOKS: {
       title: 'Gérer les webhooks',
       content:
-        'Les membres ayant cette permission peuvent créer, modifier et supprimer les webhooks.'
+        'Les membres ayant cette permission peuvent créer, modifier et supprimer les webhooks.',
     },
     MANAGE_EMOJIS: {
       title: 'Gérer les émojis',
-      content: ''
-    }
+      content: '',
+    },
   },
   template: {
     tutorial: {
@@ -243,7 +242,7 @@ export default {
       TITLE:
         'Créer un serveur discord {templateMainTag} avec le modèle {templateName} en 3 étapes',
       DESCRIPTION:
-        'Tutoriel pour créer facilement ta communauté discord {templateMainTag} et bien la gérer à l’aide du modèle {templateName}. Des astuces pour rendre ta commu populaire !'
+        'Tutoriel pour créer facilement ta communauté discord {templateMainTag} et bien la gérer à l’aide du modèle {templateName}. Des astuces pour rendre ta commu populaire !',
     },
     details: {
       DESC_TITLE: 'Description',
@@ -266,7 +265,7 @@ export default {
         ORGINAL_DESC_DESCRIPTION: 'Description originelle du modèle',
         NUMBER_OF_USES_TITLE: "Nombre d'utilisations",
         NUMBER_OF_USES_DESCRIPTION: 'Mis-à-jour lors de la dernière build',
-        CREATOR_TITLE: 'Créateur'
+        CREATOR_TITLE: 'Créateur',
       },
       source: {
         TITLE: 'Informations sur le serveur source',
@@ -281,11 +280,11 @@ export default {
         AFK_CHNL_ID_TITLE: "ID du salon d'AFK",
         SYS_CHNL_ID_TITLE: 'ID du salon système',
         SYS_CHNL_FLAGS_TITLE: 'Drapeaux du salon système',
-        ICON_HASH_TITLE: "Hash de l'icône du serveur"
+        ICON_HASH_TITLE: "Hash de l'icône du serveur",
       },
       DESCRIPTION:
-        'Créer ton serveur Discord {templateMainTag} avec le modèle {templateName}'
-    }
+        'Créer ton serveur Discord {templateMainTag} avec le modèle {templateName}',
+    },
   },
   dataTable: {
     LOADING: 'Chargement...',
@@ -293,6 +292,6 @@ export default {
     ITEMS_PER_PAGE_ALL_TEXT: 'Tous',
     PAGE_TEXT: '{0}-{1} de {2}',
     NO_DATA: 'Aucunes données',
-    NO_RESULTS: 'Aucuns résultats'
-  }
+    NO_RESULTS: 'Aucuns résultats',
+  },
 }

@@ -127,7 +127,7 @@ import { getDefaultBrowseOrder, validateBrowseQuery } from '~/utils/utils'
 export default {
   components: {
     DCardTemplate,
-    DPartners
+    DPartners,
   },
   async fetch() {
     const res = await this.$templatesApi.search(
@@ -137,7 +137,7 @@ export default {
       {
         itemsPerPage: 300,
         sortDesc: this.options.sortDesc,
-        sortBy: this.options.sortBy
+        sortBy: this.options.sortBy,
       }
     )
     this.templates = res.result
@@ -159,8 +159,8 @@ export default {
         itemsPerPage: Number(
           typeof query.items !== 'undefined' ? query.items : 8
         ),
-        page: Number(typeof query.page !== 'undefined' ? query.page : 1)
-      }
+        page: Number(typeof query.page !== 'undefined' ? query.page : 1),
+      },
     }
   },
   validate({ query }) {
@@ -175,11 +175,11 @@ export default {
       options: {
         page: 1,
         sortBy: 'most-recent',
-        sortDesc: true
+        sortDesc: true,
       },
       search: '',
       sortSelectedIcon: 'mdi-clock',
-      timeout: null
+      timeout: null,
     }
   },
   computed: {
@@ -188,18 +188,18 @@ export default {
         {
           text: this.$t('listing.sort.ALPHABETICAL'),
           icon: 'mdi-sort-alphabetical-descending-variant',
-          value: 'alphabetical'
+          value: 'alphabetical',
         },
         {
           text: this.$t('listing.sort.MOST_RECENT'),
           icon: 'mdi-clock',
-          value: 'most-recent'
+          value: 'most-recent',
         },
         {
           text: this.$t('listing.sort.MOST_POPULAR'),
           icon: 'mdi-star',
-          value: 'most-popular'
-        }
+          value: 'most-popular',
+        },
       ]
     },
     footerProps() {
@@ -207,12 +207,12 @@ export default {
         'items-per-page-options': [8, 20],
         'page-text': this.$t('dataTable.PAGE_TEXT'),
         'items-per-page-text': this.$t('dataTable.ITEMS_PER_PAGE_TEXT'),
-        'items-per-page-all-text': this.$t('dataTable.ITEMS_PER_PAGE_ALL_TEXT')
+        'items-per-page-all-text': this.$t('dataTable.ITEMS_PER_PAGE_ALL_TEXT'),
       }
     },
     selectedTagsIds() {
       return this.selectedTags.map((num) => order[num])
-    }
+    },
   },
   watchQuery: ['q', 'tags', 'sort', 'order'],
   watch: {
@@ -221,7 +221,7 @@ export default {
         ...watchers,
         [key]() {
           this.$fetch()
-        }
+        },
       }),
       {}
     ),
@@ -241,8 +241,8 @@ export default {
             name: 'browse',
             query: {
               ...this.$route.query,
-              page: this.options.page
-            }
+              page: this.options.page,
+            },
           })
         )
         .catch(() => {})
@@ -255,12 +255,12 @@ export default {
             query: {
               ...this.$route.query,
               page: 1,
-              items: this.options.itemsPerPage
-            }
+              items: this.options.itemsPerPage,
+            },
           })
         )
         .catch(() => {})
-    }
+    },
   },
   mounted() {
     this.updateSortIcon()
@@ -281,8 +281,8 @@ export default {
               sort: this.options.sortBy,
               order: Number(this.options.sortDesc),
               page: 1,
-              items: this.options.itemsPerPage
-            }
+              items: this.options.itemsPerPage,
+            },
           })
         )
         .catch(() => {
@@ -303,7 +303,7 @@ export default {
       this.timeout = setTimeout(() => {
         this.performSearch()
       }, 1000)
-    }
+    },
   },
   head() {
     return {
@@ -312,10 +312,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('listing.DESCRIPTION')
-        }
-      ]
+          content: this.$t('listing.DESCRIPTION'),
+        },
+      ],
     }
-  }
+  },
 }
 </script>

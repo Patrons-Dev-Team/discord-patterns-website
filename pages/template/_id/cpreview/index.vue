@@ -9,7 +9,7 @@
         ></v-img>
       </v-col>
       <v-list-item two-line>
-        <v-list-item-avatar size="100" class="display-1 accent text-center "
+        <v-list-item-avatar size="100" class="display-1 accent text-center"
           ><v-img
             :src="emojiSrc"
             :transition="false"
@@ -21,7 +21,7 @@
         </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-title class="display-2 mb-1">
-            <span style="white-space: normal;">
+            <span style="white-space: normal">
               {{ templateData.title }}
             </span>
           </v-list-item-title>
@@ -92,9 +92,7 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <div v-if="imgLoaded" id="loaded-trigger" style="opacity: 0;">
-      LOADED
-    </div>
+    <div v-if="imgLoaded" id="loaded-trigger" style="opacity: 0">LOADED</div>
   </div>
 </template>
 
@@ -110,7 +108,7 @@ export default {
     error,
     payload,
     route: { path },
-    app: { $templatesApi, i18n }
+    app: { $templatesApi, i18n },
   }) {
     const templateData = await $templatesApi.getTemplateById(
       i18n.locale,
@@ -131,7 +129,7 @@ export default {
       tags: templateData.tags.sort().map((tag) => {
         return {
           id: tag,
-          icon: tagsIcons[tag]
+          icon: tagsIcons[tag],
         }
       }),
       channels: arrayToTree(
@@ -141,21 +139,21 @@ export default {
       channelsIcons: {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
-        5: 'mdi-bullhorn'
+        5: 'mdi-bullhorn',
       },
-      roles: templateData.dprops.serialized_source_guild.roles.reverse()
+      roles: templateData.dprops.serialized_source_guild.roles.reverse(),
     }
   },
   data() {
     return {
-      imgLoaded: false
+      imgLoaded: false,
     }
   },
   methods: {
     loaded() {
       this.imgLoaded = true
-    }
-  }
+    },
+  },
 }
 </script>
 

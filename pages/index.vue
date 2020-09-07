@@ -98,13 +98,13 @@ import { tags, order } from '~/data/tags'
 export default {
   components: {
     DCardTemplate,
-    DPartners
+    DPartners,
   },
   async asyncData({
     payload,
     getPayload,
     route: { path },
-    app: { $templatesApi, router, i18n }
+    app: { $templatesApi, router, i18n },
   }) {
     const templates =
       payload ||
@@ -112,14 +112,14 @@ export default {
       (await $templatesApi.getLatestTemplates(i18n.locale))
     return {
       templates,
-      dTemplates: templates
+      dTemplates: templates,
     }
   },
   data() {
     return {
       tags,
       order,
-      search: ''
+      search: '',
     }
   },
   computed: {
@@ -131,9 +131,9 @@ export default {
           link: {
             name: 'browse',
             query: {
-              sort: 'alphabetical'
-            }
-          }
+              sort: 'alphabetical',
+            },
+          },
         },
         {
           title: this.$t('listing.sort.MOST_RECENT'),
@@ -141,9 +141,9 @@ export default {
           link: {
             name: 'browse',
             query: {
-              sort: 'most-recent'
-            }
-          }
+              sort: 'most-recent',
+            },
+          },
         },
         {
           title: this.$t('listing.sort.MOST_POPULAR'),
@@ -151,12 +151,12 @@ export default {
           link: {
             name: 'browse',
             query: {
-              sort: 'most-popular'
-            }
-          }
-        }
+              sort: 'most-popular',
+            },
+          },
+        },
       ]
-    }
+    },
   },
   watch: {
     '$vuetify.breakpoint.smOnly'() {
@@ -183,7 +183,7 @@ export default {
       if (this.$vuetify.breakpoint.xsOnly) {
         this.dTemplates = this.templates
       }
-    }
+    },
   },
   beforeMount() {
     this.setItems()
@@ -202,10 +202,10 @@ export default {
       this.$router.push(
         this.localePath({
           name: 'browse',
-          query: { q: this.search }
+          query: { q: this.search },
         })
       )
-    }
+    },
   },
   head() {
     return {
@@ -215,10 +215,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('index.DESCRIPTION')
-        }
-      ]
+          content: this.$t('index.DESCRIPTION'),
+        },
+      ],
     }
-  }
+  },
 }
 </script>

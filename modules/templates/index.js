@@ -7,7 +7,7 @@ import {
   generateLangThumbnails,
   stopServer,
   copyTemplates,
-  getThumbnailsToGenerate
+  getThumbnailsToGenerate,
 } from './thumbnail-generate'
 
 const cachePath = resolve(__dirname, '../../.thumbnails/entries')
@@ -57,11 +57,11 @@ export default async function templatesModule(moduleOptions) {
   this.addPlugin({
     src: resolve(__dirname, 'plugin.js'),
     options: {
-      langs: moduleOptions.langs
-    }
+      langs: moduleOptions.langs,
+    },
   })
 }
 
 module.exports.meta = {
-  name: 'template'
+  name: 'template',
 }

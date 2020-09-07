@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-list-item two-line>
-        <v-list-item-avatar size="70" class="display-1 accent text-center "
+        <v-list-item-avatar size="70" class="display-1 accent text-center"
           ><v-img
             :src="emojiSrc"
             contain
@@ -12,7 +12,7 @@
         </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-title class="headline mb-1">
-            <span style="white-space: normal;">
+            <span style="white-space: normal">
               {{ templateData.title }}
             </span>
           </v-list-item-title>
@@ -67,7 +67,7 @@
           :to="
             localePath({
               name: 'template-id-tutorial',
-              params: { id: templateData.id }
+              params: { id: templateData.id },
             })
           "
           block
@@ -249,11 +249,11 @@ import { convertPerms } from '~/lib/discordperms'
 import { tags as tagsIcons } from '~/data/tags'
 import DTemplateDetails from '~/components/DTemplateDetails'
 const localesDateFns = {
-  fr
+  fr,
 }
 export default {
   components: {
-    DTemplateDetails
+    DTemplateDetails,
   },
   layout: 'dense',
   async asyncData({
@@ -262,7 +262,7 @@ export default {
     payload,
     getPayload,
     route: { path },
-    app: { $templatesApi, router, i18n }
+    app: { $templatesApi, router, i18n },
   }) {
     const templateData =
       payload ||
@@ -286,7 +286,7 @@ export default {
       tags: templateData.tags.sort().map((tag) => {
         return {
           id: tag,
-          icon: tagsIcons[tag]
+          icon: tagsIcons[tag],
         }
       }),
       channels: arrayToTree(
@@ -296,10 +296,10 @@ export default {
       channelsIcons: {
         0: 'mdi-pound',
         2: 'mdi-volume-high',
-        5: 'mdi-bullhorn'
+        5: 'mdi-bullhorn',
       },
       creationLink: `https://discord.new/${templateData.dprops.code}`,
-      roles: templateData.dprops.serialized_source_guild.roles.reverse()
+      roles: templateData.dprops.serialized_source_guild.roles.reverse(),
     }
   },
   data() {
@@ -308,11 +308,11 @@ export default {
       modalRoleData: {
         perms: null,
         mentionable: null,
-        hoist: null
+        hoist: null,
       },
       modalRoleName: '',
       modalRoleColor: '',
-      modalRoleModel: 0
+      modalRoleModel: 0,
     }
   },
   computed: {
@@ -321,7 +321,7 @@ export default {
         new Date(this.templateData.dprops.created_at),
         'iii, MMMM d yyyy, h:mm a',
         {
-          locale: localesDateFns[this.$i18n.locale]
+          locale: localesDateFns[this.$i18n.locale],
         }
       )
     },
@@ -330,10 +330,10 @@ export default {
         new Date(this.templateData.dprops.updated_at),
         'iii, MMMM d yyyy, h:mm a',
         {
-          locale: localesDateFns[this.$i18n.locale]
+          locale: localesDateFns[this.$i18n.locale],
         }
       )
-    }
+    },
   },
   methods: {
     openModalRole(role, index) {
@@ -341,10 +341,10 @@ export default {
       this.modalRoleData = {
         perms: convertPerms(role.permissions, {
           ordered: true,
-          readableNames: false
+          readableNames: false,
         }),
         mentionable: role.mentionable,
-        hoist: role.hoist
+        hoist: role.hoist,
       }
       this.modalRoleName = role.name
       this.modalRoleColor =
@@ -360,10 +360,10 @@ export default {
       this.modalRoleData = {
         perms: convertPerms(role.permissions, {
           ordered: true,
-          readableNames: false
+          readableNames: false,
         }),
         mentionable: role.mentionable,
-        hoist: role.hoist
+        hoist: role.hoist,
       }
       this.modalRoleName = role.name
       this.modalRoleColor =
@@ -371,12 +371,12 @@ export default {
           ? '#' + role.color.toString(16).padStart(6, '0') + ' !important'
           : 'rgb(212,212,212) !important'
       this.modalRoleModel = index
-    }
+    },
   },
   head() {
     const vars = {
       templateName: this.templateData.title,
-      templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`)
+      templateMainTag: this.$t(`listing.tags.${this.templateData.mtag}`),
     }
     const thumbnailsUrl =
       this.$router.options.base +
@@ -389,76 +389,76 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('template.details.DESCRIPTION', vars)
+          content: this.$t('template.details.DESCRIPTION', vars),
         },
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.templateData.title
+          content: this.templateData.title,
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.templateData.description
+          content: this.templateData.description,
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: thumbnailsUrl
+          content: thumbnailsUrl,
         },
         {
           hid: 'twitter:creator',
           name: 'twitter:creator',
-          content: `${this.templateData.dprops.creator.username}#${this.templateData.dprops.creator.discriminator}`
+          content: `${this.templateData.dprops.creator.username}#${this.templateData.dprops.creator.discriminator}`,
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content: this.templateData.title
+          content: this.templateData.title,
         },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: './'
+          content: './',
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: this.templateData.description
+          content: this.templateData.description,
         },
         {
           hid: 'og:site_name',
           name: 'og:site_name',
-          content: process.env.APP_TITLE
+          content: process.env.APP_TITLE,
         },
         {
           hid: 'og:image',
           name: 'og:image',
-          content: thumbnailsUrl
+          content: thumbnailsUrl,
         },
         {
           hid: 'og:image:type',
           name: 'og:image:type',
-          content: 'image/png'
+          content: 'image/png',
         },
         {
           hid: 'og:image:width',
           name: 'og:image:width',
-          content: '1280'
+          content: '1280',
         },
         {
           hid: 'og:image:height',
           name: 'og:image:height',
-          content: '800'
-        }
-      ]
+          content: '800',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

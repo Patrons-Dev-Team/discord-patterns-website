@@ -91,19 +91,19 @@ export default {
     GuildChannels,
     GuildContent,
     GuildMembers,
-    GuildsList
+    GuildsList,
   },
   async asyncData({ app: { $templatesApi } }) {
     const templates = await $templatesApi.getLatestTemplates('us')
     return {
       templates,
-      dTemplates: [...templates]
+      dTemplates: [...templates],
     }
   },
   data() {
     return {
       channel: 1,
-      membersOn: true
+      membersOn: true,
     }
   },
   methods: {
@@ -117,8 +117,8 @@ export default {
     },
     openRightPannel(membersOn) {
       this.membersOn = membersOn
-    }
-  }
+    },
+  },
 }
 </script>
 

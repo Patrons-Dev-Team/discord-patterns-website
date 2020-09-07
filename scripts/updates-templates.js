@@ -4,7 +4,7 @@ const rateLimit = require('axios-rate-limit')
 const fs = require('fs-extra')
 const http = rateLimit(axios.create(), {
   maxRequests: 1,
-  perMilliseconds: 1500
+  perMilliseconds: 1500,
 })
 if (process.argv.length !== 3) {
   throw new Error('invalid args')
