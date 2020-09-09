@@ -29,7 +29,11 @@ export default {
 
   async getLatestTemplates(lang) {
     const templates = await this.getAllTemplates(lang)
-    return templates.slice(0, 9)
+    return templates
+      .sort(
+        (a, b) => new Date(b.dprops.updated_at) - new Date(a.dprops.updated_at)
+      )
+      .slice(0, 9)
   },
 
   async getTemplateById(lang, id) {

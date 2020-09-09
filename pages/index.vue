@@ -61,14 +61,23 @@
       </v-menu>
       <v-row>
         <v-col
-          v-for="template in dTemplates"
+          v-for="(template, index) in dTemplates"
           :key="template.id"
           cols="12"
           sm="6"
           lg="4"
           xl="3"
         >
-          <v-lazy min-height="195">
+          <v-lazy
+            v-show="
+              index !== 8 ||
+              (!$vuetify.breakpoint.smOnly &&
+                !$vuetify.breakpoint.mdOnly &&
+                !$vuetify.breakpoint.xlOnly)
+            "
+            when-hidle
+            min-height="195"
+          >
             <d-card-template :template="template"></d-card-template>
           </v-lazy>
         </v-col>
@@ -92,13 +101,11 @@
 </template>
 
 <script>
-import DPartners from '~/components/DPartners'
-import DCardTemplate from '~/components/DCardTemplate'
 import { tags, order } from '~/data/tags'
 export default {
   components: {
-    DCardTemplate,
-    DPartners,
+    DCardTemplate: () => import('~/components/DCardTemplate'),
+    DPartners: () => import('~/components/DPartners'),
   },
   async asyncData({
     payload,
@@ -158,46 +165,8 @@ export default {
       ]
     },
   },
-  watch: {
-    '$vuetify.breakpoint.smOnly'() {
-      if (this.$vuetify.breakpoint.smOnly) {
-        this.dTemplates = this.templates.slice(0, 8)
-      }
-    },
-    '$vuetify.breakpoint.mdOnly'() {
-      if (this.$vuetify.breakpoint.mdOnly) {
-        this.dTemplates = this.templates.slice(0, 8)
-      }
-    },
-    '$vuetify.breakpoint.xlOnly'() {
-      if (this.$vuetify.breakpoint.xlOnly) {
-        this.dTemplates = this.templates.slice(0, 8)
-      }
-    },
-    '$vuetify.breakpoint.lgOnly'() {
-      if (this.$vuetify.breakpoint.lgOnly) {
-        this.dTemplates = this.templates
-      }
-    },
-    '$vuetify.breakpoint.xsOnly'() {
-      if (this.$vuetify.breakpoint.xsOnly) {
-        this.dTemplates = this.templates
-      }
-    },
-  },
-  beforeMount() {
-    this.setItems()
-  },
+  watch: {},
   methods: {
-    setItems() {
-      if (
-        this.$vuetify.breakpoint.smOnly ||
-        this.$vuetify.breakpoint.mdOnly ||
-        this.$vuetify.breakpoint.xlOnly
-      ) {
-        this.dTemplates = this.templates.slice(0, 8)
-      }
-    },
     performSearch() {
       this.$router.push(
         this.localePath({

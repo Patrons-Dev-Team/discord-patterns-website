@@ -12,7 +12,11 @@ export default function (lang, templates, routes) {
   }
   routes.push({
     route: prefix || '/',
-    payload: templates.slice(0, 9),
+    payload: templates
+      .sort(
+        (a, b) => new Date(b.dprops.updated_at) - new Date(a.dprops.updated_at)
+      )
+      .slice(0, 9),
   })
   routes = routes.map(
     (obj) => (obj.route += obj.route.endsWith('/') ? '' : '/')
