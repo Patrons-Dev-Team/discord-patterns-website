@@ -172,11 +172,7 @@ export default {
       order,
       templates: [],
       selectedTags: [],
-      options: {
-        page: 1,
-        sortBy: 'most-recent',
-        sortDesc: true,
-      },
+      options: {},
       search: '',
       sortSelectedIcon: 'mdi-clock',
       timeout: null,
