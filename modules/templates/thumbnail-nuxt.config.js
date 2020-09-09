@@ -3,6 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   mode: 'universal',
   dev: false,
+  telemetry: false,
   ignore: [
     'pages/index.vue',
     'pages/browse.vue',
