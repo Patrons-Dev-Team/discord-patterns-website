@@ -35,6 +35,7 @@
     "performant-array-to-tree": "^1.7.1",
     "promise-worker": "^2.0.1",
     "sanitize-html": "^1.27.4",
+    "twemoji": "^12.1.6",
     "twemoji-parser": "^13.0.0",
     "vue-country-flag": "^2.0.1",
     "vue-discord-message": "^4.0.0"

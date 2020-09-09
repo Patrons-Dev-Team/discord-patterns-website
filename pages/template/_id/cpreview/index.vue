@@ -92,11 +92,14 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <div v-if="imgLoaded" id="loaded-trigger" style="opacity: 0">LOADED</div>
+    <div v-if="readyForScreenshot" id="loaded-trigger" style="opacity: 0">
+      LOADED
+    </div>
   </div>
 </template>
 
 <script>
+import twemoji from 'twemoji'
 import { parse } from 'twemoji-parser'
 import { arrayToTree } from 'performant-array-to-tree'
 import { tags as tagsIcons } from '~/data/tags'
@@ -147,10 +150,26 @@ export default {
   data() {
     return {
       imgLoaded: false,
+      readyForScreenshot: false,
     }
+  },
+  mounted() {
+    twemoji.parse(document.body)
   },
   methods: {
     loaded() {
+      Promise.all(
+        Array.from(document.images)
+          .filter((img) => !img.complete)
+          .map(
+            (img) =>
+              new Promise((resolve) => {
+                img.onload = img.onerror = resolve
+              })
+          )
+      ).then(() => {
+        this.readyForScreenshot = true
+      })
       this.imgLoaded = true
     },
   },
@@ -199,10 +218,16 @@ export default {
       0 100%;
   background-repeat: no-repeat;
   background-color: white;
-  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-size: 100% 0px, 100% 40px, 100% 14px, 100% 14px;
 }
 </style>
 <style>
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
 .dchannels .v-treeview-node__root {
   min-height: 20px;
 }
