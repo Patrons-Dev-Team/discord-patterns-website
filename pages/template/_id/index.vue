@@ -143,7 +143,7 @@
       >
         <v-card>
           <v-row class="mx-0">
-            <v-col md="3" class="pa-0 roleModal">
+            <v-col md="3" class="pa-0 roleModal role-dialog-col">
               <v-list-item>
                 <v-list-item-avatar>
                   <v-icon @click="closeModalrole">mdi-close</v-icon>
@@ -177,7 +177,7 @@
                 </v-list-item-group>
               </v-list>
             </v-col>
-            <v-col md="9">
+            <v-col md="9" class="role-dialog-col">
               <v-fade-transition>
                 <v-list two-line>
                   <h3 :style="'color: ' + modalRoleColor + ';'">
@@ -466,5 +466,9 @@ export default {
 .d-tree-normalized-level {
   display: inline-block;
   width: 24px;
+}
+.role-dialog-col {
+  height: 80vh;
+  overflow-y: auto;
 }
 </style>
