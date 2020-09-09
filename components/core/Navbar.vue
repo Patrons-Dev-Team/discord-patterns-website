@@ -67,13 +67,15 @@ export default {
   },
   computed: {
     menuItems() {
+      const isBrowsingInPopular = this.$route.query.sort === 'most-popular'
       return [
         {
+          activeClass: isBrowsingInPopular ? 'no-active' : '',
           title: this.$t('header.BROWSE'),
           link: 'browse',
         },
         {
-          activeClass: 'no-active',
+          activeClass: !isBrowsingInPopular ? 'no-active' : '',
           title: this.$t('header.POPULAR'),
           link: { name: 'browse', query: { sort: 'most-popular' } },
         },
