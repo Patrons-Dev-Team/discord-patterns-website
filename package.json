@@ -24,7 +24,7 @@
     "fast-glob": "^3.2.4",
     "flexsearch": "^0.6.32",
     "fs-extra": "^9.0.1",
-    "marked": "^1.1.1",
+    "marked": "^2.0.0",
     "nuxt": "^2.14.4",
     "nuxt-cache-payload": "^0.1.2",
     "nuxt-i18n": "^6.13.12",
