@@ -15,7 +15,7 @@
       "code": "EPAukKQArtg3",
       "name": "Giveaways, GA Community →  By Maxerbox, Discord Patterns",
       "description": "GA Community template\nThis template is provided by Maxerbox from Discord Patterns. \nhttps://bit.ly/DiscordPatterns",
-      "usage_count": 74,
+      "usage_count": 141,
       "creator_id": "695372268364103772",
       "creator": {
         "id": "695372268364103772",
@@ -378,7 +378,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 536873024,
                 "allow_new": "0",
@@ -386,7 +386,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -394,7 +394,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -402,7 +402,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 8256,
                 "allow_new": "0",
@@ -410,7 +410,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 805829713,
                 "deny": 0,
                 "allow_new": "805829713",
@@ -418,7 +418,7 @@
               },
               {
                 "id": 35,
-                "type": 0,
+                "type": "role",
                 "allow": 268445696,
                 "deny": 0,
                 "allow_new": "268445696",
@@ -440,7 +440,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -448,7 +448,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -456,7 +456,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -478,7 +478,7 @@
             "permission_overwrites": [
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -500,7 +500,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -508,7 +508,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -530,7 +530,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -538,7 +538,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -546,7 +546,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -554,7 +554,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 2112,
                 "allow_new": "1024",
@@ -562,7 +562,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 3136,
                 "deny": 0,
                 "allow_new": "3136",
@@ -584,7 +584,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 64,
                 "deny": 2048,
                 "allow_new": "64",
@@ -592,7 +592,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -600,7 +600,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -608,7 +608,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 10240,
                 "allow_new": "0",
@@ -616,7 +616,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -638,7 +638,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 10304,
                 "allow_new": "0",
@@ -646,7 +646,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -654,7 +654,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -662,7 +662,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 10304,
                 "allow_new": "0",
@@ -670,7 +670,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 805829713,
                 "deny": 0,
                 "allow_new": "805829713",
@@ -692,7 +692,7 @@
             "permission_overwrites": [
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -714,7 +714,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 1,
                 "deny": 0,
                 "allow_new": "1",
@@ -722,7 +722,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -730,7 +730,7 @@
               },
               {
                 "id": 5,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 2048,
                 "allow_new": "1024",
@@ -738,7 +738,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -746,7 +746,7 @@
               },
               {
                 "id": 35,
-                "type": 0,
+                "type": "role",
                 "allow": 11264,
                 "deny": 0,
                 "allow_new": "11264",
@@ -768,7 +768,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -776,7 +776,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -784,7 +784,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -806,7 +806,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -814,7 +814,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -822,7 +822,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -844,7 +844,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -852,7 +852,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -860,7 +860,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -882,7 +882,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -890,7 +890,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -898,7 +898,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -920,7 +920,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -928,7 +928,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -936,7 +936,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2097152,
                 "allow_new": "0",
@@ -958,7 +958,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2097152,
                 "allow_new": "0",
@@ -966,7 +966,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -974,7 +974,7 @@
               },
               {
                 "id": 5,
-                "type": 0,
+                "type": "role",
                 "allow": 3146752,
                 "deny": 0,
                 "allow_new": "3146752",
@@ -982,7 +982,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2097152,
                 "allow_new": "0",
@@ -1004,7 +1004,7 @@
             "permission_overwrites": [
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1026,7 +1026,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1034,7 +1034,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1042,7 +1042,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1064,7 +1064,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1072,7 +1072,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1094,7 +1094,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1102,7 +1102,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1110,7 +1110,7 @@
               },
               {
                 "id": 6,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1118,7 +1118,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1140,7 +1140,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -1148,7 +1148,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1156,7 +1156,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1178,7 +1178,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1186,7 +1186,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1194,7 +1194,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1216,7 +1216,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1224,7 +1224,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1232,7 +1232,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1254,7 +1254,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 6144,
                 "allow_new": "0",
@@ -1262,7 +1262,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1270,7 +1270,7 @@
               },
               {
                 "id": 6,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1278,7 +1278,7 @@
               },
               {
                 "id": 18,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1286,7 +1286,7 @@
               },
               {
                 "id": 19,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1294,7 +1294,7 @@
               },
               {
                 "id": 20,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1302,7 +1302,7 @@
               },
               {
                 "id": 21,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1310,7 +1310,7 @@
               },
               {
                 "id": 22,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1318,7 +1318,7 @@
               },
               {
                 "id": 26,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1326,7 +1326,7 @@
               },
               {
                 "id": 27,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1334,7 +1334,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 807926865,
                 "allow_new": "0",
@@ -1342,7 +1342,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1350,7 +1350,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 805829713,
                 "deny": 0,
                 "allow_new": "805829713",
@@ -1372,7 +1372,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 131072,
                 "allow_new": "0",
@@ -1380,7 +1380,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1388,7 +1388,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1410,7 +1410,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 2048,
                 "allow_new": "1024",
@@ -1418,7 +1418,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1440,7 +1440,7 @@
             "permission_overwrites": [
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1462,7 +1462,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -1470,7 +1470,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1478,7 +1478,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1500,7 +1500,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1508,7 +1508,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1516,7 +1516,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1524,7 +1524,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 8192,
                 "allow_new": "0",
@@ -1532,7 +1532,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 10240,
                 "deny": 0,
                 "allow_new": "10240",
@@ -1554,7 +1554,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -1562,7 +1562,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1570,7 +1570,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1592,7 +1592,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -1600,7 +1600,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1608,7 +1608,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1630,7 +1630,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -1638,7 +1638,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1646,7 +1646,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -1654,7 +1654,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -1676,7 +1676,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1684,7 +1684,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1692,7 +1692,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -1714,7 +1714,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -1722,7 +1722,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1730,7 +1730,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 8192,
                 "allow_new": "3072",
@@ -1738,7 +1738,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 8192,
                 "deny": 0,
                 "allow_new": "8192",
@@ -1760,7 +1760,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -1768,7 +1768,7 @@
               },
               {
                 "id": 5,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1776,7 +1776,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1784,7 +1784,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 8192,
                 "allow_new": "3072",
@@ -1792,7 +1792,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 8192,
                 "deny": 0,
                 "allow_new": "8192",
@@ -1814,7 +1814,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -1822,7 +1822,7 @@
               },
               {
                 "id": 5,
-                "type": 0,
+                "type": "role",
                 "allow": 3072,
                 "deny": 0,
                 "allow_new": "3072",
@@ -1830,7 +1830,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1838,7 +1838,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -1860,7 +1860,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -1868,7 +1868,7 @@
               },
               {
                 "id": 25,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -1876,7 +1876,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -1884,7 +1884,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -1906,7 +1906,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 805829713,
                 "allow_new": "0",
@@ -1914,7 +1914,7 @@
               },
               {
                 "id": 25,
-                "type": 0,
+                "type": "role",
                 "allow": 523329,
                 "deny": 0,
                 "allow_new": "523329",
@@ -1922,7 +1922,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -1944,7 +1944,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -1952,7 +1952,7 @@
               },
               {
                 "id": 25,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -1960,7 +1960,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -1968,7 +1968,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 8192,
                 "allow_new": "1049600",
@@ -1990,7 +1990,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -1998,7 +1998,7 @@
               },
               {
                 "id": 25,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2006,7 +2006,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2097152,
                 "allow_new": "0",
@@ -2014,7 +2014,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2036,7 +2036,7 @@
             "permission_overwrites": [
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2058,7 +2058,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 16384,
                 "deny": 2112,
                 "allow_new": "16384",
@@ -2066,7 +2066,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2074,7 +2074,7 @@
               },
               {
                 "id": 5,
-                "type": 0,
+                "type": "role",
                 "allow": 2048,
                 "deny": 0,
                 "allow_new": "2048",
@@ -2082,7 +2082,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2090,7 +2090,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 2048,
                 "deny": 0,
                 "allow_new": "2048",
@@ -2112,7 +2112,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 0,
                 "allow_new": "0",
@@ -2120,7 +2120,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2128,7 +2128,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2150,7 +2150,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -2158,7 +2158,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2166,7 +2166,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2188,7 +2188,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2196,7 +2196,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2218,7 +2218,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2226,7 +2226,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2234,7 +2234,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2242,7 +2242,7 @@
               },
               {
                 "id": 35,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2264,7 +2264,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -2272,7 +2272,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2280,7 +2280,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2302,7 +2302,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -2310,7 +2310,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2318,7 +2318,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2326,7 +2326,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 805825616,
                 "deny": 4097,
                 "allow_new": "805825616",
@@ -2348,7 +2348,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1051648,
                 "allow_new": "0",
@@ -2356,7 +2356,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2364,7 +2364,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 2048,
                 "allow_new": "1049600",
@@ -2372,7 +2372,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2394,7 +2394,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1051648,
                 "allow_new": "0",
@@ -2402,7 +2402,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 2048,
                 "allow_new": "1024",
@@ -2410,7 +2410,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2418,7 +2418,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1048576,
                 "deny": 3072,
                 "allow_new": "1048576",
@@ -2426,7 +2426,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2448,7 +2448,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1051648,
                 "allow_new": "0",
@@ -2456,7 +2456,7 @@
               },
               {
                 "id": 2,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 2048,
                 "allow_new": "1024",
@@ -2464,7 +2464,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2472,7 +2472,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 1048576,
                 "deny": 3072,
                 "allow_new": "1048576",
@@ -2480,7 +2480,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2502,7 +2502,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2510,7 +2510,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2518,7 +2518,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2540,7 +2540,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2548,7 +2548,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2556,7 +2556,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2578,7 +2578,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2586,7 +2586,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2608,7 +2608,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2616,7 +2616,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2624,7 +2624,7 @@
               },
               {
                 "id": 33,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 8192,
                 "allow_new": "0",
@@ -2632,7 +2632,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 2048,
                 "deny": 0,
                 "allow_new": "2048",
@@ -2654,7 +2654,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -2662,7 +2662,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2684,7 +2684,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2692,7 +2692,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2700,7 +2700,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2722,7 +2722,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2730,7 +2730,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2738,7 +2738,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2760,7 +2760,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2768,7 +2768,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2776,7 +2776,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2798,7 +2798,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2806,7 +2806,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2828,7 +2828,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2836,7 +2836,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2844,7 +2844,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2866,7 +2866,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1049600,
                 "allow_new": "0",
@@ -2874,7 +2874,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2099264,
                 "allow_new": "0",
@@ -2882,7 +2882,7 @@
               },
               {
                 "id": 34,
-                "type": 0,
+                "type": "role",
                 "allow": 1049600,
                 "deny": 0,
                 "allow_new": "1049600",
@@ -2904,7 +2904,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2912,7 +2912,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2934,7 +2934,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 3072,
                 "allow_new": "0",
@@ -2942,7 +2942,7 @@
               },
               {
                 "id": 28,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2112,
                 "allow_new": "0",
@@ -2974,7 +2974,7 @@
       "code": "z7XbwSqNZudW",
       "name": "Giveaways, Giveaways like REX →  By Maxerbox, Discord Patterns",
       "description": "Simple giveaway template:\nThis template is provided by Maxerbox from Discord Patterns. \nhttps://bit.ly/DiscordPatterns",
-      "usage_count": 17,
+      "usage_count": 31,
       "creator_id": "695372268364103772",
       "creator": {
         "id": "695372268364103772",
@@ -3085,7 +3085,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -3133,7 +3133,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -3141,7 +3141,7 @@
               },
               {
                 "id": 6,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -3163,7 +3163,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 49152,
                 "deny": 0,
                 "allow_new": "49152",
@@ -3198,7 +3198,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -3220,7 +3220,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -3242,7 +3242,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 2048,
                 "allow_new": "0",
@@ -3446,7 +3446,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -3454,7 +3454,7 @@
               },
               {
                 "id": 7,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
@@ -3476,7 +3476,7 @@
             "permission_overwrites": [
               {
                 "id": 0,
-                "type": 0,
+                "type": "role",
                 "allow": 0,
                 "deny": 1024,
                 "allow_new": "0",
@@ -3484,7 +3484,7 @@
               },
               {
                 "id": 7,
-                "type": 0,
+                "type": "role",
                 "allow": 1024,
                 "deny": 0,
                 "allow_new": "1024",
