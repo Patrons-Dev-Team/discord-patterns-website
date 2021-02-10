@@ -48,7 +48,7 @@ export async function generateLangThumbnails(
               `Generating preview .thumbnails/${lang}-template.${template.id}.png`
             )
             return captureWebsite.file(
-              `http://localhost:4444${prefix}/template/${template.id}/cpreview`,
+              `http://localhost:4444${prefix}/template/${template.id}/cpreview/`,
               join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
               {
                 launchOptions: {
