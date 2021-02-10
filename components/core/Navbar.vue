@@ -18,6 +18,7 @@
           v-for="item in menuItems"
           :key="item.title"
           :to="localePath(item.link)"
+          :active-class="item.activeClass"
           link
         >
           <v-list-item-content>
@@ -85,6 +86,7 @@ export default {
 }
 </script>
 <style scoped>
+.v-list-item--active.no-active::before,
 .v-btn--active.no-active::before {
   opacity: 0 !important;
 }
