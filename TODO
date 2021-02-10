@@ -1,0 +1,44 @@
+- Problème de typographie sur page d'acceuil (eliott)
+- Problème au niveau de l'affichage mobile des détails
+
+- En mode tutorial et en mode de détails, quand on change la langue, revenir sur la pagde d'accueuil.
+- Problème au niveau des partneraires (dépasse la limite).
+- Changer le parallax avec une image unsplash libre
+- Problème au niveau de la position du parallax en détail
+- Préserver l'ordre naturel des tags
+- Problème de trad francaise
+
+Laisser dans le dépôt les images de templates, ou ajouter une option pour empêcher de les générer 
+Refaire la gestion des templates : utilise un fichier regroupant toutes les templates et des fichiers partionnés par langues. Permet d'accèder tout de même si on est en français aux templates américaines.
+Faire un script node qui télécharger les données des templates. (Générer les fichiers de templates)
+Mettre en place les oembeds et les tags open graph (+ les titres et descriptions pour chaque page).
+Implémenter toutes les traductions de la page de détails d'une template
+Réduire la taille de la page de détail d'une template
+Mettre en place les templates conseillées sur la page de détail d'une template
+Repenser le mode popular (peut être faire comme discord.style, enlever la barre de recherche, ou laisser l'iccône activé en exact)
+
+Faire une commande pour générer les images de templates
+Mettre en place un retry promise pour la génération des images de templates
+Reduire le timeout de moitié pour capture website
+
+Ajouter un module à nuxt pour générer automatiquement les images des templates et les récupérer (génère les oembeds, met en place les plugins d'API, génère les images, met en place les routes pour generate et les payloads)
+Fix le payload caching
+Mettre en place les payloads (pour la page de détails, la page d'accueil et la page de tutoriel)
+Mettre en place un payload url extractor ?
+
+Optimiser l'affichage des cards
+
+Utiliser vue warehouse pour le stockage interne des partenaires
+Faire en sorte que lorsque l'on clique sur la croix, la recherche se re-initialise.
+Corriger un bug avec le perfom search: la page devrait être à 0.
+Rajouter le items per page dans la query
+Implémenter le service de partnenaires
+
+Intégrer les pages dans la query
+Utiliser des webworkers pour l'API statique
+Redimenssionner le nombre d'items en fonction de la taille de l'écran
+Déclencher la requête lors du clique sur une chip de tag, 700ms après
+Implémenter le sort
+Fix le problème sur la page d'accueil avec le nombre de cards affichées
+Fix le problème avec trop de card affichées sur le browser
+

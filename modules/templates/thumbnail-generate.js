@@ -54,7 +54,7 @@ export async function generateLangThumbnails(
                 launchOptions: {
                   args: ['--no-sandbox', '--disable-setuid-sandbox'],
                 },
-                waitForElement: '#loaded-trigger',
+                //  waitForElement: '#loaded-trigger',
                 overwrite: true,
                 timeout: 30,
                 width: 1280,
