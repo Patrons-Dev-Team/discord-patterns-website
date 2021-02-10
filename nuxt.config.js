@@ -89,6 +89,7 @@ export default async () => {
     generate: {
       dir: 'public',
       concurrency: 150,
+      crawler: false,
     },
     router: {
       /**
