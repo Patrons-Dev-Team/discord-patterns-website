@@ -14,16 +14,17 @@ const cachePath = resolve(__dirname, '../../.thumbnails/entries')
 const rootDir = resolve(__dirname, '../../')
 export default async function templatesModule(moduleOptions) {
   const distDir = this.options.generate.dir
-  for (const lang of this.options.i18n.locales.map((locale) => locale.code)) {
-    const templates = await getAllTemplates(lang)
-    logger.info(`${templates.length} templates for ${lang} locale`)
-    templateRoutesGenerator(
-      this.options.i18n.defaultLocale === lang ? null : lang,
-      templates,
-      this.options.generate.routes
-    )
-  }
-  this.nuxt.hook('generate:extendRoutes', (routes) => {
+
+  this.nuxt.hook('generate:extendRoutes', async (routes) => {
+    for (const lang of this.options.i18n.locales.map((locale) => locale.code)) {
+      const templates = await getAllTemplates(lang)
+      logger.info(`${templates.length} templates for ${lang} locale`)
+      templateRoutesGenerator(
+        this.options.i18n.defaultLocale === lang ? null : lang,
+        templates,
+        routes
+      )
+    }
     logger.info(`${routes.length} routes to generate`)
   })
   this.nuxt.hook('generate:done', async () => {

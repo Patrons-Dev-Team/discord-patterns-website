@@ -24,4 +24,5 @@ export default function (lang, templates, routes) {
   routes = routes.map(
     (obj) => (obj.route += obj.route.endsWith('/') ? '' : '/')
   )
+  return routes
 }
