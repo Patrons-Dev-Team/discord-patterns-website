@@ -11,6 +11,7 @@
       <v-list-item two-line>
         <v-list-item-avatar size="100" class="display-1 accent text-center"
           ><v-img
+            eager
             :src="
               require(`~/node_modules/twemoji-emojis/vendor/72x72/${emojiSrc}`)
             "
@@ -18,6 +19,8 @@
             contain
             height="72"
             :alt="templateData.emoji"
+            :options="{ threshold: 0 }"
+            @error="loaded"
             @load="loaded"
           ></v-img>
         </v-list-item-avatar>
