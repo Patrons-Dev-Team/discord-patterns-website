@@ -31,7 +31,7 @@ export async function generateLangThumbnails(
   templates,
   lang,
   isFallback,
-  concurrency = 2
+  concurrency = 5
 ) {
   const prefix = !isFallback ? `/${lang}` : ''
 
