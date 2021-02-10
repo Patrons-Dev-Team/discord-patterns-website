@@ -298,4 +298,12 @@ export default {
     NO_DATA: 'No data',
     NO_RESULTS: 'No results',
   },
+  about: {
+    TITLE: 'About Discord Patterns',
+    DESCRIPTION: 'To know a little bit more about discord patterns',
+  },
+  theTeam: {
+    TITLE: 'The team',
+    DESCRIPTION: 'The creators of discord patterns, masters of the templates',
+  },
 }

@@ -294,4 +294,12 @@ export default {
     NO_DATA: 'Aucunes données',
     NO_RESULTS: 'Aucuns résultats',
   },
+  about: {
+    TITLE: 'À propos de Discord Patterns',
+    DESCRIPTION: 'En savoir plus sur discord patterns',
+  },
+  theTeam: {
+    TITLE: "L'équipe derrière Discord Patterns",
+    DESCRIPTION: 'Les créateurs de discord patterns, maîtres des templates',
+  },
 }
