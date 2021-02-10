@@ -11,6 +11,9 @@ export default function (lang, templates, routes) {
     })
   }
   routes.push({
+    route: `${prefix}/about/`,
+  })
+  routes.push({
     route: prefix || '/',
     payload: templates
       .sort(

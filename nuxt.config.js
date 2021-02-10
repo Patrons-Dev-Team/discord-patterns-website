@@ -15,6 +15,7 @@ export default async () => {
     }
   })
   return {
+    target: 'static',
     ignore: ['pages/template/_id/cpreview/*'],
     /*
      ** Headers of the page

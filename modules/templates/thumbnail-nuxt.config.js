@@ -1,7 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
   dev: false,
   telemetry: false,
   ignore: [
@@ -12,6 +11,8 @@ export default {
     'pages/template/_id/tutorial/*',
     'layouts/default.vue',
     'layouts/dense.vue',
+    'pages/about.vue',
+    'pages/theteam.vue',
   ],
   /*
    ** Headers of the page
