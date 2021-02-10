@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
     <navbar />
-    <v-content>
+    <v-main>
       <parallax-header class="pa-7" height="auto" />
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <d-footer :locale-changer-props="{ fallbackToIndex: true }" class="mt-10" />
   </v-app>
 </template>
