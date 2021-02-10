@@ -13,12 +13,12 @@
             <h3>{{ $t('footer.TITLE_LINKS') }}</h3>
             <ul>
               <li>
-                <nuxt-link to="#" class="footerLink--text">{{
+                <nuxt-link to="/about/" class="footerLink--text">{{
                   $t('footer.ABOUT_LINK')
                 }}</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#" class="footerLink--text">{{
+                <nuxt-link to="/theteam/" class="footerLink--text">{{
                   $t('footer.TEAM_LINK')
                 }}</nuxt-link>
               </li>
@@ -26,6 +26,7 @@
                 <a
                   class="footerLink--text"
                   rel="noopener"
+                  target="_blank"
                   href="https://gitlab.com/patrons-dev-team/discord-patterns-website"
                   >{{ $t('footer.GITLAB_LINK') }}</a
                 >
@@ -34,6 +35,7 @@
                 <a
                   class="success--text"
                   rel="noopener"
+                  target="_blank"
                   href="https://discord.gg/MFMXamv"
                   >Discord</a
                 >
