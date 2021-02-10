@@ -47,26 +47,21 @@ export async function generateLangThumbnails(
             logger.info(
               `Generating preview .thumbnails/${lang}-template.${template.id}.png`
             )
-            return captureWebsite
-              .file(
-                `http://localhost:4444${prefix}/template/${template.id}/cpreview`,
-                join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
-                {
-                  launchOptions: {
-                    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-                  },
-                  waitForElement: '#loaded-trigger',
-                  overwrite: true,
-                  timeout: 30,
-                  width: 1280,
-                  height: 800,
-                  scaleFactor: 1,
-                }
-              )
-              .catch((reason) => {
-                logger.error(reason)
-                Promise.reject(reason)
-              })
+            return captureWebsite.file(
+              `http://localhost:4444${prefix}/template/${template.id}/cpreview`,
+              join(dir, `.thumbnails/${lang}-template.${template.id}.png`),
+              {
+                launchOptions: {
+                  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+                },
+                waitForElement: '#loaded-trigger',
+                overwrite: true,
+                timeout: 30,
+                width: 1280,
+                height: 800,
+                scaleFactor: 1,
+              }
+            )
           },
           { retries: 3 }
         )

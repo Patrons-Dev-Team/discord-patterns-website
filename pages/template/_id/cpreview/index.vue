@@ -11,7 +11,9 @@
       <v-list-item two-line>
         <v-list-item-avatar size="100" class="display-1 accent text-center"
           ><v-img
-            :src="emojiSrc"
+            :src="
+              require(`~/node_modules/twemoji-emojis/vendor/72x72/${emojiSrc}`)
+            "
             :transition="false"
             contain
             height="72"
@@ -121,7 +123,11 @@ export default {
       error({ statusCode: 404, message: 'Template not found' })
       return
     }
-    const emojiEntities = parse(templateData.emoji, { assetType: 'png' })
+    const emojiEntities = parse(templateData.emoji, {
+      assetType: 'png',
+      buildUrl: (codepoints, assetType) =>
+        assetType === 'png' ? `${codepoints}.png` : `svg/${codepoints}.svg`,
+    })
     const emojiSrc =
       emojiEntities.length > 0
         ? emojiEntities[0].url
