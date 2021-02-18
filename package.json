@@ -27,7 +27,7 @@
     "flexsearch": "^0.6.32",
     "fs-extra": "^9.1.0",
     "html2canvas": "^1.0.0-rc.7",
-    "marked": "^1.2.9",
+    "marked": "^2.0.0",
     "nuxt": "^2.15.0",
     "nuxt-cache-payload": "^0.1.2",
     "nuxt-i18n": "^6.20.1",
