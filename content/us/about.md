@@ -12,4 +12,4 @@ It was built with :
 - Vuetify
 - and many others !
 
-Discord Patterns is licensed under MIT.
+Discord Patterns is licensed under GNU GPLv3.

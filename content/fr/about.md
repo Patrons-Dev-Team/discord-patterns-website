@@ -12,4 +12,4 @@ Il a été construit avec des outils Open Sources, comme :
 - Vuetify
 - et bien d'autres !
 
-Discord Patterns est sous licence MIT.
+Discord Patterns est sous licence GNU GPLv3.
