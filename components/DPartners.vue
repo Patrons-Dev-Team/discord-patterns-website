@@ -25,6 +25,7 @@
             rel="noopener"
             target="blank"
             :href="$t(`partners.list[${partnerId}].LINK`)"
+            aria-label="Open link"
             icon
           >
             <v-icon color="grey lighten-1">mdi-open-in-new</v-icon>
