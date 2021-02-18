@@ -109,14 +109,11 @@ export default {
   },
   async asyncData({
     payload,
-    getPayload,
     route: { path },
     app: { $templatesApi, router, i18n },
   }) {
     const templates =
-      payload ||
-      (await getPayload(router.options.base + path)) ||
-      (await $templatesApi.getLatestTemplates(i18n.locale))
+      payload || (await $templatesApi.getLatestTemplates(i18n.locale))
     return {
       templates,
       dTemplates: templates,

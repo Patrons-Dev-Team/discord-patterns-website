@@ -15,7 +15,7 @@ export default async () => {
     }
   })
   return {
-    // target: 'static', <--- not enough stable rn
+    target: 'static',
     ignore: ['pages/template/_id/cpreview/*'],
     /*
      ** Headers of the page
@@ -139,7 +139,7 @@ export default async () => {
       // Doc: https://nuxt-community.github.io/nuxt-i18n/
       'nuxt-i18n',
       // Doc: https://github.com/nandenjin/nuxt-cache-payload
-      'nuxt-cache-payload',
+      // 'nuxt-cache-payload',
       'nuxt-webfontloader',
       // Doc: https://github.com/nuxt-community/sitemap-module
       '@nuxtjs/sitemap',

@@ -9,14 +9,11 @@ export default {
     params,
     error,
     payload,
-    getPayload,
     route: { path },
     app: { $templatesApi, router, i18n },
   }) {
     const templateData =
-      payload ||
-      (await getPayload(router.options.base + path)) ||
-      (await $templatesApi.getTemplateById(i18n.locale, params.id))
+      payload || (await $templatesApi.getTemplateById(i18n.locale, params.id))
 
     if (!templateData) {
       error({ statusCode: 404, message: 'Template not found' })
