@@ -13,14 +13,16 @@
             <h3>{{ $t('footer.TITLE_LINKS') }}</h3>
             <ul>
               <li>
-                <nuxt-link to="/about/" class="footerLink--text">{{
+                <nuxt-link :to="localePath('about')" class="footerLink--text">{{
                   $t('footer.ABOUT_LINK')
                 }}</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/theteam/" class="footerLink--text">{{
-                  $t('footer.TEAM_LINK')
-                }}</nuxt-link>
+                <nuxt-link
+                  :to="localePath('theteam')"
+                  class="footerLink--text"
+                  >{{ $t('footer.TEAM_LINK') }}</nuxt-link
+                >
               </li>
               <li>
                 <a
