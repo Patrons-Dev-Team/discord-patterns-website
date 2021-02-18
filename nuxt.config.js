@@ -264,6 +264,9 @@ export default async () => {
           useShortDoctype: true,
         },
       },
+      terser: {
+        sourceMap: true,
+      },
     },
     /*
      ** Client side env variables
