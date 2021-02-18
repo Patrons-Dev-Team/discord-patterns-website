@@ -197,6 +197,7 @@ export default async () => {
       seo: true,
       lazy: true,
       langDir: 'lang/',
+      baseUrl: 'https://d-patterns.js.org',
     },
     /*
      ** nuxt-optimized-images module configuration

@@ -25,7 +25,6 @@
 </template>
 
 <script>
-import html2canvas from 'html2canvas'
 import { createBlankImageData, weightedRandomDistrib } from './utils'
 export default {
   name: 'ThanosSnapEffect',
@@ -116,6 +115,7 @@ export default {
     },
     async drawCanvas(elm) {
       try {
+        const html2canvas = (await import('html2canvas')).default
         const canvas = await html2canvas(elm, {
           allowTaint: true,
           //  scale: 1,

@@ -43,16 +43,17 @@
 </template>
 
 <script>
-import ThanosSnapEffect from '~/components/thanos/ThanosSnapEffect'
+import DCardCreator from '~/components/DCardCreator'
+import DPartners from '~/components/DPartners'
 import { tags } from '~/data/tags'
 function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 export default {
   components: {
-    DCardCreator: () => import('~/components/DCardCreator'),
-    DPartners: () => import('~/components/DPartners'),
-    ThanosSnapEffect,
+    DCardCreator,
+    DPartners,
+    ThanosSnapEffect: () => import('~/components/thanos/ThanosSnapEffect'),
   },
   data() {
     return {
